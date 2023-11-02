@@ -14,18 +14,18 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: {
-    default: "Societal Analytics Lab",
-    template: "%s | Societal Analytics Lab",
+    default: "VU Verkiezingsonderzoek 2023",
+    template: "%s | VU Verkiezingsonderzoek 2023",
   },
   description:
-    "We are the Societal Analytics Lab of the Faculty of Social Science at the Vrije Universiteit Amsterdam",
+    "Resultaten en achtergrondinformatie van het VU Verkiezingsonderzoek 2023",
 
   openGraph: {
-    title: "Societal Analytics Lab",
+    title: "VU Verkiezingsonderzoek 2023",
     description:
-      "We are the Societal Analytics Lab of the Faculty of Social Science at the Vrije Universiteit Amsterdam",
+      "Resultaten en achtergrondinformatie van het VU Verkiezingsonderzoek 2023",
     url: absoluteUrl("/"),
-    locale: "en_US",
+    locale: "nl_NL",
     type: "website",
   },
   icons: {

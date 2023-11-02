@@ -25,7 +25,7 @@ async function getData() {
   const db = await load();
 
   const page = await db
-    .find({ collection: "pages", slug: "projects" }, ["content"])
+    .find({ collection: "pages", slug: "rapport_overzicht" }, ["content"])
     .first();
 
   const content = await markdownToHtml(page.content);
@@ -43,7 +43,7 @@ async function getData() {
     .toArray();
 
   const allProjects = await db
-    .find({ collection: "projects" }, ["title", "slug", "coverImage"])
+    .find({ collection: "rapporten" }, ["title", "slug", "coverImage"])
     .sort({ publishedAt: -1 })
     .toArray();
 

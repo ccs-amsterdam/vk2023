@@ -9,6 +9,28 @@ const Navbar = () => {
   const pathName = usePathname();
   const home = pathName === "/";
 
+  if (home)
+    return (
+      <div
+        className="grid transition-all duration-500 w-full min-h-[10rem]
+  overflow-visible  backdrop-blur-sm bg-background-transparent d top-0 z-20 "
+      >
+        <div className="flex p-4 flex-wrap 2xl:flex-nowrap  bg-gray-400 m-8 gap-8 justify-center items-center">
+          <div className="text-white font-bold text-5xl md:text-6xl 2xl:text-8xl">
+            VU AMSTERDAM
+          </div>
+          <div className="flex flex-col">
+            <div className="text-white text-2xl md:text-3xl 2xl:text-4xl text-center">
+              ONDERZOEK NAAR DE VERKIEZINGEN VAN 2023{" "}
+            </div>
+            <div className="text-white text-2xl hidden 2xl:block">
+              U navigeert door het rood maken van een wit stipje{" "}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
   return (
     <>
       {!home && (
@@ -42,13 +64,10 @@ const Navbar = () => {
 const Links = () => {
   return (
     <>
-      {/* <NavItem route="/about">About us</NavItem> */}
-
-      {/* <NavItem route="/projects">Projects</NavItem> */}
-
-      <NavItem route="/kickoff">Kick-off</NavItem>
-
-      {/* <NavItem route="/contact">Contact</NavItem> */}
+      <NavItem route="/over_ons">Over ons</NavItem>
+      <NavItem route="/media">In de media</NavItem>
+      <NavItem route="/rapporten">rapporten en visualisaties</NavItem>
+      <NavItem route="/methodologie">methodologie</NavItem>
     </>
   );
 };
@@ -131,9 +150,9 @@ const Logo = ({ visible }: { visible: boolean }) => {
     <div className="flex items-center gap-x-3 h-16 md:h-20 w-16 md:w-20 mr-4">
       <Link href="/" className={visible ? "opacity-100" : "opacity-0"}>
         <img
-          src="/images/logo_small.svg"
+          src="/images/logo_small.png"
           alt="logo"
-          className="p-2 h-24 w-24 [&>path]:bg-gray-300"
+          className="p-2 h-auto w-auto [&>path]:bg-gray-300"
         />
       </Link>
     </div>

@@ -11,6 +11,9 @@ module.exports = {
       },
     },
     extend: {
+      cursor: {
+        pencil: "url(/images/pencil-cursor.svg) 16 16, pointer",
+      },
       typography: {
         DEFAULT: {
           css: {

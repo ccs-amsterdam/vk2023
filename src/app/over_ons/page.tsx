@@ -12,9 +12,7 @@ export default async function Index() {
       />
       <div className="relative flex px-4 ml-auto w-full lg:w-1/3 mt-12 lg:mt-8">
         <div className="flex flex-col mx-auto items-center gap-8 flex-auto">
-          <h2 className="text-center text-2xl font-bold">
-            The Societal Analytics Lab Team
-          </h2>
+          <h2 className="text-center text-2xl font-bold">Ons team</h2>
           {people.map((person) => {
             return <PersonItem key={person.name} person={person} />;
           })}
@@ -28,13 +26,13 @@ async function getData() {
   const db = await load();
 
   const page = await db
-    .find({ collection: "pages", slug: "about" }, ["content"])
+    .find({ collection: "pages", slug: "over_ons" }, ["content"])
     .first();
 
   const content = await markdownToHtml(page.content);
 
   const allPeople = await db
-    .find({ collection: "people" }, ["title", "content", "coverImage"])
+    .find({ collection: "mensen" }, ["title", "content", "coverImage"])
     .sort({ publishedAt: 1 })
     .toArray();
 
