@@ -1,95 +1,131 @@
 {
-  "commit": "5258980fa819b3ee8ac2882bf9fb2b3e29e5dd78",
-  "generated": "2023-10-20T11:52:57.423Z",
+  "commit": "b0e8a8bb9d80ebec3843953cd8dc003482cfabfb",
+  "generated": "Fri, 03 Nov 2023 19:14:05 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "89557e77f789294224d3cbb63889685206878182",
-        "hash": "1497716472",
-        "path": "outstatic/content/pages/over_ons.md"
+        "commit": "89ad5dc3f1de054adf601ba248c05082a15d296d",
+        "hash": "2887620423",
+        "path": "outstatic/content/mensen/wouter-van-atteveldt.md"
       },
       "author": {
-        "name": "Nel Ruigrok",
+        "name": "",
         "picture": ""
       },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "This is my blog.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "over_ons",
-      "status": "published",
-      "title": "Home"
+      "collection": "mensen",
+      "coverImage": "https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveldt_tcm250_36346.jpg?w=160&f=webp",
+      "description": "",
+      "publishedAt": "2023-09-26T11:55:11.394Z",
+      "slug": "wouter-van-atteveldt",
+      "status": "draft",
+      "title": "Wouter van Atteveldt"
     },
     {
       "__outstatic": {
-        "commit": "89557e77f789294224d3cbb63889685206878182",
-        "hash": "1497716472",
-        "path": "outstatic/content/pages/media.md"
+        "commit": "b06c0851a636b38626bdb3445d7084695ff4aabc",
+        "hash": "1465053880",
+        "path": "outstatic/content/mensen/kasper-welbers.md"
       },
       "author": {
-        "name": "Nel Ruigrok",
-        "picture": ""
+        "name": "Kasper Welbers",
+        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
       },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "This is my blog.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "media",
-      "status": "published",
-      "title": "Home"
+      "collection": "mensen",
+      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
+      "description": "",
+      "publishedAt": "2023-09-26T11:57:02.330Z",
+      "slug": "kasper-welbers",
+      "status": "draft",
+      "title": "Kasper Welbers"
     },
     {
       "__outstatic": {
-        "commit": "89557e77f789294224d3cbb63889685206878182",
-        "hash": "1497716472",
-        "path": "outstatic/content/pages/rapport_overzicht.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "This is my blog.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "rapport_overzicht",
-      "status": "published",
-      "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "89557e77f789294224d3cbb63889685206878182",
-        "hash": "1497716472",
-        "path": "outstatic/content/pages/methodologie.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "This is my blog.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "methodologie",
-      "status": "published",
-      "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "b6e4004577d0a05d8334d6969ac49e4e08f55888",
-        "hash": "1798563272",
+        "commit": "a538f1b3502fb057501ec171de1342d45b263397",
+        "hash": "3773084205",
         "path": "outstatic/content/rapporten/example.md"
       },
       "author": {
         "name": "Kasper Welbers"
       },
       "collection": "rapporten",
-      "coverImage": "/images/logo_small.svg",
+      "coverImage": "/image/logo.svg",
       "description": "Here we put a short description of the project.",
       "publishedAt": "2023-09-21T04:35:07.000Z",
       "slug": "example",
       "status": "published",
       "title": "Project title goes here"
+    },
+    {
+      "__outstatic": {
+        "commit": "597343f9944336b069232c5b28e82eecfe03f9b4",
+        "hash": "2987652562",
+        "path": "outstatic/content/pages/rapport_overzicht.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "rapporten",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "rapport_overzicht",
+      "status": "published",
+      "title": "rapporten"
+    },
+    {
+      "__outstatic": {
+        "commit": "329b0a982a70f6cbc119165879f586b2e0aa3557",
+        "hash": "1365963019",
+        "path": "outstatic/content/pages/over_ons.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Wie zijn wij",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "over_ons",
+      "status": "published",
+      "title": "Over ons"
+    },
+    {
+      "__outstatic": {
+        "commit": "4d7b11887b12ec8ebfb93e77c215cb754679db69",
+        "hash": "2418124213",
+        "path": "outstatic/content/pages/methodologie.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo.svg",
+      "description": "Beschrijving van methodologie",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "methodologie",
+      "status": "published",
+      "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a2610bfc09a248faeda7f43226ea3057b6dcd9b",
+        "hash": "2796024192",
+        "path": "outstatic/content/pages/media.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.svg",
+      "description": "Samenvatting media activiteiten",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "home",
+      "status": "published",
+      "title": "In de media"
     }
   ]
 }
