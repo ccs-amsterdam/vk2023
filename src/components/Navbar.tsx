@@ -12,14 +12,14 @@ const Navbar = () => {
   if (home)
     return (
       <div
-        className="grid transition-all duration-500 w-full min-h-[10rem]
+        className="grid transition-all duration-500 w-full 
   overflow-visible  backdrop-blur-sm  d top-0 z-20 "
       >
         <div className="flex p-4 flex-wrap 2xl:flex-nowrap  bg-gray-400 m-8 gap-8 justify-center items-center">
-          <div className="text-white text-center md:text-left font-bold text-4xl md:text-6xl 2xl:text-8xl">
+          <div className="text-white text-center md:text-left font-bold text-4xl md:text-6xl 2xl:text-[76px]">
             VU AMSTERDAM
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col h-full justify-between p-0 md:pb-[5px]">
             <div className="text-white text-2xl md:text-3xl 2xl:text-4xl text-center">
               ONDERZOEK NAAR DE VERKIEZINGEN VAN 2023{" "}
             </div>
