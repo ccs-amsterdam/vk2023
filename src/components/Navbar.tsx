@@ -147,17 +147,35 @@ const FoldedMenu = () => {
 
 const Logo = ({ visible }: { visible: boolean }) => {
   return (
-    <div className="flex items-center gap-x-3 h-16 md:h-20 w-16 md:w-20 mr-4">
+    <div className="flex relative items-center  gap-x-3 pr-4 ">
       <Link href="/" className={visible ? "opacity-100" : "opacity-0"}>
         <img
-          src="/images/logo_small.png"
+          src="/images/leeg_stemvak.svg"
           alt="logo"
-          className="p-2 h-auto w-auto [&>path]:bg-gray-300"
+          className="w-16 lg:w-20"
+        />
+        <img
+          src="/images/red_scribble.png"
+          alt="logo"
+          className="absolute inset-1 ml-[2px] w-16 lg:w-18"
         />
       </Link>
     </div>
   );
 };
+
+function Stemvak() {
+  return (
+    <div className="flex relative items-center  gap-x-3 pr-4 ">
+      <img src="/images/leeg_stemvak.svg" alt="logo" className="w-16 lg:w-20" />
+      <img
+        src="/images/red_scribble.png"
+        alt="logo"
+        className="absolute inset-1 ml-[2px] w-16 lg:w-18 hidden group-hover:block"
+      />
+    </div>
+  );
+}
 
 export default Navbar;
 export { Links };

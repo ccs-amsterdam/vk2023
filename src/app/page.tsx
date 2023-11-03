@@ -1,9 +1,9 @@
-import { load } from "outstatic/server";
-import markdownToHtml from "../lib/markdownToHtml";
-import Background from "./background";
-import Link from "next/link";
+"use client";
 
-export default async function Index() {
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+export default function Index() {
   return (
     <div className="relative animate-fade-in">
       <div className="relative  left-0 flex  h-full px-4 z-10 lg:mb-10">
@@ -14,9 +14,13 @@ export default async function Index() {
       <section className="flex flex-col gap-8 items-center p-8 relative mt-16 mb-16 md:mb-12">
         <div className="grid grid-cols-1 w-full max-w-2xl border-b-2 border-gray-400">
           <Stemrij nr={1} label="Over ons" link="/over_ons" />
-          <Stemrij nr={2} label="In de media" link="/over_ons" />
-          <Stemrij nr={3} label="Rapporten en visualisaties" link="/over_ons" />
-          <Stemrij nr={4} label="Methodologie" link="/over_ons" />
+          <Stemrij nr={2} label="In de media" link="/media" />
+          <Stemrij
+            nr={3}
+            label="Rapporten en visualisaties"
+            link="/rapporten"
+          />
+          <Stemrij nr={4} label="Methodologie" link="/methodologie" />
         </div>
         <div className="w-full max-w-2xl">
           <p>
@@ -32,27 +36,6 @@ export default async function Index() {
       </section>
     </div>
   );
-}
-
-async function getData() {
-  const db = await load();
-
-  const page = await db
-    .find({ collection: "pages", slug: "home" }, [
-      "content",
-      "title",
-      "coverImage",
-    ])
-    .first();
-
-  console.log(page);
-
-  const content = await markdownToHtml(page.content);
-
-  return {
-    content,
-    coverImage: page.coverImage,
-  };
 }
 
 function VuLogo() {
@@ -75,8 +58,12 @@ function VuLogo() {
 }
 
 function Stemrij(props: { nr: number; label: string; link: string }) {
+  const router = useRouter();
   return (
-    <div className="group flex p-2 w-full border-t-2 border-x-2 border-gray-400 cursor-pencil">
+    <div
+      className="group flex p-2 w-full border-t-2 border-x-2 border-gray-400 cursor-pencil"
+      onClick={() => router.push(props.link)}
+    >
       <Stemvak />
       <div className="align-bottom mt-auto font-bold">{props.nr}</div>
       <div className="my-auto flex-auto  ml-[10%] text-2xl md:text-4xl">
@@ -90,7 +77,11 @@ function Stemvak() {
   return (
     <div className="flex relative items-center  gap-x-3 pr-4 ">
       <img src="/images/leeg_stemvak.svg" alt="logo" className="w-16 lg:w-20" />
-      <div className="absolute inset-2 group-hover:bg-red-500" />
+      <img
+        src="/images/red_scribble.png"
+        alt="logo"
+        className="absolute inset-1 ml-[2px] w-16 lg:w-18 hidden group-hover:block"
+      />
     </div>
   );
 }

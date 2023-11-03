@@ -6,25 +6,7 @@
       "__outstatic": {
         "commit": "89557e77f789294224d3cbb63889685206878182",
         "hash": "1497716472",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "This is my blog.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "89557e77f789294224d3cbb63889685206878182",
-        "hash": "1497716472",
-        "path": "outstatic/content/pages/home.md"
+        "path": "outstatic/content/pages/over_ons.md"
       },
       "author": {
         "name": "Nel Ruigrok",
@@ -42,7 +24,7 @@
       "__outstatic": {
         "commit": "89557e77f789294224d3cbb63889685206878182",
         "hash": "1497716472",
-        "path": "outstatic/content/pages/home.md"
+        "path": "outstatic/content/pages/media.md"
       },
       "author": {
         "name": "Nel Ruigrok",
@@ -60,7 +42,7 @@
       "__outstatic": {
         "commit": "89557e77f789294224d3cbb63889685206878182",
         "hash": "1497716472",
-        "path": "outstatic/content/pages/home.md"
+        "path": "outstatic/content/pages/rapport_overzicht.md"
       },
       "author": {
         "name": "Nel Ruigrok",
@@ -78,7 +60,7 @@
       "__outstatic": {
         "commit": "89557e77f789294224d3cbb63889685206878182",
         "hash": "1497716472",
-        "path": "outstatic/content/pages/home.md"
+        "path": "outstatic/content/pages/methodologie.md"
       },
       "author": {
         "name": "Nel Ruigrok",
@@ -91,6 +73,23 @@
       "slug": "methodologie",
       "status": "published",
       "title": "Home"
+    },
+    {
+      "__outstatic": {
+        "commit": "b6e4004577d0a05d8334d6969ac49e4e08f55888",
+        "hash": "1798563272",
+        "path": "outstatic/content/rapporten/example.md"
+      },
+      "author": {
+        "name": "Kasper Welbers"
+      },
+      "collection": "rapporten",
+      "coverImage": "/images/logo_small.svg",
+      "description": "Here we put a short description of the project.",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "example",
+      "status": "published",
+      "title": "Project title goes here"
     }
   ]
 }

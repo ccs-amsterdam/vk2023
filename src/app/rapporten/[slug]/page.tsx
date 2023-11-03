@@ -99,7 +99,7 @@ export default async function Project(params: Params) {
 async function getData({ params }: Params) {
   const db = await load();
   const project = await db
-    .find<Project>({ collection: "projects", slug: params.slug }, [
+    .find<Project>({ collection: "rapporten", slug: params.slug }, [
       "title",
       "publishedAt",
       "description",
@@ -113,7 +113,7 @@ async function getData({ params }: Params) {
   const content = await markdownToHtml(project.content);
 
   const moreProjects = await db
-    .find({ collection: "projects", slug: { $ne: params.slug } }, [
+    .find({ collection: "rapporten", slug: { $ne: params.slug } }, [
       "title",
       "slug",
       "coverImage",
@@ -128,6 +128,6 @@ async function getData({ params }: Params) {
 }
 
 export async function generateStaticParams() {
-  const posts = getDocumentSlugs("projects");
+  const posts = getDocumentSlugs("rapporten");
   return posts.map((slug) => ({ slug }));
 }

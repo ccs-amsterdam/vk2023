@@ -13,6 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: {
     default: "VU Verkiezingsonderzoek 2023",
     template: "%s | VU Verkiezingsonderzoek 2023",
