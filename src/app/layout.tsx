@@ -42,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="relative flex flex-col min-h-screen scroll-smooth">
+      <body className="relative flex flex-col min-h-screen scroll-smooth bg-gradient-to-br from-white to-slate-200">
         <CssWindowVariables />
         <Navbar />
 

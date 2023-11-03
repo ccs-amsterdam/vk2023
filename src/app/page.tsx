@@ -6,12 +6,12 @@ import { useRouter } from "next/navigation";
 export default function Index() {
   return (
     <div className="relative animate-fade-in">
-      <div className="relative  left-0 flex  h-full px-4 z-10 lg:mb-10">
+      <div className="relative  left-0 flex  h-full px-4 z-10">
         <div className="w-full mx-auto">
           <VuLogo />
         </div>
       </div>
-      <section className="flex flex-col gap-8 items-center p-8 relative mt-16 mb-16 md:mb-12">
+      <section className="flex flex-col gap-8 items-center p-8 relative mb-16 md:mb-12">
         <div className="grid grid-cols-1 w-full max-w-2xl border-b-2 border-gray-400">
           <Stemrij nr={1} label="Over ons" link="/over_ons" />
           <Stemrij nr={2} label="In de media" link="/media" />
@@ -48,11 +48,11 @@ function VuLogo() {
           className=" w-36 md:w-72 lg:w-96"
         />
       </Link>
-      <div className=" lg:pl-5 text-secondary text-[11px] md:text-[16px] lg:text-[25px]">
+      {/* <div className=" lg:pl-5 text-secondary text-[11px] md:text-[16px] lg:text-[25px]">
         <h3 className="font-bold text-primary text-2xl md:text-4xl lg:text-5xl tracking-[0.075em]">
           Verkiezingsonderzoek 2023
         </h3>
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -80,7 +80,7 @@ function Stemvak() {
       <img
         src="/images/red_scribble.png"
         alt="logo"
-        className="absolute inset-1 ml-[2px] w-16 lg:w-18 hidden group-hover:block"
+        className="absolute inset-1 ml-[2px] w-12 md:w-16 hidden group-hover:block"
       />
     </div>
   );

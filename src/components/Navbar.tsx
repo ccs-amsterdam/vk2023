@@ -13,10 +13,10 @@ const Navbar = () => {
     return (
       <div
         className="grid transition-all duration-500 w-full min-h-[10rem]
-  overflow-visible  backdrop-blur-sm bg-background-transparent d top-0 z-20 "
+  overflow-visible  backdrop-blur-sm  d top-0 z-20 "
       >
         <div className="flex p-4 flex-wrap 2xl:flex-nowrap  bg-gray-400 m-8 gap-8 justify-center items-center">
-          <div className="text-white font-bold text-5xl md:text-6xl 2xl:text-8xl">
+          <div className="text-white text-center md:text-left font-bold text-4xl md:text-6xl 2xl:text-8xl">
             VU AMSTERDAM
           </div>
           <div className="flex flex-col">
