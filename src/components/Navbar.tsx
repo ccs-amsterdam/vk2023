@@ -157,25 +157,12 @@ const Logo = ({ visible }: { visible: boolean }) => {
         <img
           src="/images/red_scribble.png"
           alt="logo"
-          className="absolute inset-1 ml-[2px] w-16 lg:w-18"
+          className="absolute inset-1 ml-[2px] w-12 lg:w-16"
         />
       </Link>
     </div>
   );
 };
-
-function Stemvak() {
-  return (
-    <div className="flex relative items-center  gap-x-3 pr-4 ">
-      <img src="/images/leeg_stemvak.svg" alt="logo" className="w-16 lg:w-20" />
-      <img
-        src="/images/red_scribble.png"
-        alt="logo"
-        className="absolute inset-1 ml-[2px] w-16 lg:w-18 hidden group-hover:block"
-      />
-    </div>
-  );
-}
 
 export default Navbar;
 export { Links };
