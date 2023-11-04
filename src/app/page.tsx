@@ -24,7 +24,7 @@ export default function Index() {
         </div>
         <div className="w-full max-w-2xl">
           <p>
-            U navigeert door het rood maken van een wit stipje, geplaats voor de
+            U kiest door het rood maken van een wit stipje, geplaats voor de
             pagina van uw keuze. Het stembiljet wordt zo dicht gevouwen dat uw
             keuze niet zichtbaar is.
           </p>
@@ -45,7 +45,7 @@ function VuLogo() {
         <img
           src="/images/logo_vu.svg"
           alt="logo"
-          className=" w-36 md:w-72 lg:w-96"
+          className=" w-60 md:w-72 lg:w-96"
         />
       </Link>
       {/* <div className=" lg:pl-5 text-secondary text-[11px] md:text-[16px] lg:text-[25px]">

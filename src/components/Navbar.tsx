@@ -16,15 +16,15 @@ const Navbar = () => {
   overflow-visible  backdrop-blur-sm  d top-0 z-20 "
       >
         <div className="flex p-4 flex-wrap 2xl:flex-nowrap  bg-gray-400 m-8 gap-8 justify-center items-center">
-          <div className="text-white text-center md:text-left font-bold text-4xl md:text-6xl 2xl:text-[76px]">
-            VU AMSTERDAM
+          <div className="text-white text-center md:text-left font-bold text-4xl md:text-6xl lg:text-[65px] xl:text-[76px]">
+            ONDERZOEK
           </div>
           <div className="flex flex-col h-full justify-between p-0 md:pb-[5px]">
-            <div className="text-white text-2xl md:text-3xl 2xl:text-4xl text-center">
-              ONDERZOEK NAAR DE VERKIEZINGEN VAN 2023{" "}
+            <div className="text-white text-2xl md:text-3xl 2xl:text-4xl text-center lg:text-left">
+              NAAR DE VERKIEZINGEN VAN 2023{" "}
             </div>
-            <div className="text-white text-2xl hidden 2xl:block">
-              U navigeert door het rood maken van een wit stipje{" "}
+            <div className="text-white tracking-[-0.02rem]  text-2xl hidden lg:block">
+              U kiest door het rood maken van een wit stipje{" "}
             </div>
           </div>
         </div>
@@ -33,24 +33,22 @@ const Navbar = () => {
 
   return (
     <>
-      {!home && (
-        <div className="h-[var(--navbar-height)] md:h-[var(--navbar-height-md)]" />
-      )}
+      <div className="h-[var(--navbar-height)] md:h-[var(--navbar-height-md)]" />
       <div
         className={`${
           home ? "" : "fixed"
         } grid transition-all duration-500 w-full grid-rows-[var(--navbar-height)]  md:grid-rows-[var(--navbar-height-md)]
         overflow-visible  backdrop-blur-sm bg-background-transparent d top-0 z-20 border-b-2`}
       >
-        <div className="flex justify-between md:justify-start relative items-center h-full px-4">
+        <div
+          className={`flex justify-between lg:justify-start relative items-center h-full px-4`}
+        >
           <div className="">
             <Logo visible={true} />
           </div>
 
           <ul
-            className={`w-full  mx-auto  hidden md:flex text-foreground text-xl ${
-              home ? "" : "max-w-[calc(1200px+96px)]"
-            }`}
+            className={`w-full  mx-auto  hidden lg:flex text-foreground text-xl 2xl:text-2xl max-w-[calc(800px+96px)] 2xl:max-w-[calc(1200px+96px)]`}
           >
             <Links />
           </ul>
@@ -66,8 +64,8 @@ const Links = () => {
     <>
       <NavItem route="/over_ons">Over ons</NavItem>
       <NavItem route="/media">In de media</NavItem>
-      <NavItem route="/rapporten">rapporten en visualisaties</NavItem>
-      <NavItem route="/methodologie">methodologie</NavItem>
+      <NavItem route="/rapporten">Rapporten en visualisaties</NavItem>
+      <NavItem route="/methodologie">Methodologie</NavItem>
     </>
   );
 };
@@ -79,7 +77,7 @@ const NavItem = (props: { children: React.ReactNode; route: string }) => {
   return (
     <Link href={props.route}>
       <button
-        className={`transition  p-4 md:px-8    ${
+        className={`transition  p-4 px-8  ${
           isActive ? " text-primary" : " text-secondary"
         } hover:text-primary`}
       >
@@ -115,18 +113,18 @@ const FoldedMenu = () => {
   return (
     <div className="relative ">
       <Button
-        className={`bg-secondary p-1 mt-2 w-12 h-12 md:hidden rounded-full`}
+        className={`bg-white transition-colors duration-200 p-1 mt-1 w-16 h-16 lg:hidden hover:bg-black hover:fill-white  rounded-none`}
         onClick={() => {
           setShow(!show);
         }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
+          width="60"
+          height="60"
           viewBox="0 0 24 24"
         >
-          <path fill="#fff" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
+          <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
         </svg>
       </Button>
       <div
@@ -134,7 +132,7 @@ const FoldedMenu = () => {
         onClick={() => setShow(false)}
         className={`grid grid-rows-[0px] transition-all fixed top-20 right-4 bg-background overflow-hidden`}
       >
-        <div className="rounded w-full h-full border-4 border-secondary py-2">
+        <div className="rounded w-full h-full border-4 border-black py-2">
           <ul className="flex flex-col">
             <Links />
           </ul>
