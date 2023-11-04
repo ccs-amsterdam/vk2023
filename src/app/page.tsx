@@ -45,7 +45,7 @@ function VuLogo() {
         <img
           src="/images/logo_vu.svg"
           alt="logo"
-          className=" w-60 md:w-72 lg:w-96"
+          className=" w-60 md:w-64 lg:w-96"
         />
       </Link>
       {/* <div className=" lg:pl-5 text-secondary text-[11px] md:text-[16px] lg:text-[25px]">
