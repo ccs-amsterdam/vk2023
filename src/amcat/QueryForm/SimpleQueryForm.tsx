@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useFields, getField } from "../api";
+import { useFields, getField } from "@/amcat/api";
 import FilterPicker from "./FilterPicker";
 import { queryFromString, queryToString } from "./libQuery";
 import { QueryFormProps } from "./QueryForm";

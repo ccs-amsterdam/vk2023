@@ -1,4 +1,4 @@
-import { MiddlecatUser } from "middlecat-react";
+import { Axios } from "axios";
 import { ReactNode } from "react";
 
 export interface AmcatServerConfig {
@@ -24,7 +24,26 @@ export interface AmcatUserInfo {
   role: AmcatRole;
 }
 
-export interface AmcatUser extends MiddlecatUser {}
+export interface AmcatUser {
+  /** user signin email */
+  email: string;
+  /** user name */
+  name: string;
+  /** image */
+  image: string;
+  /** is user authenticated? */
+  authenticated: boolean;
+  /** Authentication is disabled? */
+  authDisabled?: boolean;
+  /** Axios instance to make API calls */
+  api: Axios;
+  /** resource url */
+  resource: string;
+  /** middlecat url */
+  middlecat: string;
+  /** Kill the AmCAT session and optionally also the MiddleCat session. Used internally on signout */
+  killSession: (signOutMiddlecat: boolean) => Promise<void>;
+}
 
 export type DisplayOption = "list" | "table" | "linechart" | "barchart";
 export type AggregationInterval =

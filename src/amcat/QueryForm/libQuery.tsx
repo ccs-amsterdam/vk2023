@@ -1,4 +1,4 @@
-import { AmcatQueryTerms } from "../../interfaces";
+import { AmcatQueryTerms } from "@/amcat/interfaces";
 
 function format_queries_object(queries: { [label: string]: string }) {
   return Object.keys(queries).map((l) => `${l}=${queries[l]}`);

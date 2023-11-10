@@ -31,7 +31,7 @@ function SelectIndex({ content }: { content: string }) {
           {indices.map((index, i) => {
             return (
               <Stemrij
-                key={index}
+                key={index.index}
                 nr={i + 1}
                 label={index.label}
                 link={`/dashboard?index=${index.index}`}
@@ -46,5 +46,6 @@ function SelectIndex({ content }: { content: string }) {
 
 function Index({ indexId }: { indexId: string }) {
   const index = indices.find((i) => i.index === indexId);
+  if (!index) return null;
   return <Dashboard index={index} />;
 }

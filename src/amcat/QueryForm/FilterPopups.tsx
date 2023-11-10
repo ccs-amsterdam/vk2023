@@ -1,11 +1,11 @@
-import { useFieldValues } from "../api";
+import { useFieldValues } from "@/amcat/api";
 import {
   AmcatUser,
   AmcatField,
   AmcatFilter,
   AmcatIndexName,
   DateFilter,
-} from "../interfaces";
+} from "@/amcat/interfaces";
 import { Checkbox } from "@/components/ui/checkbox";
 import DatePicker from "./DatePicker";
 
@@ -25,18 +25,35 @@ export function filterLabel(
   if (field == null || filter == null) return null;
 
   const name = includeName ? `${field.name} ` : "";
+
+  let values = "";
+  console.log(filter.values);
   if (field.type === "date") {
-    if (filter.gte && filter.lte) return `${name}${filter.gte} - ${filter.lte}`;
-    if (filter.gte) return `${name}from ${filter.gte}`;
-    if (filter.lte) return `${name}until ${filter.lte}`;
+    if (filter.gte && filter.lte) values = `{filter.gte} - ${filter.lte}`;
+    if (filter.gte) values = `from ${filter.gte}`;
+    if (filter.lte) values = `until ${filter.lte}`;
   } else {
-    if (filter.values && filter.values.length > 2)
-      return `${name}${filter.values.slice(0, 2)},…`;
-    if (filter.values && filter.values.length > 0)
-      return `${name}${filter.values}`;
+    if (filter.values && filter.values.length >= 2) {
+      values = filter.values.slice(0, 2).join(", ") + " …";
+    } else {
+      if (filter.values && filter.values.length > 0)
+        values = filter.values.join(", ");
+    }
   }
 
-  return `select ${field.name}`;
+  if (values)
+    return (
+      <span>
+        <b>{name}</b>
+        {values}
+      </span>
+    );
+
+  return (
+    <span>
+      select <b>{field.name}</b>
+    </span>
+  );
 }
 
 export function FilterPopup({
@@ -66,7 +83,8 @@ export function KeywordPopup({
   const selected = value?.values || [];
   if (values.length === 0) return null;
 
-  function handleChange(v: string, checked: any) {
+  function handleChange(checked: boolean, v: string) {
+    console.log(checked);
     if (checked && !selected.includes(v))
       onChange({ values: [...selected, v] });
     if (!checked && selected.includes(v))
@@ -74,20 +92,23 @@ export function KeywordPopup({
   }
 
   return (
-    <form>
-      {values.map((v, i) => (
-        <>
-          <Checkbox
-            key={i}
-            values={i}
-            checked={selected.includes(v)}
-            label={v}
-            onChange={(_, { checked }) => handleChange(v, checked)}
-          />
-          <br key={-1 - i} />
-        </>
-      ))}
-    </form>
+    <div>
+      {values.map((v, i) => {
+        const checked = selected.includes(v);
+        return (
+          <div
+            key={v + i}
+            className="flex items-center gap-3 py-1"
+            onClick={() => handleChange(!checked, v)}
+          >
+            <Checkbox key={i} checked={checked} className="w-5 h-5" />
+            <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+              {v}{" "}
+            </label>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -102,7 +123,8 @@ function date2str(date: Date, ifNone = ""): string {
 export function DateRangePopup({ value, onChange }: FilterPopupProps) {
   if (value == null) return null;
 
-  const handleChange = (key: keyof DateFilter, newval: Date) => {
+  const handleChange = (key: keyof DateFilter, newval?: Date) => {
+    if (!newval) return;
     let result = { ...value };
     if (newval == null) {
       delete result[key];
@@ -113,13 +135,13 @@ export function DateRangePopup({ value, onChange }: FilterPopupProps) {
     <div className="w-full flex flex-col gap-2">
       <DatePicker
         label={"from date"}
-        value={Date.parse(value.gte)}
-        onChange={(newval: Date) => handleChange("gte", newval)}
+        value={new Date(value.gte || "")}
+        onChange={(newval) => handleChange("gte", newval)}
       />
       <DatePicker
         label={"to date"}
-        value={Date.parse(value.lte)}
-        onChange={(newval: Date) => handleChange("lte", newval)}
+        value={new Date(value.lte || "")}
+        onChange={(newval) => handleChange("lte", newval)}
       />
     </div>
   );

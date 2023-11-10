@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AmcatField, AmcatQuery } from "../../interfaces";
-import { getFieldTypeIcon } from "../../Amcat";
+import { AmcatField, AmcatQuery } from "@/amcat/interfaces";
 
 import {
   Popover,
@@ -20,7 +19,7 @@ interface AddFilterProps {
   options: AmcatField[];
   onClick: (value: string) => void;
   addFilterLabel?: string;
-  className: string;
+  className?: string;
 }
 export default function AddFilterButton({
   options,
@@ -28,9 +27,12 @@ export default function AddFilterButton({
   className,
   addFilterLabel,
 }: AddFilterProps) {
-  const [addOpen, setAddOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  if (options.length === 0) return null;
+
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={() => setOpen(!open)}>
       <PopoverTrigger asChild>
         <Button
           className={cn("whitespace-nowrap bg-background border-2", className)}
@@ -44,10 +46,8 @@ export default function AddFilterButton({
             <Button
               className="bg-background border-2"
               key={f.name}
-              icon
-              labelPosition="left"
               onClick={() => {
-                setAddOpen(false);
+                setOpen(false);
                 onClick(f.name);
               }}
             >

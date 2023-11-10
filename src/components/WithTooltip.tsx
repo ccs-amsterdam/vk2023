@@ -4,18 +4,24 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { HelpCircle } from "lucide-react";
 
-export function WithTooltip({
-  children,
-  tooltip,
-}: {
-  children: React.ReactNode;
+interface Props {
+  children?: React.ReactNode;
   tooltip: React.ReactNode;
-}) {
+  open?: boolean;
+  setOpen?: (open: boolean) => void;
+}
+
+export function WithTooltip({ children, tooltip }: Props) {
+  const trigger = children ?? (
+    <HelpCircle className="mb-1 text-gray-600 w-5 h-5" />
+  );
+
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={300}>
       <Tooltip>
-        <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipTrigger asChild>{trigger}</TooltipTrigger>
         <TooltipContent>{tooltip}</TooltipContent>
       </Tooltip>
     </TooltipProvider>

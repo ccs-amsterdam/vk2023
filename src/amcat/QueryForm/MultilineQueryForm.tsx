@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useFields, getField } from "../api";
+import { useFields, getField } from "@/amcat/api";
 import FilterPicker from "./FilterPicker";
 import { QueryFormProps } from "./QueryForm";
 import AddFilterButton, { fieldOptions } from "./AddFilterButton";
@@ -7,57 +7,7 @@ import { queryFromString, queryToString } from "./libQuery";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { WithTooltip } from "@/components/WithTooltip";
-import { Input } from "@/components/ui/input";
 import { X } from "lucide-react";
-
-// const MultiLineForm = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-//   .querycol {
-//     flex-grow: 3;
-//     padding-right: 1em;
-//   }
-//   .filtercol {
-//     width: 30em;
-//   }
-//   textarea {
-//     width: 100%;
-//     border-radius: var(--rounding) !important;
-//     border-color: rgba(34, 36, 38, 0.15);
-//   }
-//   .submit {
-//     position: absolute;
-//     bottom: 0;
-//     right: 1em;
-//   }
-// `;
-
-// const FilterList = styled.div`
-//   .filter {
-//     vertical-align: middle;
-//     display: flex;
-//     padding-bottom: 2px;
-//   }
-//   .filterlabel {
-//     width: 8em;
-//     text-overflow: ellipsis;
-//     overflow: hidden;
-//     white-space: nowrap;
-//   }
-//   .filterdelete {
-//     padding-left: 0.5em;
-//   }
-//   .filter .filterpicker {
-//     width: 20em;
-//   }
-//   .valuepicker {
-//     text-overflow: ellipsis;
-//     overflow: hidden;
-//     white-space: nowrap;
-//     width: 100% !important;
-//   }
-// `;
 
 export default function MultilineQueryForm({
   user,
@@ -98,30 +48,31 @@ export default function MultilineQueryForm({
   }
 
   const hint = (
-    <h3>
+    <p>
       Use control+Enter to submit; label queries with{" "}
       <span className="font-bold text-primary">label = query</span>
-    </h3>
+    </p>
   );
 
   return (
     <div className="flex flex-col">
       <div className="flex-auto prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,300px] gap-3 lg:gap-6">
         <form className="flex-auto w-full">
-          <b>Query:</b>
+          <div className="flex items-center gap-2">
+            <b>Query</b>
 
-          <WithTooltip tooltip={<p>{hint}</p>}>
-            <Textarea
-              className=""
-              rows={5}
-              placeholder={`Enter multiple (labeled) queries:\nLabel1 = query1\nLabel2 = query2\netc.`}
-              onChange={(e) => {
-                setQ(e.target.value);
-              }}
-              onKeyDown={handleKeyDown}
-              value={q || ""}
-            />
-          </WithTooltip>
+            <WithTooltip tooltip={hint} />
+          </div>
+          <Textarea
+            className=""
+            rows={5}
+            placeholder={`Enter multiple (labeled) queries:\n\nLabel1 = query1\nLabel2 = query2\netc.`}
+            onChange={(e) => {
+              setQ(e.target.value);
+            }}
+            onKeyDown={handleKeyDown}
+            value={q || ""}
+          />
           <Button
             className="bg-gray-200 border-2 w-full  h-8 mt-1"
             onClick={submitForm}

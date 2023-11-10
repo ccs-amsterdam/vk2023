@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useFields } from "../api";
-import { AmcatIndexName, AmcatQuery, AmcatUser } from "../interfaces";
+import { useFields } from "@/amcat/api";
+import { AmcatIndexName, AmcatQuery, AmcatUser } from "@/amcat/interfaces";
 import MultilineQueryForm from "./MultilineQueryForm";
 import SimpleQueryForm from "./SimpleQueryForm";
 import { ChevronDown, ChevronUp } from "lucide-react";

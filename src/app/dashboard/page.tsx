@@ -1,12 +1,11 @@
 import { load } from "outstatic/server";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Dashboard from "./Dashboard";
-import Stemrij from "@/components/Stemrij";
 import IndexRouting from "./IndexRouting";
 
 const indices = [{ label: "State of the Union", index: "state_of_the_union" }];
 
-export default async function Dashboard({
+export default async function Index({
   searchParams,
 }: {
   searchParams: { index?: string };

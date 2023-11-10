@@ -13,8 +13,15 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
+interface Props {
+  label: string;
+  value: Date;
+  onChange: (value: Date | undefined) => void;
+}
+
 export default function DatePicker({ label, value, onChange }: Props) {
   console.log(value);
+
   return (
     <Popover>
       <PopoverTrigger asChild>

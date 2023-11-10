@@ -3,7 +3,7 @@ import {
   AmcatField,
   AmcatFilter,
   AmcatIndexName,
-} from "../../interfaces";
+} from "@/amcat/interfaces";
 import { filterLabel, FilterPopup } from "./FilterPopups";
 
 import {
@@ -48,7 +48,7 @@ export default function FilterPicker({
         >
           {filterLabel(field, value, true)}
           {onDelete == null ? null : (
-            <div name="delete" onClick={onDelete}>
+            <div onClick={onDelete}>
               <X />
             </div>
           )}
