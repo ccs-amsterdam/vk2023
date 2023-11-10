@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { Roboto } from "next/font/google";
 import CssWindowVariables from "@/components/CssWindowVariables";
+import ClientProviders from "@/components/ClientProviders";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -46,7 +47,9 @@ export default function RootLayout({
         <CssWindowVariables />
         <Navbar />
 
-        <div className="w-full py-6 md:py-12">{children}</div>
+        <div className="flex flex-col  w-full flex-auto py-6 md:py-12">
+          <ClientProviders>{children}</ClientProviders>
+        </div>
       </body>
     </html>
   );

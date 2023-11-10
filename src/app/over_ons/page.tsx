@@ -5,7 +5,7 @@ import PersonItem from "@/components/PersonItem";
 export default async function Index() {
   const { content, people } = await getData();
   return (
-    <div className="animate-fade-in flex flex-col lg:flex-row max-w-[1200px] mx-auto px-4 md:px-8">
+    <div className="animate-fade-in w-full flex flex-col lg:flex-row max-w-[1200px] mx-auto px-4 md:px-8">
       <div
         className="flex-auto relative w-full max-w-2xl mx-auto lg:mx-0 prose md:prose-xl mt-4 lg:mt-8 overflow-auto"
         dangerouslySetInnerHTML={{ __html: content }}

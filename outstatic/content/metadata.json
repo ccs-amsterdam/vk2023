@@ -126,6 +126,24 @@
       "slug": "media",
       "status": "published",
       "title": "In de media"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a2610bfc09a248faeda7f43226ea3057b6dcd9b",
+        "hash": "2796024192",
+        "path": "outstatic/content/pages/dashboard.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.svg",
+      "description": "Dashboard",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "dashboard",
+      "status": "published",
+      "title": "Dashboard"
     }
   ]
 }

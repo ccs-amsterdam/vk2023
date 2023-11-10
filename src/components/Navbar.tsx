@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
 
           <ul
-            className={`w-full  mx-auto  hidden lg:flex text-foreground text-xl 2xl:text-2xl max-w-[calc(800px+96px)] 2xl:max-w-[calc(1200px+96px)]`}
+            className={`w-full  mx-auto  hidden lg:flex text-foreground text-lg 2xl:text-2xl max-w-[calc(1000px+96px)] 2xl:max-w-[calc(1200px+96px)]`}
           >
             <Links />
           </ul>
@@ -66,6 +66,7 @@ const Links = () => {
       <NavItem route="/media">In de media</NavItem>
       <NavItem route="/rapporten">Rapporten en visualisaties</NavItem>
       <NavItem route="/methodologie">Methodologie</NavItem>
+      <NavItem route="/dashboard">Dashboard</NavItem>
     </>
   );
 };

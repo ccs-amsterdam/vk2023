@@ -1,11 +1,12 @@
 "use client";
 
+import Stemrij from "@/components/Stemrij";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Index() {
   return (
-    <div className="relative animate-fade-in">
+    <div className="flex flex-col flex-auto justify-center relative animate-fade-in">
       <div className="relative  left-0 flex  h-full px-4 z-10">
         <div className="w-full mx-auto">
           <VuLogo />
@@ -21,6 +22,7 @@ export default function Index() {
             link="/rapporten"
           />
           <Stemrij nr={4} label="Methodologie" link="/methodologie" />
+          <Stemrij nr={5} label="Dashboard" link="/dashboard" />
         </div>
         <div className="w-full max-w-2xl">
           <p>
@@ -53,35 +55,6 @@ function VuLogo() {
           Verkiezingsonderzoek 2023
         </h3>
       </div> */}
-    </div>
-  );
-}
-
-function Stemrij(props: { nr: number; label: string; link: string }) {
-  const router = useRouter();
-  return (
-    <div
-      className="group grid grid-cols-[6rem,1fr] p-2 w-full border-t-2 border-x-2 border-gray-400 cursor-pencil"
-      onClick={() => router.push(props.link)}
-    >
-      <Stemvak nr={props.nr} />
-      <div className="my-auto flex-auto ml-[10%] text-2xl md:text-4xl">
-        {props.label}
-      </div>
-    </div>
-  );
-}
-
-function Stemvak(props: { nr: number }) {
-  return (
-    <div className="flex relative items-center  gap-x-3 pr-4">
-      <img src="/images/leeg_stemvak.svg" alt="logo" className="w-16 lg:w-20" />
-      <img
-        src="/images/red_scribble.png"
-        alt="logo"
-        className="absolute inset-1 ml-[2px] w-12 lg:w-16 hidden group-hover:block"
-      />
-      <div className="align-bottom mt-auto font-bold">{props.nr}</div>
     </div>
   );
 }

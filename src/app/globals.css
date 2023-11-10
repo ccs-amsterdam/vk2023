@@ -13,8 +13,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 207 95% 16%;
-    --primary-foreground: 207 95% 30%;
+    /* give me a great color to complement 0 99% 40% */
+    --primary: 240 90% 75%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 0 99% 40%;
     --secondary-foreground: 202 99% 60%;

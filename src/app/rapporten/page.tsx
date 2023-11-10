@@ -6,7 +6,7 @@ export default async function Index() {
   const { content, allPosts, allProjects } = await getData();
 
   return (
-    <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8">
+    <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8 w-full">
       <section className="mt-8 mb-16 md:mb-12">
         <div
           className="prose md:prose-xl"
