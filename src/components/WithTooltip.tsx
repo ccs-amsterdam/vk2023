@@ -15,7 +15,7 @@ interface Props {
 
 export function WithTooltip({ children, tooltip }: Props) {
   const trigger = children ?? (
-    <HelpCircle className="mb-1 text-gray-600 w-5 h-5" />
+    <HelpCircle className="mb-0 text-gray-600 w-5 h-5" />
   );
 
   return (

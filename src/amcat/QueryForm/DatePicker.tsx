@@ -15,13 +15,11 @@ import {
 
 interface Props {
   label: string;
-  value: Date;
+  value: Date | undefined;
   onChange: (value: Date | undefined) => void;
 }
 
 export default function DatePicker({ label, value, onChange }: Props) {
-  console.log(value);
-
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -41,6 +39,9 @@ export default function DatePicker({ label, value, onChange }: Props) {
           mode="single"
           selected={value}
           onSelect={onChange}
+          captionLayout="dropdown-buttons"
+          fromYear={1960}
+          toYear={2030}
           initialFocus
         />
       </PopoverContent>

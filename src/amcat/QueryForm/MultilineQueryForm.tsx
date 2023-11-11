@@ -7,13 +7,14 @@ import { queryFromString, queryToString } from "./libQuery";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { WithTooltip } from "@/components/WithTooltip";
-import { X } from "lucide-react";
+import { ChevronUp, X } from "lucide-react";
 
 export default function MultilineQueryForm({
   user,
   index,
   value,
   onSubmit,
+  switchAdvanced,
 }: QueryFormProps) {
   const fields = useFields(user, index);
   const [q, setQ] = useState("");
@@ -47,7 +48,7 @@ export default function MultilineQueryForm({
     onSubmit({ ...value, queries: queryFromString(q) });
   }
 
-  const hint = (
+  const queryHint = (
     <p>
       Use control+Enter to submit; label queries with{" "}
       <span className="font-bold text-primary">label = query</span>
@@ -56,12 +57,18 @@ export default function MultilineQueryForm({
 
   return (
     <div className="flex flex-col">
-      <div className="flex-auto prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,300px] gap-3 lg:gap-6">
-        <form className="flex-auto w-full">
-          <div className="flex items-center gap-2">
-            <b>Query</b>
+      <div className="flex-auto prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,400px] gap-3 lg:gap-6">
+        <form className="flex-auto w-full p-1">
+          <div className="flex items-center gap-2 h-10">
+            <div className="flex items-center">
+              <ChevronUp
+                onClick={switchAdvanced}
+                className="p-1 mb-1  w-8 h-8 cursor-pointer"
+              />
+              <b>Query</b>
+            </div>
 
-            <WithTooltip tooltip={hint} />
+            <WithTooltip tooltip={queryHint} />
           </div>
           <Textarea
             className=""
@@ -82,20 +89,21 @@ export default function MultilineQueryForm({
         </form>
 
         <div>
-          <b>Filters:</b>
-          <br />
-          <div>
-            <div className="filter">
-              <div className="filterpicker">
-                <AddFilterButton
-                  className="w-full"
-                  options={fieldOptions(fields, value)}
-                  onClick={(field) => {
-                    addFilter(field);
-                  }}
-                />
-              </div>
+          <div className="flex items-center gap-2 h-10">
+            <b>Filters</b>
+            <div>
+              <AddFilterButton
+                className="w-full"
+                options={fieldOptions(fields, value)}
+                onClick={(field) => {
+                  addFilter(field);
+                }}
+                addFilterLabel={<X />}
+              />
             </div>
+          </div>
+
+          <div>
             {Object.keys(value?.filters || {}).map((f, i) => (
               <div className="flex" key={i}>
                 <div className=" w-full">

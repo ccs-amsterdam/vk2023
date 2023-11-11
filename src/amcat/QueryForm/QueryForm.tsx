@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useFields } from "@/amcat/api";
+import { useEffect, useRef, useState } from "react";
 import { AmcatIndexName, AmcatQuery, AmcatUser } from "@/amcat/interfaces";
 import MultilineQueryForm from "./MultilineQueryForm";
 import SimpleQueryForm from "./SimpleQueryForm";
@@ -10,6 +9,7 @@ export interface QueryFormProps {
   index: AmcatIndexName;
   value: AmcatQuery;
   onSubmit: (value: AmcatQuery) => void;
+  switchAdvanced: () => void;
 }
 
 export default function QueryForm({
@@ -18,25 +18,53 @@ export default function QueryForm({
   value,
   onSubmit,
 }: QueryFormProps) {
-  const [simple, setSimple] = useState(true);
-  const fields = useFields(user, index);
+  const [advanced, setAdvanced] = useState(true);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLDivElement>(null);
 
   if (!index) return null;
-  const QForm = simple ? SimpleQueryForm : MultilineQueryForm;
-  const handleClick = () => {
-    setSimple(!simple);
-  };
+
+  useEffect(() => {
+    function setHeight() {
+      if (!containerRef?.current || !formRef?.current) return;
+      const newHeight = formRef.current.scrollHeight + "px";
+      containerRef.current.style.gridTemplateRows = newHeight;
+    }
+
+    setHeight();
+    const interval = setInterval(setHeight, 1000);
+    return () => clearInterval(interval);
+  }, [value, advanced, containerRef, formRef]);
+
+  const switchAdvanced = () => setAdvanced(!advanced);
+
+  const QForm = advanced ? MultilineQueryForm : SimpleQueryForm;
 
   return (
     <div className="flex flex-col gap-3">
-      <div
+      {/* <div
         className="p-1 w-full bg-gray-200 hover:bg-gray-300 rounded flex justify-center cursor-pointer items-center gap-1"
-        onClick={handleClick}
+        onClick={switchAdvanced}
       >
-        <span className="text-sm">{simple ? "Advanced" : "Simple"}</span>
-        {simple ? <ChevronDown /> : <ChevronUp />}
+        <span className="text-sm">{!advanced ? "Advanced" : "Simple"}</span>
+        {!advanced ? <ChevronDown /> : <ChevronUp />}
+      </div> */}
+      <div
+        ref={containerRef}
+        className={`grid grid-rows-1 transition-all overflow-hidden`}
+      >
+        <div>
+          <div ref={formRef}>
+            <QForm
+              user={user}
+              index={index}
+              value={value}
+              onSubmit={onSubmit}
+              switchAdvanced={switchAdvanced}
+            />
+          </div>
+        </div>
       </div>
-      <QForm user={user} index={index} value={value} onSubmit={onSubmit} />
     </div>
   );
 }

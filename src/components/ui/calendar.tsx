@@ -1,13 +1,15 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { DayPicker } from "react-day-picker"
+import * as React from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { DayPicker, useNavigation } from "react-day-picker";
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
+import { format } from "date-fns";
+import { buttonVariants } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
-export type CalendarProps = React.ComponentProps<typeof DayPicker>
+export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
 function Calendar({
   className,
@@ -52,13 +54,48 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        Caption: CustomCaption,
+        // IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
+        // IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
       }}
       {...props}
     />
-  )
+  );
 }
-Calendar.displayName = "Calendar"
+Calendar.displayName = "Calendar";
 
-export { Calendar }
+function CustomCaption(props: CaptionProps) {
+  const { goToMonth, nextMonth, previousMonth, displayMonths } =
+    useNavigation();
+  const date = props.displayMonth;
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  const monthName = date.toLocaleString("default", { month: "long" });
+
+  const toPreviousYear = () => goToMonth(new Date(year - 1, month));
+  const toNextYear = () => goToMonth(new Date(year + 1, month));
+
+  return (
+    <div className="flex flex-col select-none">
+      <div className="flex justify-center">
+        <ChevronLeft className="h-6 w-6" onClick={toPreviousYear} />
+        <div className="text-center w-full"> {year}</div>
+        <ChevronRight className="h-6 w-6" onClick={toNextYear} />
+      </div>
+      <div className="flex justify-center">
+        <ChevronLeft
+          className="h-6 w-6"
+          onClick={() => previousMonth && goToMonth(previousMonth)}
+        />
+        <div className="text-center w-full"> {monthName}</div>
+        <ChevronRight
+          className="h-6 w-6 text-right"
+          onClick={() => nextMonth && goToMonth(nextMonth)}
+        />
+      </div>
+    </div>
+  );
+}
+
+export { Calendar };

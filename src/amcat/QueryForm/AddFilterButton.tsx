@@ -35,7 +35,10 @@ export default function AddFilterButton({
     <Popover open={open} onOpenChange={() => setOpen(!open)}>
       <PopoverTrigger asChild>
         <Button
-          className={cn("whitespace-nowrap bg-background border-2", className)}
+          className={cn(
+            "whitespace-nowrap bg-background border-[1px]",
+            className
+          )}
         >
           {addFilterLabel || "Add Filter"}
         </Button>

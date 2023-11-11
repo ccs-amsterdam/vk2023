@@ -5,12 +5,14 @@ import { queryFromString, queryToString } from "./libQuery";
 import { QueryFormProps } from "./QueryForm";
 import AddFilterButton, { fieldOptions } from "./AddFilterButton";
 import { Input } from "@/components/ui/input";
+import { ChevronsUpDown } from "lucide-react";
 
 export default function SimpleQueryForm({
   user,
   index,
   value,
   onSubmit,
+  switchAdvanced,
 }: QueryFormProps) {
   const fields = useFields(user, index);
   const [q, setQ] = useState("");
@@ -34,9 +36,12 @@ export default function SimpleQueryForm({
   function handleKeydown(e: any) {
     if (e.key === "Enter") onSubmit({ ...value, queries: queryFromString(q) });
   }
-
   return (
-    <div className="flex flex-wrap items-center gap-1">
+    <div className="flex flex-wrap items-center gap-1 p-1">
+      <ChevronsUpDown
+        onClick={switchAdvanced}
+        className="p-1 w-8 h-8 cursor-pointer"
+      />
       <Input
         className="min-w-[50%] flex-auto w-auto"
         placeholder="search"

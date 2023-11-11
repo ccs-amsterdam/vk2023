@@ -27,26 +27,22 @@ export function filterLabel(
   const name = includeName ? `${field.name} ` : "";
 
   let values = "";
-  console.log(filter.values);
   if (field.type === "date") {
-    if (filter.gte && filter.lte) values = `{filter.gte} - ${filter.lte}`;
-    if (filter.gte) values = `from ${filter.gte}`;
-    if (filter.lte) values = `until ${filter.lte}`;
+    if (filter.gte && filter.lte) values = `${filter.gte} / ${filter.lte}`;
+    if (filter.gte && !filter.lte) values = `from ${filter.gte}`;
+    if (filter.lte && !filter.gte) values = `until ${filter.lte}`;
   } else {
-    if (filter.values && filter.values.length >= 2) {
-      values = filter.values.slice(0, 2).join(", ") + " …";
-    } else {
-      if (filter.values && filter.values.length > 0)
-        values = filter.values.join(", ");
+    if (filter.values) {
+      values = `${filter.values.length} selected`;
     }
   }
 
   if (values)
     return (
-      <span>
-        <b>{name}</b>
+      <div className="w-full flex justify-between gap-2">
+        <div className="bg-primary">{name}</div>
         {values}
-      </span>
+      </div>
     );
 
   return (
@@ -135,12 +131,12 @@ export function DateRangePopup({ value, onChange }: FilterPopupProps) {
     <div className="w-full flex flex-col gap-2">
       <DatePicker
         label={"from date"}
-        value={new Date(value.gte || "")}
+        value={value.gte ? new Date(value.gte) : undefined}
         onChange={(newval) => handleChange("gte", newval)}
       />
       <DatePicker
         label={"to date"}
-        value={new Date(value.lte || "")}
+        value={value.lte ? new Date(value.lte) : undefined}
         onChange={(newval) => handleChange("lte", newval)}
       />
     </div>

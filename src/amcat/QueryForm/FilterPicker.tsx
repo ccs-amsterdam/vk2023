@@ -42,7 +42,7 @@ export default function FilterPicker({
       <PopoverTrigger asChild>
         <Button
           className={cn(
-            "whitespace-nowrap flex gap-2 justify-between pr-1 bg-background border-2",
+            "whitespace-nowrap flex gap-2 justify-between bg-background border-2",
             className
           )}
         >

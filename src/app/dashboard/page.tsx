@@ -1,6 +1,5 @@
 import { load } from "outstatic/server";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Dashboard from "./Dashboard";
 import IndexRouting from "./IndexRouting";
 
 const indices = [{ label: "State of the Union", index: "state_of_the_union" }];
