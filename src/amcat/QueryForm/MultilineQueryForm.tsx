@@ -98,7 +98,7 @@ export default function MultilineQueryForm({
                 onClick={(field) => {
                   addFilter(field);
                 }}
-                addFilterLabel={<X />}
+                addFilterLabel={"add"}
               />
             </div>
           </div>
