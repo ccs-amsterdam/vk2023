@@ -1,6 +1,6 @@
 {
   "commit": "7d712b3ebec5dd6871641fa4155645f356082467",
-  "generated": "2023-11-13T16:51:41.987Z",
+  "generated": "2023-11-13T16:52:00.464Z",
   "metadata": [
     {
       "__outstatic": {
@@ -77,6 +77,25 @@
       "status": "draft",
       "title": "RTL Nieuws: De kiezer is de verliezer",
       "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
+    },
+    {
+      "__outstatic": {
+        "commit": "570e377ea3417b0e6242b7769c362abc4089bdba",
+        "hash": "4006749848",
+        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
+      "description": "",
+      "publishedAt": "2023-10-28T15:29:22.000Z",
+      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
+      "status": "published",
+      "title": "Trouw: tips voor een goed verkiezingsdebat ",
+      "url": ""
     },
     {
       "__outstatic": {
@@ -206,24 +225,6 @@
     },
     {
       "__outstatic": {
-        "commit": "597343f9944336b069232c5b28e82eecfe03f9b4",
-        "hash": "2987652562",
-        "path": "outstatic/content/pages/rapport_overzicht.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "rapporten",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "rapport_overzicht",
-      "status": "published",
-      "title": "rapporten"
-    },
-    {
-      "__outstatic": {
         "commit": "36b5c42228a6feec3b6a7e51aff38ccfed6a38a3",
         "hash": "1797539307",
         "path": "outstatic/content/pages/methodologie.md"
@@ -243,21 +244,20 @@
     {
       "__outstatic": {
         "commit": "7d712b3ebec5dd6871641fa4155645f356082467",
-        "hash": "334969395",
-        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
+        "hash": "2299656266",
+        "path": "outstatic/content/pages/rapporten.md"
       },
       "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+        "name": "Kasper Welbers",
+        "picture": ""
       },
-      "collection": "media",
-      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
-      "description": "",
-      "publishedAt": "2023-10-21T15:29:22.000Z",
-      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
+      "collection": "pages",
+      "coverImage": "",
+      "description": "rapporten",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "rapporten",
       "status": "published",
-      "title": "Trouw: tips voor een goed verkiezingsdebat ",
-      "url": ""
+      "title": "rapporten"
     }
   ]
 }
