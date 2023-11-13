@@ -1,6 +1,6 @@
 {
-  "commit": "34c9e79bdffdcd8ca26904e92480226fb5cc47d5",
-  "generated": "2023-11-13T14:42:54.215Z",
+  "commit": "0748302abd836601faa2b548225c52aca0499af9",
+  "generated": "2023-11-13T14:43:20.688Z",
   "metadata": [
     {
       "__outstatic": {
@@ -144,6 +144,24 @@
       "slug": "wouter-van-atteveldt",
       "status": "draft",
       "title": "Wouter van Atteveldt"
+    },
+    {
+      "__outstatic": {
+        "commit": "0748302abd836601faa2b548225c52aca0499af9",
+        "hash": "3603488833",
+        "path": "outstatic/content/mensen/mariken-van-der-velden.md"
+      },
+      "author": {
+        "name": "Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
+      },
+      "collection": "mensen",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-13T14:49:00.029Z",
+      "slug": "mariken-van-der-velden",
+      "status": "draft",
+      "title": "Mariken van der Velden"
     }
   ]
 }
