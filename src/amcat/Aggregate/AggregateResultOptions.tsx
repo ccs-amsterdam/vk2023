@@ -12,18 +12,21 @@ import {
 
 import { useFields, getField } from "@/amcat/api";
 import { Dropdown, Option } from "@/components/ui/dropdown";
-import React, { Dispatch, SetStateAction, useMemo } from "react";
-import {
-  Calendar,
-  CalendarDays,
-  Hash,
-  Tally5,
-  TextCursor,
-  X,
-} from "lucide-react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { Tally5, TextCursor, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DynamicIcon } from "@/components/ui/dynamic-icon";
-import { Row } from "react-day-picker";
+
+// Style Idea:
+// Just single button with dropdown menu
+// each item is a component that can be set (e.g., x-axis, aggregate)
+// each item then has a combobox to select the column
 
 interface Props {
   user: AmcatUser;
@@ -40,45 +43,58 @@ export default function AggregateResultOptions({
   options,
   setOptions,
 }: Props) {
+  const [newOptions, setNewOptions] = useState(options);
+
+  useEffect(() => {
+    // deep copy using serialization. Should not be a problem,
+    // since we want options to be serializable anyway
+    setNewOptions(JSON.parse(JSON.stringify(options)));
+  }, [options]);
+
   function setAxis(i: number, newval?: AggregationAxis) {
     const axes = options.axes == null ? [] : [...options.axes];
     if (newval == null) {
       axes.splice(i, 1);
     } else axes[i] = newval;
-    setOptions({ ...options, axes });
+    setNewOptions({ ...options, axes });
   }
   function submit() {
-    if (options != null) setOptions({ ...options, hold: false });
+    setOptions(newOptions);
+  }
+  function optionsIdentical() {
+    return JSON.stringify(options) === JSON.stringify(newOptions);
+  }
+  function optionsInvalid() {
+    if (!newOptions.display) return true;
+    if (newOptions.metrics?.length === 0) return true;
+    if (newOptions.axes?.length === 0) return true;
+    return false;
   }
 
   const labels = aggregation_labels[options.display || "list"];
 
-  const rowClassName = "";
+  const rowClassName = "w-full";
 
   return (
-    <div className="aggregateoptions prose w-64">
-      <div className="aggregateoptionsrow">
-        <h3>Aggregate</h3>
-      </div>
-
+    <div className=" prose w-72">
       <div className="flex flex-col gap-3">
-        <div className="displayoptionsrow">
+        <div className="">
           <div className="label">Display</div>
           <div className={rowClassName}>
-            <DisplayPicker options={options} setOptions={setOptions} />
+            <DisplayPicker options={newOptions} setOptions={setNewOptions} />
           </div>
         </div>
 
-        <div className="aggregateoptionsrow">
+        <div className="">
           <div className="label">Aggregate</div>
           <div className={rowClassName}>
             <MetricPicker
               user={user}
               index={index}
-              value={options.metrics?.[0]}
+              value={newOptions.metrics?.[0]}
               onChange={(newval) =>
-                setOptions({
-                  ...options,
+                setNewOptions({
+                  ...newOptions,
                   metrics: newval == null ? undefined : [newval],
                 })
               }
@@ -86,7 +102,7 @@ export default function AggregateResultOptions({
           </div>
         </div>
 
-        <div className="aggregateoptionsrow">
+        <div className="">
           <div className="label">{labels[0]}</div>
 
           <div className={rowClassName}>
@@ -94,13 +110,13 @@ export default function AggregateResultOptions({
               user={user}
               index={index}
               query={query}
-              value={options.axes?.[0]}
+              value={newOptions.axes?.[0]}
               onChange={(newval) => setAxis(0, newval)}
             />
           </div>
         </div>
 
-        <div className="aggregateoptionsrow">
+        <div className="">
           <div className="label">{labels[1]}</div>
 
           <div className={rowClassName}>
@@ -108,13 +124,18 @@ export default function AggregateResultOptions({
               user={user}
               index={index}
               query={query}
-              value={options.axes?.[1]}
+              value={newOptions.axes?.[1]}
               onChange={(newval) => setAxis(1, newval)}
               clearable
             />
           </div>
         </div>
-        <Button onClick={submit}>Submit</Button>
+        <Button
+          disabled={optionsIdentical() || optionsInvalid()}
+          onClick={submit}
+        >
+          Submit
+        </Button>
       </div>
     </div>
   );
@@ -167,8 +188,8 @@ const INTERVALS = [
 const METRIC_FUNCTIONS = [
   { types: ["long", "double"], value: "sum", text: "Sum" },
   { types: ["long", "double"], value: "avg", text: "Average" },
-  { types: ["long", "double", "date"], value: "min", text: "Minimum" },
-  { types: ["long", "double", "date"], value: "max", text: "Maximum" },
+  { types: ["long", "double"], value: "min", text: "Minimum" },
+  { types: ["long", "double"], value: "max", text: "Maximum" },
 ];
 
 interface DisplayPickerProps {

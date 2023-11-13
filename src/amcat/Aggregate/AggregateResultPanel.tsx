@@ -1,5 +1,5 @@
 import AggregateResultOptions from "./AggregateResultOptions";
-import AggregateResultConnector from "./AggregateResultConnector";
+import AggregateResult from "./AggregateResult";
 import { useState } from "react";
 import {
   AmcatUser,
@@ -10,8 +10,7 @@ import {
 
 const initialState: AggregationOptions = {
   display: "linechart",
-  hold: true,
-  axes: [{ field: "date", name: "date", interval: "month" }],
+  axes: [],
 };
 
 interface Props {
@@ -26,20 +25,29 @@ export default function AggregateResultPanel({ user, index, query }: Props) {
   if (!user || !index || !query) return null;
 
   return (
-    <>
-      <AggregateResultOptions
-        user={user}
-        index={index}
-        query={query}
-        options={options}
-        setOptions={setOptions}
-      />
-      <AggregateResultConnector
-        user={user}
-        index={index}
-        query={query}
-        options={options}
-      />
-    </>
+    <div>
+      <div className="prose p-5 pb-0">
+        <h3>Aggregate</h3>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] gap-3">
+        <div className="flex justify-center p-5">
+          <AggregateResultOptions
+            user={user}
+            index={index}
+            query={query}
+            options={options}
+            setOptions={setOptions}
+          />
+        </div>
+        <div className="w-full p-5">
+          <AggregateResult
+            user={user}
+            index={index}
+            query={query}
+            options={options}
+          />
+        </div>
+      </div>
+    </div>
   );
 }

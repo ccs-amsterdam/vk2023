@@ -16,13 +16,17 @@ function should_add_zeroes(interval: AggregationInterval) {
 
 // Convert amcat aggregate results ('long' format data plus axes) into data for recharts ('wide' data and series names)
 // Specifically, from [{ row_id, col_id, value }, ...] to [{ row_id, col1: value1, col2: value2, ...}, ...]
-export function createChartData(data: AggregateData): LongData {
+export function createChartData(
+  data: AggregateData,
+  sorted?: boolean
+): LongData {
   const fields = data.meta.axes.map((axis) => axis.name);
   const target =
     data.meta.aggregations.length > 0
       ? data.meta.aggregations[0].name || "n"
       : "n";
   const interval = data.meta.axes[0].interval;
+
   if (fields.length === 1) {
     const d = add_zeroes(data.data, fields[0], interval, [target]);
     return { d, columns: [target] };
@@ -187,6 +191,7 @@ export function transform_dateparts(
 }
 
 export function can_transform(interval: string | undefined): boolean {
+  console.log(interval);
   if (!interval) return false;
   return ["dayofweek", "daypart", "monthnr"].includes(interval);
 }

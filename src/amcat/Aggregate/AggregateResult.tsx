@@ -54,12 +54,7 @@ export default function AggregateResult({
     // Prevent data/error being set after component is unmounted
     let cancel = false;
     // TODO: don't query if index changed but options hasn't been reset (yet)
-    if (
-      index == null ||
-      !options?.axes ||
-      options.axes.length === 0 ||
-      options.hold
-    ) {
+    if (index == null || !options?.axes || options.axes.length === 0) {
       setData(undefined);
       setError(undefined);
     } else {
