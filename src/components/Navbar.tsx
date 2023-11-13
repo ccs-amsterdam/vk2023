@@ -12,7 +12,7 @@ const Navbar = () => {
   if (home)
     return (
       <div
-        className="grid transition-all duration-500 w-full 
+        className="grid transition-all duration-500 w-full
   overflow-visible  backdrop-blur-sm  d top-0 z-20 "
       >
         <div className="flex p-4 flex-wrap 2xl:flex-nowrap  bg-gray-400 m-8 gap-8 justify-center items-center">
@@ -40,9 +40,7 @@ const Navbar = () => {
         } grid transition-all duration-500 w-full grid-rows-[var(--navbar-height)]  md:grid-rows-[var(--navbar-height-md)]
         overflow-visible  backdrop-blur-sm bg-background-transparent d top-0 z-20 border-b-2`}
       >
-        <div
-          className={`flex justify-between lg:justify-start relative items-center h-full px-4`}
-        >
+        <div className={`flex justify-between lg:justify-start relative items-center h-full px-4`}>
           <div className="">
             <Logo visible={true} />
           </div>
@@ -62,7 +60,7 @@ const Navbar = () => {
 const Links = () => {
   return (
     <>
-      <NavItem route="/over_ons">Over ons</NavItem>
+      <NavItem route="/overons">Over ons</NavItem>
       <NavItem route="/media">In de media</NavItem>
       <NavItem route="/rapporten">Rapporten en visualisaties</NavItem>
       <NavItem route="/methodologie">Methodologie</NavItem>
@@ -77,11 +75,7 @@ const NavItem = (props: { children: React.ReactNode; route: string }) => {
 
   return (
     <Link href={props.route}>
-      <button
-        className={`transition  p-4 px-8  ${
-          isActive ? " text-primary" : " text-secondary"
-        } hover:text-primary`}
-      >
+      <button className={`transition  p-4 px-8  ${isActive ? " text-primary" : " text-secondary"} hover:text-primary`}>
         <span className="font-semibold ">{props.children}</span>
       </button>
     </Link>
@@ -119,12 +113,7 @@ const FoldedMenu = () => {
           setShow(!show);
         }}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="60"
-          height="60"
-          viewBox="0 0 24 24"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
           <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
         </svg>
       </Button>
@@ -148,16 +137,8 @@ const Logo = ({ visible }: { visible: boolean }) => {
   return (
     <div className="flex relative items-center  gap-x-3 pr-4 ">
       <Link href="/" className={visible ? "opacity-100" : "opacity-0"}>
-        <img
-          src="/images/leeg_stemvak.svg"
-          alt="logo"
-          className="w-16 lg:w-20"
-        />
-        <img
-          src="/images/red_scribble.png"
-          alt="logo"
-          className="absolute inset-1 ml-[2px] w-12 lg:w-16"
-        />
+        <img src="/images/leeg_stemvak.svg" alt="logo" className="w-16 lg:w-20" />
+        <img src="/images/red_scribble.png" alt="logo" className="absolute inset-1 ml-[2px] w-12 lg:w-16" />
       </Link>
     </div>
   );

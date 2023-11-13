@@ -14,7 +14,7 @@ export default function Index() {
       </div>
       <section className="flex flex-col gap-8 items-center p-8 relative mb-16 md:mb-12">
         <div className="grid grid-cols-1 w-full max-w-2xl border-b-2 border-gray-400">
-          <Stemrij nr={1} label="Over ons" link="/over_ons" />
+          <Stemrij nr={1} label="Over ons" link="/overons" />
           <Stemrij nr={2} label="In de media" link="/media" />
           <Stemrij
             nr={3}

@@ -25,9 +25,7 @@ export default async function Index() {
 async function getData() {
   const db = await load();
 
-  const page = await db
-    .find({ collection: "pages", slug: "over_ons" }, ["content"])
-    .first();
+  const page = await db.find({ collection: "pages", slug: "overons" }, ["content"]).first();
 
   const content = await markdownToHtml(page.content);
 
