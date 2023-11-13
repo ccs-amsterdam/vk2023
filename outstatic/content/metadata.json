@@ -1,26 +1,7 @@
 {
-  "commit": "f90c8d4330b91afa4f8a8eafe37c22cd5029a47d",
-  "generated": "2023-11-13T16:41:29.531Z",
+  "commit": "85ece96c0d7db4c1ab6b8b1ecce01562af0a5d6a",
+  "generated": "2023-11-13T16:41:44.464Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "04896056624e70837d0b6b3f4d11a04bcc56991d",
-        "hash": "3576222117",
-        "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": ""
-      },
-      "collection": "media",
-      "coverImage": "/images/anp-483197920-Q0ND.jpg",
-      "description": "",
-      "publishedAt": "2023-11-11T15:20:53.000Z",
-      "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
-      "status": "draft",
-      "title": "RTL Nieuws: De kiezer is de verliezer",
-      "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
-    },
     {
       "__outstatic": {
         "commit": "2d8dc29e5fd0c66e18b9d7919c209239b7c92c0b",
@@ -256,6 +237,25 @@
       "status": "published",
       "title": "NPO Radio 1: Podcast De Verkiezingsdag ",
       "url": "https://www.nporadio1.nl/nieuws/podcast/c1332038-f8f0-40eb-9482-9027f8a49d74/de-verkiezingsdag-de-lijsttrekker"
+    },
+    {
+      "__outstatic": {
+        "commit": "85ece96c0d7db4c1ab6b8b1ecce01562af0a5d6a",
+        "hash": "3576222117",
+        "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "/images/anp-483197920-Q0ND.jpg",
+      "description": "",
+      "publishedAt": "2023-11-11T15:20:53.000Z",
+      "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
+      "status": "draft",
+      "title": "RTL Nieuws: De kiezer is de verliezer",
+      "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
     }
   ]
 }
