@@ -13,7 +13,7 @@ export default async function Index({
 
   return (
     <>
-      <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8 w-full">
+      <div className="animate-fade-in max-w-[1500px] mx-auto px-4 md:px-8 w-full">
         <IndexRouting data={data} />
       </div>
     </>

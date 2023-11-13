@@ -51,7 +51,7 @@ export default function ArticleSnippets({
   const disabledIconStyle = "w-9 h-9 p-1 rounded opacity-50 cursor-not-allowed";
 
   return (
-    <div className="relative prose max-h-[700px] overflow-auto">
+    <div className="relative prose-base max-h-[700px] overflow-auto">
       <div className="flex justify-center items-center select-none">
         <SkipBack
           className={page > 0 ? iconStyle : disabledIconStyle}
