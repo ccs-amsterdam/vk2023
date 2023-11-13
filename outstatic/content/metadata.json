@@ -1,26 +1,7 @@
 {
-  "commit": "b8f999aac0af5e0db406ebb247a5dfee7808545a",
-  "generated": "2023-11-13T16:40:03.285Z",
+  "commit": "12a8589bdf206ea3102dd574bdf42ad3b2e7273e",
+  "generated": "2023-11-13T16:40:28.655Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "b5155e8f7c23b8df9e9eea9b71eb53fce757b2b0",
-        "hash": "3090592336",
-        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
-      "description": "",
-      "publishedAt": "2023-11-13T16:39:16.992Z",
-      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
-      "status": "draft",
-      "title": "Trouw: Omtzigt en Timmermans kiezen voor diepte in nieuw debatformat",
-      "url": ""
-    },
     {
       "__outstatic": {
         "commit": "b5a62502d7e55963bb2f79c38c0ea930e07adfb2",
@@ -255,6 +236,25 @@
       "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
       "status": "published",
       "title": "Trouw: tips voor een goed verkiezingsdebat ",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "12a8589bdf206ea3102dd574bdf42ad3b2e7273e",
+        "hash": "2944615268",
+        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
+      "description": "",
+      "publishedAt": "2023-10-30T16:39:16.000Z",
+      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
+      "status": "draft",
+      "title": "Trouw: Omtzigt en Timmermans kiezen voor diepte in nieuw debatformat",
       "url": ""
     }
   ]
