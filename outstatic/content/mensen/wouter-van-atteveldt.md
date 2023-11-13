@@ -10,5 +10,5 @@ coverImage: 'https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveld
 publishedAt: '2023-09-26T11:55:11.394Z'
 ---
 
-Lab director
+Politieke communicatie, verkiezingsnieuws, vertrouwen, methodologie
 

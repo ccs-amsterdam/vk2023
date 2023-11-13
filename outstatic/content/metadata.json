@@ -1,25 +1,7 @@
 {
-  "commit": "99ec54ba7853fcf18fb6f6c1a00fcf077e3721f0",
-  "generated": "2023-11-13T14:42:26.741Z",
+  "commit": "34c9e79bdffdcd8ca26904e92480226fb5cc47d5",
+  "generated": "2023-11-13T14:42:54.215Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "89ad5dc3f1de054adf601ba248c05082a15d296d",
-        "hash": "2887620423",
-        "path": "outstatic/content/mensen/wouter-van-atteveldt.md"
-      },
-      "author": {
-        "name": "",
-        "picture": ""
-      },
-      "collection": "mensen",
-      "coverImage": "https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveldt_tcm250_36346.jpg?w=160&f=webp",
-      "description": "",
-      "publishedAt": "2023-09-26T11:55:11.394Z",
-      "slug": "wouter-van-atteveldt",
-      "status": "draft",
-      "title": "Wouter van Atteveldt"
-    },
     {
       "__outstatic": {
         "commit": "a538f1b3502fb057501ec171de1342d45b263397",
@@ -144,6 +126,24 @@
       "slug": "kasper-welbers",
       "status": "draft",
       "title": "Kasper Welbers"
+    },
+    {
+      "__outstatic": {
+        "commit": "34c9e79bdffdcd8ca26904e92480226fb5cc47d5",
+        "hash": "3735598576",
+        "path": "outstatic/content/mensen/wouter-van-atteveldt.md"
+      },
+      "author": {
+        "name": "",
+        "picture": ""
+      },
+      "collection": "mensen",
+      "coverImage": "https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveldt_tcm250_36346.jpg?w=160&f=webp",
+      "description": "",
+      "publishedAt": "2023-09-26T11:55:11.394Z",
+      "slug": "wouter-van-atteveldt",
+      "status": "draft",
+      "title": "Wouter van Atteveldt"
     }
   ]
 }
