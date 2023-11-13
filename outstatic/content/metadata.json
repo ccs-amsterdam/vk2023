@@ -1,6 +1,6 @@
 {
-  "commit": "b0905ce81e4a0f530e6864da3acf8a11d5d9d554",
-  "generated": "Mon, 13 Nov 2023 16:38:16 GMT",
+  "commit": "b8f999aac0af5e0db406ebb247a5dfee7808545a",
+  "generated": "2023-11-13T16:39:47.396Z",
   "metadata": [
     {
       "__outstatic": {
@@ -19,25 +19,6 @@
       "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
       "status": "draft",
       "title": "Trouw: Omtzigt en Timmermans kiezen voor diepte in nieuw debatformat",
-      "url": ""
-    },
-    {
-      "__outstatic": {
-        "commit": "c4e17d5f570661c7cd034bb322c52ca6fec48873",
-        "hash": "492030037",
-        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
-      "description": "",
-      "publishedAt": "2023-11-13T16:29:22.567Z",
-      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
-      "status": "draft",
-      "title": "Trouw: tips voor een goed verkiezingsdebat ",
       "url": ""
     },
     {
@@ -256,6 +237,25 @@
       "slug": "methodologie",
       "status": "published",
       "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
+        "commit": "b8f999aac0af5e0db406ebb247a5dfee7808545a",
+        "hash": "564489686",
+        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
+      "description": "",
+      "publishedAt": "2023-10-28T15:29:22.000Z",
+      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
+      "status": "draft",
+      "title": "Trouw: tips voor een goed verkiezingsdebat ",
+      "url": ""
     }
   ]
 }
