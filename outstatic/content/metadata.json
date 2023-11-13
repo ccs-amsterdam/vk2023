@@ -1,6 +1,6 @@
 {
-  "commit": "cadaec75ab1f4f121751efc94c7b9e12da39a49b",
-  "generated": "2023-11-13T16:31:17.112Z",
+  "commit": "7d266248544171919f88489a38ad1e769ae6ac6f",
+  "generated": "2023-11-13T16:34:50.085Z",
   "metadata": [
     {
       "__outstatic": {
@@ -236,6 +236,25 @@
       "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
       "status": "draft",
       "title": "Trouw: tips voor een goed verkiezingsdebat ",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "7d266248544171919f88489a38ad1e769ae6ac6f",
+        "hash": "2917815263",
+        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-13T16:39:16.992Z",
+      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
+      "status": "draft",
+      "title": "Trouw: Omtzigt en Timmermans kiezen voor diepte in nieuw debatformat",
       "url": ""
     }
   ]
