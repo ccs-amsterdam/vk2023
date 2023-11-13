@@ -1,6 +1,6 @@
 {
-  "commit": "9a6616c45cf50678820e7adbcc975a9a188746b0",
-  "generated": "2023-11-13T15:10:33.069Z",
+  "commit": "6a34682b95e74e0b8edd3c7db15ed974c4208099",
+  "generated": "2023-11-13T15:15:49.503Z",
   "metadata": [
     {
       "__outstatic": {
@@ -198,6 +198,24 @@
       "slug": "npo-radio-1-podcast-de-verkiezingsdag",
       "status": "draft",
       "title": "NPO Radio 1: Podcast De Verkiezingsdag "
+    },
+    {
+      "__outstatic": {
+        "commit": "6a34682b95e74e0b8edd3c7db15ed974c4208099",
+        "hash": "462759911",
+        "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "/images/anp-483197920-Q0ND.jpg",
+      "description": "",
+      "publishedAt": "2023-11-13T15:20:53.890Z",
+      "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
+      "status": "draft",
+      "title": "RTL Nieuws: In deze tamme verkiezingscampagne is de kiezer de verliezer"
     }
   ]
 }
