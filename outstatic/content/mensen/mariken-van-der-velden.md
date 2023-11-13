@@ -2,7 +2,7 @@
 author:
   name: 'Wouter van Atteveldt'
   picture: 'https://avatars.githubusercontent.com/u/1736240?v=4'
-coverImage: ''
+coverImage: '/images/screenshot-from-2023-11-13-15-44-12-k0Nz.png'
 title: 'Mariken van der Velden'
 status: 'draft'
 slug: 'mariken-van-der-velden'

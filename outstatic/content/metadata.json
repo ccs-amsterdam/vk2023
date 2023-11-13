@@ -1,6 +1,6 @@
 {
-  "commit": "0748302abd836601faa2b548225c52aca0499af9",
-  "generated": "2023-11-13T14:43:20.688Z",
+  "commit": "9754401dc2a6ba60a9473aa043e78230d13915cc",
+  "generated": "2023-11-13T14:44:21.412Z",
   "metadata": [
     {
       "__outstatic": {
@@ -147,8 +147,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0748302abd836601faa2b548225c52aca0499af9",
-        "hash": "3603488833",
+        "commit": "9754401dc2a6ba60a9473aa043e78230d13915cc",
+        "hash": "78396357",
         "path": "outstatic/content/mensen/mariken-van-der-velden.md"
       },
       "author": {
@@ -156,7 +156,7 @@
         "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
       },
       "collection": "mensen",
-      "coverImage": "",
+      "coverImage": "/images/screenshot-from-2023-11-13-15-44-12-k0Nz.png",
       "description": "",
       "publishedAt": "2023-11-13T14:49:00.029Z",
       "slug": "mariken-van-der-velden",
