@@ -1,6 +1,6 @@
 {
-  "commit": "ba96e02b8db47405acab1d1f21ae6b784650d1a8",
-  "generated": "2023-11-13T15:17:58.318Z",
+  "commit": "aa31c3c08e9ec0e396702985900dd35e001e3157",
+  "generated": "2023-11-13T15:36:53.072Z",
   "metadata": [
     {
       "__outstatic": {
@@ -202,8 +202,8 @@
     },
     {
       "__outstatic": {
-        "commit": "ba96e02b8db47405acab1d1f21ae6b784650d1a8",
-        "hash": "2050094639",
+        "commit": "aa31c3c08e9ec0e396702985900dd35e001e3157",
+        "hash": "1808981340",
         "path": "outstatic/content/media/npo-radio-1-podcast-de-verkiezingsdag.md"
       },
       "author": {
@@ -211,7 +211,7 @@
         "picture": ""
       },
       "collection": "media",
-      "coverImage": "",
+      "coverImage": "/images/screenshot-from-2023-11-13-16-36-30-AzMz.png",
       "description": "",
       "publishedAt": "2023-11-13T15:15:17.981Z",
       "slug": "npo-radio-1-podcast-de-verkiezingsdag",

@@ -2,7 +2,7 @@
 author:
   name: 'Mariken van der Velden'
   picture: ''
-coverImage: ''
+coverImage: '/images/screenshot-from-2023-11-13-16-36-30-AzMz.png'
 title: 'NPO Radio 1: Podcast De Verkiezingsdag '
 status: 'draft'
 slug: 'npo-radio-1-podcast-de-verkiezingsdag'
