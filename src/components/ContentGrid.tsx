@@ -3,10 +3,11 @@ import Link from "next/link";
 
 type Item = {
   tags?: { value: string; label: string }[];
+  url?: string;
 } & OstDocument;
 
 type Props = {
-  collection: "posts" | "projects";
+  collection: "posts" | "projects" | "media";
   title?: string;
   items: Item[];
   priority?: boolean;
@@ -17,9 +18,21 @@ const ContentGrid = ({ items, collection }: Props) => {
     <section id={collection}>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6 lg:gap-x-8 gap-y-5 sm:gap-y-6 lg:gap-y-8 mb-8">
         {items.map((item, id) => (
-          <Link key={item.slug} href={`/${collection}/${item.slug}`}>
+          <Link key={item.slug} href={item.url ? item.url : `/${collection}/${item.slug}`}>
             <div className="cursor-pointer border project-card rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 hover:shadow overflow-hidden">
               <div className="sm:mx-0">
+                {collection === "media" && (
+                  <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-l absolute top left-1/2 -translate-x-1/2 shadow-lg rounded-lg">
+                    {item.title}
+                    <br />
+                    {item.author == null ? null : (
+                      <>
+                        <br />
+                        <i>{item.author.name}</i>
+                      </>
+                    )}
+                  </h2>
+                )}
                 <img
                   src={item.coverImage ?? ""}
                   alt={`Cover Image for ${item.title}`}
@@ -46,13 +59,9 @@ const ContentGrid = ({ items, collection }: Props) => {
                         </span>
                       ))
                     : null}
-                  <h3 className="text-xl mb-2 leading-snug font-bold hover:underline">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl mb-2 leading-snug font-bold hover:underline">{item.title}</h3>
                   <div className="text-md mb-4 text-slate-700"></div>
-                  <p className="text-lg leading-relaxed mb-4">
-                    {item.description}
-                  </p>
+                  <p className="text-lg leading-relaxed mb-4">{item.description}</p>
                 </div>
               )}
             </div>
