@@ -1,40 +1,27 @@
-import { AmcatQueryTerms } from "@/amcat/interfaces";
+import { AmcatQueryTerm } from "../interfaces";
 
-function format_queries_object(queries: { [label: string]: string }) {
-  return Object.keys(queries).map((l) => `${l}=${queries[l]}`);
+export function queriesToString(queries: AmcatQueryTerm[]): string {
+  if (!queries) return "";
+  return queries
+    .map((query) => {
+      if (query.label) return `${query.label} = ${query.query}`;
+      return query.query;
+    })
+    .join("; ");
 }
 
-export function queryToString(q?: AmcatQueryTerms, joinby = "\n"): string {
-  if (!q) return "";
-  const queries = Array.isArray(q) ? q : format_queries_object(q);
-  return queries.join(joinby);
+export function queriesFromString(q: string): AmcatQueryTerm[] {
+  if (!q?.trim()) return [];
+  const queries = q.split(/[\n;]/).map((s) => s.trim());
+  return queries.map((s, i) => queryfromString(s));
 }
 
-const labelRE = /(?<=\w\s*)=/;
-
-function queryEntryfromString(
-  q: string,
-  default_label: string
-): [string, string] {
+function queryfromString(q: string): AmcatQueryTerm {
+  const labelRE = /(?<=\w\s*)=/;
   const m = q.match(labelRE);
-  if (!m?.index) return [default_label, q.trim()];
-  return [q.slice(0, m.index).trim(), q.slice(m.index + m.length).trim()];
-}
-
-function queryObjectFromStrings(queries: string[]): {
-  [label: string]: string;
-} {
-  return Object.fromEntries(
-    queries.map((s, i) => queryEntryfromString(s, `q${i}`))
-  );
-}
-
-export function queryFromString(q: string): AmcatQueryTerms {
-  if (!q?.trim()) return {};
-  const queries = q.split(/[\n;]/);
-  return queryObjectFromStrings(queries);
-
-  //   return q.match(labelRE)
-  //     ? queryObjectFromStrings(queries)
-  //     : queries.map((s) => s.trim());
+  if (!m?.index) return { query: q.trim() };
+  return {
+    label: q.slice(0, m.index).trim(),
+    query: q.slice(m.index + m.length).trim(),
+  };
 }

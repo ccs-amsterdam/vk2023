@@ -1,74 +1,57 @@
-import { useEffect, useState } from "react";
-import { useFields, getField } from "@/amcat/api";
-import FilterPicker from "./FilterPicker";
-import { queryFromString, queryToString } from "./libQuery";
+import { useFields } from "@/amcat/api";
+import { queriesFromString } from "./libQuery";
 import { QueryFormProps } from "./QueryForm";
 import AddFilterButton, { fieldOptions } from "./AddFilterButton";
 import { Input } from "@/components/ui/input";
-import { ChevronsUpDown } from "lucide-react";
+import { ChevronsUpDown, Filter } from "lucide-react";
 
 export default function SimpleQueryForm({
+  children,
   user,
   index,
   value,
+  q,
+  setQ,
   onSubmit,
   switchAdvanced,
 }: QueryFormProps) {
-  const fields = useFields(user, index);
-  const [q, setQ] = useState("");
-  useEffect(() => {
-    if (!value?.queries || Object.keys(value.queries).length === 0) setQ("");
-    else setQ(queryToString(value.queries, "; "));
-  }, [value?.queries]);
+  const { fields } = useFields(user, index);
 
   if (!index || !fields) return null;
 
-  function deleteFilter(name: string) {
-    const f = { ...value.filters };
-    delete f[name];
-    onSubmit({ ...value, filters: f });
-  }
-  function addFilter(name: string) {
-    const filters = value?.filters || {};
-    onSubmit({ ...value, filters: { ...filters, [name]: {} } });
-  }
-
   function handleKeydown(e: any) {
-    if (e.key === "Enter") onSubmit({ ...value, queries: queryFromString(q) });
+    if (e.key === "Enter")
+      onSubmit({ ...value, queries: queriesFromString(q) });
   }
-  return (
-    <div className="flex flex-wrap items-center gap-1 p-1">
-      <ChevronsUpDown
-        onClick={switchAdvanced}
-        className="p-1 w-8 h-8 cursor-pointer"
-      />
-      <Input
-        className="min-w-[50%] flex-auto w-auto"
-        placeholder="search"
-        value={q}
-        onChange={(e) => {
-          setQ(e.target.value);
-        }}
-        onKeyDown={handleKeydown}
-      />
-      <AddFilterButton
-        options={fieldOptions(fields, value)}
-        onClick={addFilter}
-      />
+  const options = fieldOptions(fields, value);
 
-      {Object.keys(value?.filters || {}).map((f, i) => (
-        <FilterPicker
-          key={i}
-          user={user}
-          index={index}
-          field={getField(fields, f)}
-          value={value?.filters?.[f]}
-          onChange={(newval) =>
-            onSubmit({ ...value, filters: { ...value?.filters, [f]: newval } })
-          }
-          onDelete={() => deleteFilter(f)}
+  return (
+    <div>
+      <div className="flex flex-wrap items-center gap-1 p-1">
+        <Input
+          className="min-w-[50%] flex-auto w-auto"
+          placeholder="search"
+          value={q}
+          onChange={(e) => {
+            setQ(e.target.value);
+          }}
+          onKeyDown={handleKeydown}
         />
-      ))}
+        <ChevronsUpDown
+          onClick={switchAdvanced}
+          className="p-1 w-8 h-8 cursor-pointer"
+        />
+        <AddFilterButton options={options} value={value} onSubmit={onSubmit}>
+          <Filter
+            className={
+              options.length === 0 ? "text-gray-400" : "cursor-pointer"
+            }
+          />
+        </AddFilterButton>
+      </div>
+      <div className="Filters flex justify-start flex-wrap items-center gap-1 p-1">
+        {children}
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { AxiosError, AxiosResponse } from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   AmcatIndex,
   AmcatIndexName,
@@ -11,7 +11,9 @@ import {
   AmcatDocument,
   AmcatField,
   AmcatFilters,
+  PostAmcatQuery,
 } from "./interfaces";
+import { useQuery } from "@tanstack/react-query";
 
 export function errorToString(error: AxiosError) {
   const d = error.response?.data as any;
@@ -139,12 +141,28 @@ export function postQuery(
   query: AmcatQuery,
   params: any
 ) {
-  return user.api.post(`index/${index}/query`, { ...query, ...params });
+  const postAmcatQuery = asPostAmcatQuery(query);
+  return user.api.post(`index/${index}/query`, {
+    ...postAmcatQuery,
+    ...params,
+  });
+}
+
+export function asPostAmcatQuery(query: AmcatQuery): PostAmcatQuery {
+  const postAmcatQuery: PostAmcatQuery = {};
+  if (query.queries) {
+    query.queries.forEach((q) => {
+      if (!postAmcatQuery.queries) postAmcatQuery.queries = {};
+      postAmcatQuery.queries[q.label || q.query] = q.query;
+    });
+  }
+  if (query.filters) postAmcatQuery.filters = { ...query.filters };
+  return postAmcatQuery;
 }
 
 /** List all fields in this index */
 export function getFields(user: AmcatUser, index: AmcatIndexName) {
-  return user.api.get(`/index/${index}/fields`);
+  return user.api.get(`/index/${index}/fields`).then((res) => res.data);
 }
 
 /** Add fields to this index */
@@ -180,10 +198,14 @@ export function postAggregate(
   query: AmcatQuery,
   options: AggregationOptions
 ) {
-  const params: any = { ...query };
+  const postAmcatQuery = asPostAmcatQuery(query);
+  const params: any = {};
   if (options?.axes) params["axes"] = options.axes;
   if (options?.metrics) params["aggregations"] = options.metrics;
-  return user.api.post(`index/${index}/aggregate`, params);
+  return user.api.post(`index/${index}/aggregate`, {
+    ...postAmcatQuery,
+    ...params,
+  });
 }
 
 export function describeError(e: AxiosError): string {
@@ -194,48 +216,23 @@ export function describeError(e: AxiosError): string {
 
 export function addFilter(q: AmcatQuery, filters: AmcatFilters): AmcatQuery {
   if (q == null) q = {};
-  return { queries: { ...q.queries }, filters: { ...q.filters, ...filters } };
-}
-
-/** Hook to get fields from amcat which allows for refreshing the cache
- * @param index Login information for this index
- * @returns a tuple [field objects, refresh callback]
- */
-export function useFieldsWithRefresh(
-  user: AmcatUser | undefined,
-  index: AmcatIndexName | undefined
-): [fields: AmcatField[], refresh: () => void] {
-  function _getSetFields(
-    index: AmcatIndexName | undefined,
-    setFields: (fields: AmcatField[]) => void
-  ): void {
-    if (user == null || index == null) setFields([]);
-    else
-      getFields(user, index)
-        .then((res: any) => {
-          setFields(Object.values(res.data));
-        })
-        .catch((e: Error) => {
-          console.error(e);
-          setFields([]);
-        });
-  }
-
-  const [fields, setFields] = useState<AmcatField[]>([]);
-  useEffect(() => _getSetFields(index, setFields), [index]);
-  const refresh = () => _getSetFields(index, setFields);
-  return [fields, refresh];
+  const queries = q.queries || [];
+  return { queries: [...queries], filters: { ...q.filters, ...filters } };
 }
 
 /** Hook to get fields from amcat
  * @param index Login information for this index
  * @returns a list of field objects
  */
-export function useFields(
-  user: AmcatUser,
-  index: AmcatIndexName | undefined
-): AmcatField[] {
-  return useFieldsWithRefresh(user, index)[0];
+export function useFields(user: AmcatUser, index: AmcatIndexName | undefined) {
+  const { data, isLoading, error, refetch } = useQuery({
+    queryKey: ["fields", user, index],
+    queryFn: () => getFields(user, index || ""),
+    enabled: index != null,
+  });
+
+  const fields: AmcatField[] = data ? Object.values(data) : [];
+  return { fields, isLoading, error, refetch };
 }
 
 /*** Hook to get field values from AmCAT

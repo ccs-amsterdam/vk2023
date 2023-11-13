@@ -111,6 +111,7 @@ export interface DateFilter {
 export interface AmcatFilter extends DateFilter {
   values?: (string | number)[];
   exists?: boolean;
+  justAdded?: boolean;
 }
 
 export interface AmcatField {
@@ -133,11 +134,18 @@ export interface AmcatFilters {
   [field: string]: AmcatFilter;
 }
 
-export type AmcatQueryTerms = { [label: string]: string };
+export interface AmcatQueryTerm {
+  label?: string;
+  query: string;
+}
 
 export interface AmcatQuery {
   filters?: AmcatFilters;
-  queries?: AmcatQueryTerms;
+  queries?: AmcatQueryTerm[];
+}
+export interface PostAmcatQuery {
+  filters?: AmcatFilters;
+  queries?: Record<string, string>;
 }
 
 export type AggregateDataPoint = { [key: string]: any };

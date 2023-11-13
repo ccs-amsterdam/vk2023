@@ -33,14 +33,14 @@ export function filterLabel(
     if (filter.lte && !filter.gte) values = `until ${filter.lte}`;
   } else {
     if (filter.values) {
-      values = `${filter.values.length} selected`;
+      values = `(${filter.values.length})`;
     }
   }
 
   if (values)
     return (
-      <div className="w-full flex justify-between gap-2">
-        <div className="bg-primary">{name}</div>
+      <div className="w-full flex items-center gap-2">
+        <div className="font-bold">{name}</div>
         {values}
       </div>
     );
@@ -80,7 +80,6 @@ export function KeywordPopup({
   if (values.length === 0) return null;
 
   function handleChange(checked: boolean, v: string) {
-    console.log(checked);
     if (checked && !selected.includes(v))
       onChange({ values: [...selected, v] });
     if (!checked && selected.includes(v))
@@ -119,23 +118,22 @@ function date2str(date: Date, ifNone = ""): string {
 export function DateRangePopup({ value, onChange }: FilterPopupProps) {
   if (value == null) return null;
 
-  const handleChange = (key: keyof DateFilter, newval?: Date) => {
-    if (!newval) return;
+  const handleChange = (key: keyof DateFilter, newval: Date | undefined) => {
     let result = { ...value };
-    if (newval == null) {
+    if (!newval) {
       delete result[key];
     } else result[key] = date2str(newval);
     onChange(result);
   };
   return (
-    <div className="w-full flex flex-col gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <DatePicker
-        label={"from date"}
+        label={"from"}
         value={value.gte ? new Date(value.gte) : undefined}
         onChange={(newval) => handleChange("gte", newval)}
       />
       <DatePicker
-        label={"to date"}
+        label={"to"}
         value={value.lte ? new Date(value.lte) : undefined}
         onChange={(newval) => handleChange("lte", newval)}
       />

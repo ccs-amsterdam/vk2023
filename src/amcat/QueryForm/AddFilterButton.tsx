@@ -7,7 +7,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { DynamicIcon } from "@/components/ui/dynamic-icon";
 
 export function fieldOptions(fields: AmcatField[], query: AmcatQuery) {
   return fields
@@ -16,46 +16,53 @@ export function fieldOptions(fields: AmcatField[], query: AmcatQuery) {
 }
 
 interface AddFilterProps {
+  children: React.ReactNode;
   options: AmcatField[];
-  onClick: (value: string) => void;
-  addFilterLabel?: string;
-  className?: string;
+  value: AmcatQuery;
+  onSubmit: (value: AmcatQuery) => void;
 }
+
 export default function AddFilterButton({
+  children,
   options,
-  onClick,
-  className,
-  addFilterLabel,
+  value,
+  onSubmit,
 }: AddFilterProps) {
   const [open, setOpen] = useState(false);
 
-  if (options.length === 0) return null;
+  function addFilter(name: string) {
+    const filters = value?.filters || {};
+    onSubmit({
+      ...value,
+      filters: { ...filters, [name]: { justAdded: true } },
+    });
+  }
 
   return (
-    <Popover open={open} onOpenChange={() => setOpen(!open)}>
-      <PopoverTrigger asChild>
-        <Button
-          className={cn(
-            "whitespace-nowrap bg-background border-[1px]",
-            className
-          )}
-        >
-          {addFilterLabel || "Add Filter"}
-        </Button>
-      </PopoverTrigger>
+    <Popover
+      open={open}
+      onOpenChange={() => {
+        if (options.length > 0) {
+          setOpen(!open);
+        } else {
+          setOpen(false);
+        }
+      }}
+    >
+      <PopoverTrigger asChild>{children}</PopoverTrigger>
       <PopoverContent>
-        <div className="flex flex-col gap-1">
+        <div className="grid grid-cols-1 gap-1">
           {options.map((f) => (
             <Button
-              className="bg-background border-2"
+              className="bg-background border-2 flex items-center justify-start gap-2"
               key={f.name}
               onClick={() => {
                 setOpen(false);
-                onClick(f.name);
+                addFilter(f.name);
               }}
             >
-              {/* <Icon name={getFieldTypeIcon(f.type)} /> */}
-              {f.name}
+              <DynamicIcon type={f.type} />
+              <div className="flex-auto text-center">{f.name}</div>
             </Button>
           ))}
         </div>

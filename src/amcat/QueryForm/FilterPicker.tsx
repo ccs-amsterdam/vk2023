@@ -7,12 +7,14 @@ import {
 import { filterLabel, FilterPopup } from "./FilterPopups";
 
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
+import { Delete, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FilterPickerProps {
@@ -21,7 +23,7 @@ interface FilterPickerProps {
   field: AmcatField | undefined;
   value: AmcatFilter | undefined;
   onChange: (value: AmcatFilter) => void;
-  onDelete?: () => void;
+  onDelete: () => void;
   className?: string;
   [key: string]: any;
 }
@@ -38,23 +40,37 @@ export default function FilterPicker({
   if (field == null || value == null) return null;
 
   return (
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button
-          className={cn(
-            "whitespace-nowrap flex gap-2 justify-between bg-background border-2",
-            className
-          )}
-        >
-          {filterLabel(field, value, true)}
-          {onDelete == null ? null : (
-            <div onClick={onDelete}>
-              <X />
-            </div>
-          )}
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent>
+    <Dialog
+      defaultOpen={value?.justAdded}
+      onOpenChange={() => {
+        if (value?.justAdded) value.justAdded = false;
+      }}
+    >
+      <DialogTrigger asChild>
+        <div className="flex flex-row-reverse bg-background border-[1px] rounded-md">
+          <Button
+            onClick={(e) => {
+              e.preventDefault();
+              onDelete?.();
+            }}
+            className="bg-transparent pl-0 pr-2 peer hover:bg-destructive rounded-l-none"
+          >
+            <Delete />
+          </Button>
+          <Button
+            className={cn(
+              "rounded-r-none hover:bg-transparent peer-hover:bg-destructive bg-transparent first-letter:first-line:whitespace-nowrap flex gap-2 justify-between ",
+              className
+            )}
+          >
+            {filterLabel(field, value, true)}
+          </Button>
+        </div>
+      </DialogTrigger>
+      <DialogContent className="">
+        <DialogHeader>
+          <DialogTitle className="pr-6">{field.name}</DialogTitle>
+        </DialogHeader>
         <FilterPopup
           user={user}
           index={index}
@@ -62,7 +78,7 @@ export default function FilterPicker({
           value={value}
           onChange={onChange}
         />
-      </PopoverContent>
-    </Popover>
+      </DialogContent>
+    </Dialog>
   );
 }
