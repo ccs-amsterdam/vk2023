@@ -1,7 +1,26 @@
 {
-  "commit": "dea75584af0b2f3c917de80b9a7496307561abab",
-  "generated": "2023-11-13T16:53:21.938Z",
+  "commit": "b27c0963fc4db4e696fd9be68e76c168d396d7ae",
+  "generated": "Mon, 13 Nov 2023 16:53:32 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "2eef225e541b7281914d732d080d8cbd31ea6cc7",
+        "hash": "3691473695",
+        "path": "outstatic/content/media/npo-radio-1-podcast-de-verkiezingsdag.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-from-2023-11-13-16-36-30-AzMz.png",
+      "description": "",
+      "publishedAt": "2023-11-13T15:15:17.981Z",
+      "slug": "npo-radio-1-podcast-de-verkiezingsdag",
+      "status": "published",
+      "title": "NPO Radio 1: Podcast De Verkiezingsdag ",
+      "url": "https://www.nporadio1.nl/nieuws/podcast/c1332038-f8f0-40eb-9482-9027f8a49d74/de-verkiezingsdag-de-lijsttrekker"
+    },
     {
       "__outstatic": {
         "commit": "252f51dd8b4d208eaae14371b9e6cad3d2c4c3cb",
@@ -61,40 +80,21 @@
     },
     {
       "__outstatic": {
-        "commit": "2eef225e541b7281914d732d080d8cbd31ea6cc7",
-        "hash": "3691473695",
-        "path": "outstatic/content/media/npo-radio-1-podcast-de-verkiezingsdag.md"
+        "commit": "305b51cd58c4da0dc2d33d4315f7986bb58f8110",
+        "hash": "3735598576",
+        "path": "outstatic/content/mensen/wouter-van-atteveldt.md"
       },
       "author": {
-        "name": "Mariken van der Velden",
+        "name": "",
         "picture": ""
       },
-      "collection": "media",
-      "coverImage": "/images/screenshot-from-2023-11-13-16-36-30-AzMz.png",
-      "description": "",
-      "publishedAt": "2023-11-13T15:15:17.981Z",
-      "slug": "npo-radio-1-podcast-de-verkiezingsdag",
-      "status": "published",
-      "title": "NPO Radio 1: Podcast De Verkiezingsdag ",
-      "url": "https://www.nporadio1.nl/nieuws/podcast/c1332038-f8f0-40eb-9482-9027f8a49d74/de-verkiezingsdag-de-lijsttrekker"
-    },
-    {
-      "__outstatic": {
-        "commit": "882038374b61e20b5e8587c9dcc993e076f0def6",
-        "hash": "4189637559",
-        "path": "outstatic/content/mensen/kasper-welbers.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
-      },
       "collection": "mensen",
-      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
+      "coverImage": "https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveldt_tcm250_36346.jpg?w=160&f=webp",
       "description": "",
-      "publishedAt": "2023-09-26T11:57:02.330Z",
-      "slug": "kasper-welbers",
+      "publishedAt": "2023-09-26T11:55:11.394Z",
+      "slug": "wouter-van-atteveldt",
       "status": "draft",
-      "title": "Kasper Welbers"
+      "title": "Wouter van Atteveldt"
     },
     {
       "__outstatic": {
@@ -116,6 +116,24 @@
     },
     {
       "__outstatic": {
+        "commit": "882038374b61e20b5e8587c9dcc993e076f0def6",
+        "hash": "4189637559",
+        "path": "outstatic/content/mensen/kasper-welbers.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
+      },
+      "collection": "mensen",
+      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
+      "description": "",
+      "publishedAt": "2023-09-26T11:57:02.330Z",
+      "slug": "kasper-welbers",
+      "status": "draft",
+      "title": "Kasper Welbers"
+    },
+    {
+      "__outstatic": {
         "commit": "9ed2c2c797304087bfa3999bde44ab0a57c548e5",
         "hash": "3491335752",
         "path": "outstatic/content/mensen/nel-ruigrok.md"
@@ -134,93 +152,22 @@
     },
     {
       "__outstatic": {
-        "commit": "305b51cd58c4da0dc2d33d4315f7986bb58f8110",
-        "hash": "3735598576",
-        "path": "outstatic/content/mensen/wouter-van-atteveldt.md"
+        "commit": "6f4267dbdc8028c18cd0ac54b6f6beed3fc012a1",
+        "hash": "3604304270",
+        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
       },
       "author": {
-        "name": "",
-        "picture": ""
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
       },
-      "collection": "mensen",
-      "coverImage": "https://research.vu.nl/files-asset/22705903/Dr._Wouter_van_Atteveldt_tcm250_36346.jpg?w=160&f=webp",
+      "collection": "media",
+      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
       "description": "",
-      "publishedAt": "2023-09-26T11:55:11.394Z",
-      "slug": "wouter-van-atteveldt",
-      "status": "draft",
-      "title": "Wouter van Atteveldt"
-    },
-    {
-      "__outstatic": {
-        "commit": "fc50ec0bf34bf30a409c5d8ccbc558233f6bc9f3",
-        "hash": "3783033652",
-        "path": "outstatic/content/pages/dashboard.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.png",
-      "description": "Dashboard",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "dashboard",
+      "publishedAt": "2023-10-30T16:39:16.000Z",
+      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
       "status": "published",
-      "title": "Dashboard"
-    },
-    {
-      "__outstatic": {
-        "commit": "8f3482a49b19fc0aae012b0d15ab69483bb0988c",
-        "hash": "2299656266",
-        "path": "outstatic/content/pages/rapporten.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "rapporten",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "rapporten",
-      "status": "published",
-      "title": "rapporten"
-    },
-    {
-      "__outstatic": {
-        "commit": "36b5c42228a6feec3b6a7e51aff38ccfed6a38a3",
-        "hash": "1797539307",
-        "path": "outstatic/content/pages/methodologie.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "Beschrijving van methodologie",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "methodologie",
-      "status": "published",
-      "title": "Methodologie"
-    },
-    {
-      "__outstatic": {
-        "commit": "cf5a07dd4cb77969a11a43f4b373e4ca9b3aae66",
-        "hash": "3352663077",
-        "path": "outstatic/content/pages/media.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.png",
-      "description": "Samenvatting media activiteiten",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "media",
-      "status": "published",
-      "title": "In de media"
+      "title": "Trouw: Omtzigt en Timmermans  in debat",
+      "url": ""
     },
     {
       "__outstatic": {
@@ -242,22 +189,75 @@
     },
     {
       "__outstatic": {
-        "commit": "dea75584af0b2f3c917de80b9a7496307561abab",
-        "hash": "3604304270",
-        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
+        "commit": "36b5c42228a6feec3b6a7e51aff38ccfed6a38a3",
+        "hash": "1797539307",
+        "path": "outstatic/content/pages/methodologie.md"
       },
       "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+        "name": "Kasper Welbers",
+        "picture": ""
       },
-      "collection": "media",
-      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
-      "description": "",
-      "publishedAt": "2023-10-30T16:39:16.000Z",
-      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Beschrijving van methodologie",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "methodologie",
       "status": "published",
-      "title": "Trouw: Omtzigt en Timmermans  in debat",
-      "url": ""
+      "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
+        "commit": "8f3482a49b19fc0aae012b0d15ab69483bb0988c",
+        "hash": "2299656266",
+        "path": "outstatic/content/pages/rapporten.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "rapporten",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "rapporten",
+      "status": "published",
+      "title": "rapporten"
+    },
+    {
+      "__outstatic": {
+        "commit": "cf5a07dd4cb77969a11a43f4b373e4ca9b3aae66",
+        "hash": "3352663077",
+        "path": "outstatic/content/pages/media.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.png",
+      "description": "Samenvatting media activiteiten",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "media",
+      "status": "published",
+      "title": "In de media"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc50ec0bf34bf30a409c5d8ccbc558233f6bc9f3",
+        "hash": "3783033652",
+        "path": "outstatic/content/pages/dashboard.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.png",
+      "description": "Dashboard",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "dashboard",
+      "status": "published",
+      "title": "Dashboard"
     }
   ]
 }
