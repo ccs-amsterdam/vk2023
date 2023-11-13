@@ -68,10 +68,10 @@ export default function IndexDashboard({ index }: Props) {
         </div>
       </div>
       <div className="flex flex-col-reverse gap-10 xl:gap-5 xl:flex-row p-1 mt-6 justify-between items-center xl:items-start">
-        <div className="min-w-[400px] ">
+        <div className=" xl:min-w-[400px] ">
           <Articles user={user} index={index.index} query={query} />
         </div>
-        <div className="max-w-[800px] flex flex-col">
+        <div className="max-w-[800px] flex-auto w-full flex flex-col">
           {aggregations.map((agg) => {
             return (
               <div key={agg.title} className="flex-auto">
