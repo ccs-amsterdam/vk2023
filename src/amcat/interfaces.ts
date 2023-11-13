@@ -196,7 +196,7 @@ export interface AmcatDocument {
 
 export interface AmcatQueryResult {
   results?: AmcatDocument[];
-  meta?: { page_count?: number };
+  meta?: { page: number; page_count?: number };
 }
 
 export interface LocationOptions {

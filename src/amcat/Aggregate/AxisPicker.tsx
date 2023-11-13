@@ -3,7 +3,7 @@ import {
   AggregationAxis,
   AggregationInterval,
 } from "@/amcat/interfaces";
-import { getField } from "@/amcat/api";
+import { getField } from "@/amcat/api/fields";
 import {
   Select,
   SelectContent,

@@ -1,4 +1,4 @@
-import { useFieldValues } from "@/amcat/api";
+import { useFieldValues } from "@/amcat/api/fieldValues";
 import {
   AmcatUser,
   AmcatField,
@@ -75,9 +75,9 @@ export function KeywordPopup({
 }: FilterPopupProps) {
   if (field == null || value == null) return null;
 
-  const values = useFieldValues(user, index, field.name);
+  const { fieldValues } = useFieldValues(user, index, field.name);
   const selected = value?.values || [];
-  if (values.length === 0) return null;
+  if (fieldValues.length === 0) return null;
 
   function handleChange(checked: boolean, v: string) {
     if (checked && !selected.includes(v))
@@ -88,7 +88,7 @@ export function KeywordPopup({
 
   return (
     <div>
-      {values.map((v, i) => {
+      {fieldValues.map((v, i) => {
         const checked = selected.includes(v);
         return (
           <div

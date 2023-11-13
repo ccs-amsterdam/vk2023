@@ -220,54 +220,6 @@ export function addFilter(q: AmcatQuery, filters: AmcatFilters): AmcatQuery {
   return { queries: [...queries], filters: { ...q.filters, ...filters } };
 }
 
-/** Hook to get fields from amcat
- * @param index Login information for this index
- * @returns a list of field objects
- */
-export function useFields(user: AmcatUser, index: AmcatIndexName | undefined) {
-  const { data, isLoading, error, refetch } = useQuery({
-    queryKey: ["fields", user, index],
-    queryFn: () => getFields(user, index || ""),
-    enabled: index != null,
-  });
-
-  const fields: AmcatField[] = data ? Object.values(data) : [];
-  return { fields, isLoading, error, refetch };
-}
-
-/*** Hook to get field values from AmCAT
- * @param index Login information for this index
- * @param field Name of the field
- * @returns a list of values (strings)
- */
-
-export function useFieldValues(
-  user: AmcatUser,
-  index: AmcatIndexName,
-  field: string
-): string[] {
-  const [values, setValues] = useState<string[]>([]);
-
-  useEffect(() => {
-    getFieldValues(user, index, field)
-      .then((d) => setValues(d.data))
-      .catch(() => {
-        setValues([]);
-      });
-  }, [index, field, setValues]);
-
-  return values;
-}
-
-export function getField(
-  fields: AmcatField[],
-  fieldname: string
-): AmcatField | undefined {
-  const i = fields.map((f) => f.name).indexOf(fieldname);
-  if (i === -1) return undefined;
-  return fields[i];
-}
-
 /** Update tags by query
  * @param index Index name
  * @param action add or remove

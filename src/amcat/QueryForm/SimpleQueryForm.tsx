@@ -1,4 +1,4 @@
-import { useFields } from "@/amcat/api";
+import { useFields } from "@/amcat/api/fields";
 import { queriesFromString } from "./libQuery";
 import { QueryFormProps } from "./QueryForm";
 import AddFilterButton, { fieldOptions } from "./AddFilterButton";

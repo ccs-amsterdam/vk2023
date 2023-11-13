@@ -1,7 +1,8 @@
 import { AmcatUser } from "@/amcat/interfaces";
 import axios from "axios";
 
-const server = "http://localhost/amcat";
+//const server = "http://localhost/amcat";
+const server = "https://open.amcat.nl/amcat";
 
 export default function amcatGuest(): AmcatUser {
   const api = axios.create({

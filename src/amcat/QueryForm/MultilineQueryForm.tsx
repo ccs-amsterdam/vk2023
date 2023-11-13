@@ -1,4 +1,4 @@
-import { useFields } from "@/amcat/api";
+import { useFields } from "@/amcat/api/fields";
 import { QueryFormProps } from "./QueryForm";
 import AddFilterButton, { fieldOptions } from "./AddFilterButton";
 import { queriesFromString } from "./libQuery";
@@ -34,8 +34,8 @@ export default function MultilineQueryForm({
   const options = fieldOptions(fields, value);
 
   return (
-    <div className="prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,400px] gap-3 lg:gap-6">
-      <form className="flex-auto w-full p-1">
+    <div className="prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,300px] gap-3 lg:gap-6">
+      <form className="flex flex-col flex-auto w-full p-1">
         <div className="flex items-center gap-2 h-10">
           <div className="flex items-center">
             <b>Query</b>
@@ -46,8 +46,7 @@ export default function MultilineQueryForm({
           </div>
         </div>
         <Textarea
-          className=""
-          rows={5}
+          className="flex-auto min-h-[120px]"
           placeholder={`Enter multiple (labeled) queries:\n\nLabel1 = query1\nLabel2 = query2\netc.`}
           onChange={(e) => {
             setQ(e.target.value);

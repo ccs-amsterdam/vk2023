@@ -33,6 +33,7 @@
     "next": "^13.4.0",
     "outstatic": "^0.0.41",
     "postcss": "8.4.24",
+    "randomcolor": "^0.6.2",
     "react": "18.2.0",
     "react-day-picker": "^8.9.1",
     "react-dom": "18.2.0",
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/randomcolor": "^0.5.9"
   }
 }

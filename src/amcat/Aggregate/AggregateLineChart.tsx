@@ -45,7 +45,7 @@ export default function AggregateLineChart({
   if (height == null) height = 300;
   if (width == null) width = "100%";
   return (
-    <ResponsiveContainer height={height} width={width}>
+    <ResponsiveContainer height={height} width={width} className="text-sm">
       <LineChart data={d}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey={data.meta.axes[0].name} />

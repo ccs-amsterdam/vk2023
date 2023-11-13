@@ -10,7 +10,7 @@ import {
   MetricFunction,
 } from "@/amcat/interfaces";
 
-import { useFields, getField } from "@/amcat/api";
+import { useFields, getField } from "@/amcat/api/fields";
 import { Dropdown, Option } from "@/components/ui/dropdown";
 import React, {
   Dispatch,

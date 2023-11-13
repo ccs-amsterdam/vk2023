@@ -3,10 +3,11 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import QueryForm from "@/amcat/QueryForm/QueryForm";
-import { AmcatQuery } from "@/amcat/interfaces";
+import { AggregationOptions, AmcatQuery } from "@/amcat/interfaces";
 import amcatGuest from "@/lib/amcatGuest";
 import { X } from "lucide-react";
-import AggregateResultPanel from "@/amcat/Aggregate/AggregateResultPanel";
+import Articles from "@/amcat/Articles/Articles";
+import AggregateResult from "@/amcat/Aggregate/AggregateResult";
 
 interface Props {
   index: {
@@ -17,12 +18,34 @@ interface Props {
 
 const user = amcatGuest();
 
+interface IndexAggregation {
+  title: string;
+  options: AggregationOptions;
+}
+
+const indexAggregations: Record<string, IndexAggregation[]> = {
+  tk2023_media: [
+    {
+      title: "Aantal artikelen per partij per week",
+      options: {
+        display: "linechart",
+        axes: [
+          { field: "date", name: "Datum", interval: "week" },
+          { field: "party", name: "Partij" },
+        ],
+      },
+    },
+  ],
+};
+
 export default function IndexDashboard({ index }: Props) {
   const router = useRouter();
 
   const [query, setQuery] = useState<AmcatQuery>({});
 
   const goBack = () => router.push("/dashboard");
+
+  const aggregations = indexAggregations[index.index] || [];
 
   return (
     <div>
@@ -44,9 +67,33 @@ export default function IndexDashboard({ index }: Props) {
           </div>
         </div>
       </div>
-      <div className="p-1">
-        <AggregateResultPanel user={user} index={index.index} query={query} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-1 mt-6 gap-5">
+        <Articles user={user} index={index.index} query={query} />
+        <div className="flex flex-col">
+          {aggregations.map((agg) => {
+            return (
+              <div key={agg.title} className="flex-auto">
+                <h3 className="text-right font-bold text-lg prose mt-5">
+                  {agg.title}
+                </h3>
+                <AggregateResult
+                  user={user}
+                  index={index.index}
+                  query={query}
+                  options={agg.options}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
+      {/* <div className="p-1">
+        <AggregateResultPanel user={user} index={index.index} query={query} />
+      </div> */}
     </div>
   );
+}
+
+{
+  /* <AggregateResultPanel user={user} index={index.index} query={query} /> */
 }

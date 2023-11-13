@@ -8,7 +8,7 @@ import {
 import MultilineQueryForm from "./MultilineQueryForm";
 import SimpleQueryForm from "./SimpleQueryForm";
 import FilterPicker from "./FilterPicker";
-import { useFields, getField } from "@/amcat/api";
+import { useFields, getField } from "@/amcat/api/fields";
 import { queriesToString } from "./libQuery";
 
 export interface Props {

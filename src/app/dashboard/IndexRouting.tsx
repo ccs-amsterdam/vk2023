@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Dashboard from "./Dashboard";
 import Stemrij from "@/components/Stemrij";
 
-const indices = [{ label: "State of the Union", index: "state_of_the_union" }];
+const indices = [{ label: "Verkiezingen", index: "tk2023_media" }];
 
 interface Props {
   data: { content: string };

@@ -14,7 +14,8 @@ import AggregateList from "./AggregateList";
 import AggregateTable from "./AggregateTable";
 import AggregateBarChart from "./AggregateBarChart";
 import AggregateLineChart from "./AggregateLineChart";
-import { describeError, postAggregate } from "@/amcat/api";
+import { postAggregate } from "@/amcat/api/aggregate";
+import { describeError } from "@/amcat/api/error";
 
 //TODO: This file is becoming too complex - move some business logic to a lib and add unit tests?
 
