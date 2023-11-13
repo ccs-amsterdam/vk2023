@@ -1,6 +1,6 @@
 {
-  "commit": "cf8d4a8327da1582f05a7d65b440ff9e37cb328f",
-  "generated": "2023-11-13T16:21:02.032Z",
+  "commit": "672a27b257069ac2a368f5dfc3d0064293b9a49c",
+  "generated": "2023-11-13T16:25:20.028Z",
   "metadata": [
     {
       "__outstatic": {
@@ -218,6 +218,25 @@
       "status": "draft",
       "title": "RTL Nieuws: De kiezer is de verliezer",
       "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
+    },
+    {
+      "__outstatic": {
+        "commit": "672a27b257069ac2a368f5dfc3d0064293b9a49c",
+        "hash": "1010630599",
+        "path": "outstatic/content/media/trouw.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-13T16:29:22.567Z",
+      "slug": "trouw",
+      "status": "draft",
+      "title": "Trouw",
+      "url": ""
     }
   ]
 }
