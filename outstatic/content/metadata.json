@@ -1,6 +1,6 @@
 {
-  "commit": "7d266248544171919f88489a38ad1e769ae6ac6f",
-  "generated": "2023-11-13T16:34:50.085Z",
+  "commit": "79d609b5c8d4915f65a5ce5c3527ba7a919ef3c7",
+  "generated": "2023-11-13T16:37:52.151Z",
   "metadata": [
     {
       "__outstatic": {
@@ -240,16 +240,16 @@
     },
     {
       "__outstatic": {
-        "commit": "7d266248544171919f88489a38ad1e769ae6ac6f",
-        "hash": "2917815263",
+        "commit": "79d609b5c8d4915f65a5ce5c3527ba7a919ef3c7",
+        "hash": "3090592336",
         "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
       },
       "author": {
-        "name": "",
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
         "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
       },
       "collection": "media",
-      "coverImage": "",
+      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
       "description": "",
       "publishedAt": "2023-11-13T16:39:16.992Z",
       "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
