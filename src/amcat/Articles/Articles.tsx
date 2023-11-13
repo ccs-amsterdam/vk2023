@@ -53,27 +53,24 @@ export default function Articles({
 
   const [articleId, setArticleId] = useState<string | null>(null);
   const { fields } = useFields(user, index);
-  const [pagination, setPagination] = useState(() => ({
-    page: 0,
-    pages: 0,
-  }));
+  const [page, setPage] = useState(0);
+  const [readyData, setReadyData] = useState<AmcatQueryResult | undefined>(
+    undefined
+  );
 
-  const { data } = useQuery({
-    queryKey: ["articles", pagination],
-    queryFn: () =>
-      fetchArticles(
-        user,
-        index,
-        query,
-        perPage,
-        sort,
-        pagination.page,
-        setPagination
-      ),
+  const { data, isLoading } = useQuery({
+    queryKey: ["articles", user, index, query, perPage, sort, page],
+    queryFn: () => fetchArticles(user, index, query, perPage, sort, page),
   });
 
   useEffect(() => {
-    setPagination({ page: 0, pages: 0 });
+    if (!isLoading) {
+      setReadyData(data);
+    }
+  }, [data, isLoading]);
+
+  useEffect(() => {
+    setPage(0);
   }, [user, index, query, perPage, sort]);
 
   const safeColumns = useMemo(() => {
@@ -108,12 +105,11 @@ export default function Articles({
   const canOpen = role && role !== "METAREADER";
 
   return (
-    <>
+    <div className="w-full">
       <ArticleSnippets
-        data={data}
+        data={readyData}
         columns={columnList}
-        pagination={pagination}
-        setPagination={setPagination}
+        pageChange={setPage}
         onClick={canOpen ? handleClick : undefined}
       />
 
@@ -127,7 +123,7 @@ export default function Articles({
           changeArticle={setArticleId}
         />
       ) : null}
-    </>
+    </div>
   );
 }
 
@@ -163,8 +159,7 @@ async function fetchArticles(
   query: AmcatQuery,
   perPage: number,
   sort: any,
-  page: number,
-  setPagination: (pagination: { page: number; pages: number }) => void
+  page: number
 ) {
   let params = {
     page,
@@ -175,9 +170,5 @@ async function fetchArticles(
   };
   const res = await postQuery(user, index, query, params);
   const queryResult: AmcatQueryResult = res.data;
-  setPagination({
-    page: queryResult?.meta?.page || 0,
-    pages: queryResult?.meta?.page_count || 0,
-  });
   return queryResult;
 }

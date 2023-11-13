@@ -19,16 +19,14 @@ import Link from "next/link";
 interface Props {
   data: AmcatQueryResult | undefined;
   columns: AmcatField[];
-  pagination: { page: number; pages: number };
-  setPagination: (pagination: { page: number; pages: number }) => void;
+  pageChange: (page: number) => void;
   onClick?: (doc: AmcatDocument) => void;
 }
 
 export default function ArticleSnippets({
   data,
   columns,
-  pagination,
-  setPagination,
+  pageChange,
   onClick,
 }: Props) {
   const meta = (row: any) => {
@@ -39,19 +37,15 @@ export default function ArticleSnippets({
   };
 
   const rows: AmcatDocument[] = data?.results || [];
-  const page = pagination.page;
-  const nPages = pagination.pages;
-
-  function pageChange(page: number) {
-    setPagination({ ...pagination, page });
-  }
+  const page = data?.meta?.page || 0;
+  const nPages = data?.meta?.page_count || 0;
 
   const iconStyle =
     "w-9 h-9 text-secondary cursor-pointer hover:bg-gray-200 p-1 rounded";
   const disabledIconStyle = "w-9 h-9 p-1 rounded opacity-50 cursor-not-allowed";
 
   return (
-    <div className="relative prose-base max-h-[700px] overflow-auto">
+    <div className="relative prose max-h-[700px] overflow-auto">
       <div className="flex justify-center items-center select-none">
         <SkipBack
           className={page > 0 ? iconStyle : disabledIconStyle}
