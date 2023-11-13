@@ -1,6 +1,6 @@
 {
-  "commit": "c102ff59fee4e3f859bf3ab0aa5818f8ab0fffe5",
-  "generated": "2023-11-13T14:49:02.406Z",
+  "commit": "f2814fd5ddf7c3da7e6387bc4bcfe955d0b42b6f",
+  "generated": "2023-11-13T14:54:17.123Z",
   "metadata": [
     {
       "__outstatic": {
@@ -36,24 +36,6 @@
       "slug": "rapport_overzicht",
       "status": "published",
       "title": "rapporten"
-    },
-    {
-      "__outstatic": {
-        "commit": "329b0a982a70f6cbc119165879f586b2e0aa3557",
-        "hash": "1365963019",
-        "path": "outstatic/content/pages/over_ons.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "Wie zijn wij",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "over_ons",
-      "status": "published",
-      "title": "Over ons"
     },
     {
       "__outstatic": {
@@ -180,6 +162,24 @@
       "slug": "nel-ruigrok",
       "status": "draft",
       "title": "Nel Ruigrok"
+    },
+    {
+      "__outstatic": {
+        "commit": "f2814fd5ddf7c3da7e6387bc4bcfe955d0b42b6f",
+        "hash": "973536988",
+        "path": "outstatic/content/pages/overons.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Wie zijn wij",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "overons",
+      "status": "published",
+      "title": "Over ons"
     }
   ]
 }
