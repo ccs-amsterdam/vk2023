@@ -1,6 +1,6 @@
 {
-  "commit": "9754401dc2a6ba60a9473aa043e78230d13915cc",
-  "generated": "2023-11-13T14:44:21.412Z",
+  "commit": "4533314fb185babc7c4568325e768fcb7cd21509",
+  "generated": "2023-11-13T14:48:31.263Z",
   "metadata": [
     {
       "__outstatic": {
@@ -162,6 +162,24 @@
       "slug": "mariken-van-der-velden",
       "status": "draft",
       "title": "Mariken van der Velden"
+    },
+    {
+      "__outstatic": {
+        "commit": "4533314fb185babc7c4568325e768fcb7cd21509",
+        "hash": "550032109",
+        "path": "outstatic/content/mensen/nel-ruigrok.md"
+      },
+      "author": {
+        "name": "Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
+      },
+      "collection": "mensen",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-13T14:51:33.642Z",
+      "slug": "nel-ruigrok",
+      "status": "draft",
+      "title": "Nel Ruigrok"
     }
   ]
 }
