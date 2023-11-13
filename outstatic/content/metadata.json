@@ -1,6 +1,6 @@
 {
-  "commit": "aa31c3c08e9ec0e396702985900dd35e001e3157",
-  "generated": "2023-11-13T15:36:53.072Z",
+  "commit": "8d19a48af725eb76c735f1416a669ff144a9b663",
+  "generated": "2023-11-13T15:38:12.062Z",
   "metadata": [
     {
       "__outstatic": {
@@ -54,24 +54,6 @@
       "slug": "methodologie",
       "status": "published",
       "title": "Methodologie"
-    },
-    {
-      "__outstatic": {
-        "commit": "9a2610bfc09a248faeda7f43226ea3057b6dcd9b",
-        "hash": "2796024192",
-        "path": "outstatic/content/pages/media.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.svg",
-      "description": "Samenvatting media activiteiten",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "media",
-      "status": "published",
-      "title": "In de media"
     },
     {
       "__outstatic": {
@@ -218,6 +200,24 @@
       "status": "draft",
       "title": "NPO Radio 1: Podcast De Verkiezingsdag ",
       "url": "https://www.nporadio1.nl/nieuws/podcast/c1332038-f8f0-40eb-9482-9027f8a49d74/de-verkiezingsdag-de-lijsttrekker"
+    },
+    {
+      "__outstatic": {
+        "commit": "8d19a48af725eb76c735f1416a669ff144a9b663",
+        "hash": "3352663077",
+        "path": "outstatic/content/pages/media.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.png",
+      "description": "Samenvatting media activiteiten",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "media",
+      "status": "published",
+      "title": "In de media"
     }
   ]
 }
