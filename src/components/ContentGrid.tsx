@@ -13,6 +13,7 @@ type Props = {
   priority?: boolean;
 };
 
+const titlecase = (txt: string) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
 const ContentGrid = ({ items, collection }: Props) => {
   return (
     <section id={collection}>
@@ -22,9 +23,19 @@ const ContentGrid = ({ items, collection }: Props) => {
             <div className="cursor-pointer border project-card rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 hover:shadow overflow-hidden">
               <div className="sm:mx-0">
                 {collection === "media" && (
-                  <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-l absolute top left-1/2 -translate-x-1/2 shadow-lg rounded-lg">
-                    {item.title}
+                  <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-l absolute top-1/2 left-1/2 -translate-x-1/2 shadow-lg rounded-lg">
+                    <span style={{ color: "grey", fontWeight: "normal" }}>
+                      {titlecase(
+                        new Date(item.publishedAt).toLocaleDateString("nl-NL", {
+                          weekday: "long",
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        })
+                      )}
+                    </span>
                     <br />
+                    {item.title}{" "}
                     {item.author == null ? null : (
                       <>
                         <br />

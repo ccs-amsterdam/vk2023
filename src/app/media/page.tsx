@@ -24,9 +24,10 @@ async function getData() {
   const content = await markdownToHtml(page.content);
 
   const allMedia = await db
-    .find({ collection: "media" }, ["title", "content", "coverImage", "url", "author"])
+    .find({ collection: "media" }, ["title", "coverImage", "url", "author", "publishedAt"])
     .sort({ publishedAt: 1 })
     .toArray();
+  console.log(allMedia);
   return {
     content,
     allMedia,
