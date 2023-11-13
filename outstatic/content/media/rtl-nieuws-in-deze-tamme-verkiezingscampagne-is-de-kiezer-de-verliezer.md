@@ -1,5 +1,5 @@
 ---
-title: 'RTL Nieuws: In deze tamme verkiezingscampagne is de kiezer de verliezer'
+title: 'RTL Nieuws: De kiezer is de verliezer'
 status: 'draft'
 author:
   name: 'Mariken van der Velden'
