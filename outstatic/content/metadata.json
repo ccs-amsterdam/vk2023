@@ -1,6 +1,6 @@
 {
-  "commit": "a8bdf5b29407ff4e16aa95b0860607c5cb464f63",
-  "generated": "Mon, 13 Nov 2023 16:50:05 GMT",
+  "commit": "c20ea10b2e5ca2fb84ca044afa2cacb0fdf7b322",
+  "generated": "2023-11-13T16:50:40.847Z",
   "metadata": [
     {
       "__outstatic": {
@@ -222,23 +222,6 @@
       "slug": "media",
       "status": "published",
       "title": "In de media"
-    },
-    {
-      "__outstatic": {
-        "commit": "a538f1b3502fb057501ec171de1342d45b263397",
-        "hash": "3773084205",
-        "path": "outstatic/content/rapporten/example.md"
-      },
-      "author": {
-        "name": "Kasper Welbers"
-      },
-      "collection": "rapporten",
-      "coverImage": "/image/logo.svg",
-      "description": "Here we put a short description of the project.",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "example",
-      "status": "published",
-      "title": "Project title goes here"
     },
     {
       "__outstatic": {
