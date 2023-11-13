@@ -7,7 +7,7 @@ author:
 slug: 'https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37'
 description: ''
 coverImage: '/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg'
-url: ''
+url: 'https://www.trouw.nl/cultuur-media/zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat~be153e37/'
 publishedAt: '2023-10-21T15:29:22.000Z'
 ---
 
