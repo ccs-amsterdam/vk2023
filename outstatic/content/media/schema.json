@@ -1,0 +1,13 @@
+{
+  "title": "media",
+  "type": "object",
+  "properties": {
+    "url": {
+      "required": false,
+      "description": "Item URL",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "url"
+    }
+  }
+}
