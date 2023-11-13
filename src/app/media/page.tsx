@@ -25,9 +25,8 @@ async function getData() {
 
   const allMedia = await db
     .find({ collection: "media" }, ["title", "coverImage", "url", "author", "publishedAt"])
-    .sort({ publishedAt: 1 })
+    .sort({ publishedAt: -1 })
     .toArray();
-  console.log(allMedia);
   return {
     content,
     allMedia,
