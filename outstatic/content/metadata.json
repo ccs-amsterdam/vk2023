@@ -1,6 +1,6 @@
 {
-  "commit": "6a34682b95e74e0b8edd3c7db15ed974c4208099",
-  "generated": "2023-11-13T15:15:49.503Z",
+  "commit": "d182994b2af66545af5bcd434bc40ad707700f7f",
+  "generated": "2023-11-13T15:17:48.886Z",
   "metadata": [
     {
       "__outstatic": {
@@ -201,8 +201,8 @@
     },
     {
       "__outstatic": {
-        "commit": "6a34682b95e74e0b8edd3c7db15ed974c4208099",
-        "hash": "462759911",
+        "commit": "d182994b2af66545af5bcd434bc40ad707700f7f",
+        "hash": "1703290861",
         "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
       },
       "author": {
@@ -215,7 +215,8 @@
       "publishedAt": "2023-11-13T15:20:53.890Z",
       "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
       "status": "draft",
-      "title": "RTL Nieuws: In deze tamme verkiezingscampagne is de kiezer de verliezer"
+      "title": "RTL Nieuws: In deze tamme verkiezingscampagne is de kiezer de verliezer",
+      "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
     }
   ]
 }
