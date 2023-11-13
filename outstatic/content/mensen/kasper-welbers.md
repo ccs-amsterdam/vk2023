@@ -10,5 +10,5 @@ coverImage: 'https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb66498
 publishedAt: '2023-09-26T11:57:02.330Z'
 ---
 
-Lab co-director
+Universitair Docent
 
