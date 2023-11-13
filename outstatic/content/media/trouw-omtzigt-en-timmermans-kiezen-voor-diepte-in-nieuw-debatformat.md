@@ -1,6 +1,6 @@
 ---
 title: 'Trouw: Omtzigt en Timmermans kiezen voor diepte in nieuw debatformat'
-status: 'draft'
+status: 'published'
 author:
   name: 'Nel Ruigrok & Wouter van Atteveldt'
   picture: 'https://avatars.githubusercontent.com/u/6438205?v=4'
