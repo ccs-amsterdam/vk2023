@@ -1,6 +1,6 @@
 {
-  "commit": "571df69eec7049655c9ca111c01d2d040d0b0b06",
-  "generated": "Mon, 13 Nov 2023 16:52:36 GMT",
+  "commit": "dea75584af0b2f3c917de80b9a7496307561abab",
+  "generated": "2023-11-13T16:53:21.938Z",
   "metadata": [
     {
       "__outstatic": {
@@ -152,25 +152,6 @@
     },
     {
       "__outstatic": {
-        "commit": "977a97db01b283e71f13019ac4522c18d85adbf8",
-        "hash": "3122485685",
-        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
-      "description": "",
-      "publishedAt": "2023-10-30T16:39:16.000Z",
-      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
-      "status": "published",
-      "title": "Trouw: Omtzigt en Timmermans  in nieuw debatformat",
-      "url": ""
-    },
-    {
-      "__outstatic": {
         "commit": "fc50ec0bf34bf30a409c5d8ccbc558233f6bc9f3",
         "hash": "3783033652",
         "path": "outstatic/content/pages/dashboard.md"
@@ -258,6 +239,25 @@
       "slug": "overons",
       "status": "published",
       "title": "Over ons"
+    },
+    {
+      "__outstatic": {
+        "commit": "dea75584af0b2f3c917de80b9a7496307561abab",
+        "hash": "3604304270",
+        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
+      "description": "",
+      "publishedAt": "2023-10-30T16:39:16.000Z",
+      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
+      "status": "published",
+      "title": "Trouw: Omtzigt en Timmermans  in debat",
+      "url": ""
     }
   ]
 }
