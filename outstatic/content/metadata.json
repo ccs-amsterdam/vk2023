@@ -1,6 +1,6 @@
 {
-  "commit": "c9ac96e4a9bfc3f8d63228fe82735ad2fd288034",
-  "generated": "Mon, 13 Nov 2023 20:21:33 GMT",
+  "commit": "6a6ecaf98fc08274509bf2a2a71348ef37002b62",
+  "generated": "2023-11-15T15:21:07.194Z",
   "metadata": [
     {
       "__outstatic": {
@@ -225,24 +225,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fc50ec0bf34bf30a409c5d8ccbc558233f6bc9f3",
-        "hash": "3783033652",
-        "path": "outstatic/content/pages/dashboard.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.png",
-      "description": "Dashboard",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "dashboard",
-      "status": "published",
-      "title": "Dashboard"
-    },
-    {
-      "__outstatic": {
         "commit": "36b5c42228a6feec3b6a7e51aff38ccfed6a38a3",
         "hash": "1797539307",
         "path": "outstatic/content/pages/methodologie.md"
@@ -258,6 +240,24 @@
       "slug": "methodologie",
       "status": "published",
       "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
+        "commit": "6a6ecaf98fc08274509bf2a2a71348ef37002b62",
+        "hash": "2267930143",
+        "path": "outstatic/content/pages/dashboard.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.png",
+      "description": "Dashboard",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "dashboard",
+      "status": "published",
+      "title": "Dashboard"
     }
   ]
 }
