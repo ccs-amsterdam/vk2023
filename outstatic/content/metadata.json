@@ -1,6 +1,6 @@
 {
-  "commit": "6a6ecaf98fc08274509bf2a2a71348ef37002b62",
-  "generated": "2023-11-15T15:21:07.194Z",
+  "commit": "7d65233203bf45c0f6a4b8ca8d8f654c4b583e56",
+  "generated": "2023-11-15T15:25:48.681Z",
   "metadata": [
     {
       "__outstatic": {
@@ -135,24 +135,6 @@
     },
     {
       "__outstatic": {
-        "commit": "882038374b61e20b5e8587c9dcc993e076f0def6",
-        "hash": "4189637559",
-        "path": "outstatic/content/mensen/kasper-welbers.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
-      },
-      "collection": "mensen",
-      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
-      "description": "",
-      "publishedAt": "2023-09-26T11:57:02.330Z",
-      "slug": "kasper-welbers",
-      "status": "draft",
-      "title": "Kasper Welbers"
-    },
-    {
-      "__outstatic": {
         "commit": "2d8dc29e5fd0c66e18b9d7919c209239b7c92c0b",
         "hash": "78396357",
         "path": "outstatic/content/mensen/mariken-van-der-velden.md"
@@ -258,6 +240,24 @@
       "slug": "dashboard",
       "status": "published",
       "title": "Dashboard"
+    },
+    {
+      "__outstatic": {
+        "commit": "7d65233203bf45c0f6a4b8ca8d8f654c4b583e56",
+        "hash": "3264619971",
+        "path": "outstatic/content/mensen/kasper-welbers.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
+      },
+      "collection": "mensen",
+      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
+      "description": "",
+      "publishedAt": "2023-09-26T11:57:02.330Z",
+      "slug": "kasper-welbers",
+      "status": "draft",
+      "title": "Kasper Welbers"
     }
   ]
 }
