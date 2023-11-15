@@ -248,7 +248,6 @@ function MetricPicker({ user, index, value, onChange }: MetricPickerProps) {
   }, [fields]);
 
   function setValues(func?: string, field?: string) {
-    console.log("fun", func, field);
     if (func === "_total") return onChange(undefined);
     const result = { ...value, function: func as MetricFunction, field };
     onChange(result as AggregationMetric);

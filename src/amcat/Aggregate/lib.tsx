@@ -191,7 +191,6 @@ export function transform_dateparts(
 }
 
 export function can_transform(interval: string | undefined): boolean {
-  console.log(interval);
   if (!interval) return false;
   return ["dayofweek", "daypart", "monthnr"].includes(interval);
 }

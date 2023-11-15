@@ -43,7 +43,7 @@ export default function Articles({
   query,
   columns,
   allColumns = false,
-  perPage = 15,
+  perPage = 7,
   sort,
   onClick,
   showOnClick = true,
@@ -104,6 +104,7 @@ export default function Articles({
 
   const canOpen = role && role !== "METAREADER";
 
+  console.log(readyData);
   return (
     <div className="w-full">
       <ArticleSnippets
@@ -164,7 +165,6 @@ async function fetchArticles(
   let params = {
     page,
     fields: DEFAULT_COLUMNS,
-    highlight: true,
     per_page: perPage,
     sort,
   };

@@ -13,7 +13,6 @@ export function useFieldValues(
   });
 
   const fieldValues: string[] = query.data || [];
-  console.log(fieldValues);
   return { ...query, fieldValues };
 }
 

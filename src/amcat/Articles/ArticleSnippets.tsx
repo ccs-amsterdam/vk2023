@@ -43,9 +43,8 @@ export default function ArticleSnippets({
   const iconStyle =
     "w-9 h-9 text-secondary cursor-pointer hover:bg-gray-200 p-1 rounded";
   const disabledIconStyle = "w-9 h-9 p-1 rounded opacity-50 cursor-not-allowed";
-
   return (
-    <div className="relative prose max-h-[700px] overflow-auto">
+    <div className="relative prose">
       <div className="flex justify-center items-center select-none">
         <SkipBack
           className={page > 0 ? iconStyle : disabledIconStyle}
@@ -72,12 +71,12 @@ export default function ArticleSnippets({
           onClick={() => pageChange(nPages - 1)}
         />
       </div>
-      <div className="max-h-[600px] overflow-auto border-t-2 border-gray-400">
+      <div className="grid grid-cols-1 overflow-auto border-t-2 border-gray-400">
         {rows.map((row, i: number) => (
-          <article key={i}>
+          <article key={row._id + i} className="animate-fade-in">
             <div
               onClick={() => onClick && onClick(row)}
-              className={`bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded-md m-1 ${
+              className={`bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded-md m-1 min-h-[5rem] ${
                 onClick ? "cursor-pointer" : ""
               }`}
             >

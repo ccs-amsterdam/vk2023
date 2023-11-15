@@ -11,6 +11,7 @@ import {
 import { AggregateVisualizerProps } from "@/amcat/interfaces";
 import { qualitativeColors } from "./colors";
 import { createChartData } from "./lib";
+import { CustomTooltip } from "./CustomTooltip";
 
 export default function AggregateLineChart({
   data,
@@ -50,7 +51,7 @@ export default function AggregateLineChart({
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey={data.meta.axes[0].name} />
         <YAxis />
-        <Tooltip />
+        <Tooltip content={<CustomTooltip />} />
         {columns.length > 1 ? <Legend /> : null}
         {columns.map((column, i) => (
           <Line

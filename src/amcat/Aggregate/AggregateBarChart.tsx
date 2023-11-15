@@ -10,6 +10,7 @@ import {
 import { AggregateVisualizerProps } from "@/amcat/interfaces";
 import { qualitativeColors } from "./colors";
 import { can_transform, createChartData, transform_dateparts } from "./lib";
+import { CustomTooltip } from "./CustomTooltip";
 
 export default function AggregateBarChart({
   data,
@@ -51,7 +52,7 @@ export default function AggregateBarChart({
         <CartesianGrid strokeDasharray="3 3" />
         <YAxis type="category" dataKey={primary} width={150} />
         <XAxis type="number" />
-        <Tooltip />
+        <Tooltip content={<CustomTooltip />} />
         {columns.map((column, i) => (
           <Bar
             key={i}

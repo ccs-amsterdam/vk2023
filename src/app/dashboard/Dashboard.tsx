@@ -26,7 +26,7 @@ interface IndexAggregation {
 const indexAggregations: Record<string, IndexAggregation[]> = {
   tk2023_media: [
     {
-      title: "Aantal artikelen per partij per week",
+      title: "Aantal artikelen per week",
       options: {
         display: "linechart",
         axes: [
@@ -35,6 +35,13 @@ const indexAggregations: Record<string, IndexAggregation[]> = {
         ],
       },
     },
+    // {
+    //   title: "Aantal artikelen per partij per week",
+    //   options: {
+    //     display: "barchart",
+    //     axes: [{ field: "party", name: "Party" }],
+    //   },
+    // },
   ],
 };
 
@@ -67,7 +74,7 @@ export default function IndexDashboard({ index }: Props) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col-reverse gap-10 xl:gap-5 xl:flex-row p-1 mt-6 justify-between items-center xl:items-start">
+      <div className="flex flex-col gap-10 xl:gap-5 xl:flex-row p-1 mt-6 justify-between items-center xl:items-start">
         <div className=" xl:min-w-[400px] flex-auto">
           <Articles user={user} index={index.index} query={query} />
         </div>
