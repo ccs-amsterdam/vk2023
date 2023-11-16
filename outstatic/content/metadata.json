@@ -1,7 +1,45 @@
 {
-  "commit": "b52d0995accc36952e20adc152d5d6fd46e2ee0a",
-  "generated": "2023-11-16T15:28:18.427Z",
+  "commit": "1f3abc44cbe0431af1ac1f2e998413258a7fefec",
+  "generated": "Thu, 16 Nov 2023 17:53:44 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "a5278d385d953e6d05ef6f2e607f4a2f4a70a3b4",
+        "hash": "1626556727",
+        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
+      "description": "",
+      "publishedAt": "2023-10-30T16:39:16.000Z",
+      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
+      "status": "published",
+      "title": "Trouw: Omtzigt en Timmermans  in debat",
+      "url": "https://www.trouw.nl/politiek/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien~b4998c36/#&gid=1&pid=1"
+    },
+    {
+      "__outstatic": {
+        "commit": "04896056624e70837d0b6b3f4d11a04bcc56991d",
+        "hash": "3576222117",
+        "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "/images/anp-483197920-Q0ND.jpg",
+      "description": "",
+      "publishedAt": "2023-11-11T15:20:53.000Z",
+      "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
+      "status": "draft",
+      "title": "RTL Nieuws: De kiezer is de verliezer",
+      "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
+    },
     {
       "__outstatic": {
         "commit": "252f51dd8b4d208eaae14371b9e6cad3d2c4c3cb",
@@ -20,25 +58,6 @@
       "status": "published",
       "title": "Op1: Zin en onzin van verkiezingsdebatten ",
       "url": "https://npo.nl/start/serie/op1/seizoen-4/op1_332/afspelen"
-    },
-    {
-      "__outstatic": {
-        "commit": "7937e1767b607f91f44db972e2c93174d24c0b8c",
-        "hash": "458915612",
-        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
-      "description": "",
-      "publishedAt": "2023-10-21T15:29:22.000Z",
-      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
-      "status": "published",
-      "title": "Trouw: tips voor een goed verkiezingsdebat ",
-      "url": "https://www.trouw.nl/cultuur-media/zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat~be153e37/"
     },
     {
       "__outstatic": {
@@ -61,22 +80,40 @@
     },
     {
       "__outstatic": {
-        "commit": "04896056624e70837d0b6b3f4d11a04bcc56991d",
-        "hash": "3576222117",
-        "path": "outstatic/content/media/rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer.md"
+        "commit": "7937e1767b607f91f44db972e2c93174d24c0b8c",
+        "hash": "458915612",
+        "path": "outstatic/content/media/https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37.md"
       },
       "author": {
-        "name": "Mariken van der Velden",
-        "picture": ""
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
       },
       "collection": "media",
-      "coverImage": "/images/anp-483197920-Q0ND.jpg",
+      "coverImage": "/images/lees-terug-het-laatste-verkiezingsdebat-in-de-balie-Y4NT.jpeg",
       "description": "",
-      "publishedAt": "2023-11-11T15:20:53.000Z",
-      "slug": "rtl-nieuws-in-deze-tamme-verkiezingscampagne-is-de-kiezer-de-verliezer",
-      "status": "draft",
-      "title": "RTL Nieuws: De kiezer is de verliezer",
-      "url": "https://www.rtlnieuws.nl/nieuws/politiek/artikel/5418138/verkiezingen-tweede-kamer-campagne-stemmen-kiezer"
+      "publishedAt": "2023-10-21T15:29:22.000Z",
+      "slug": "https-www-trouw-nl-cultuur-media-zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat-be153e37",
+      "status": "published",
+      "title": "Trouw: tips voor een goed verkiezingsdebat ",
+      "url": "https://www.trouw.nl/cultuur-media/zijn-er-nieuwe-spelregels-nodig-voor-de-verbale-bokspartij-van-het-verkiezingsdebat~be153e37/"
+    },
+    {
+      "__outstatic": {
+        "commit": "5ee52f0393d5ec1e9484f828f04c844d0a9bbad8",
+        "hash": "2267930143",
+        "path": "outstatic/content/pages/dashboard.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "/images/logo_small.png",
+      "description": "Dashboard",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "dashboard",
+      "status": "published",
+      "title": "Dashboard"
     },
     {
       "__outstatic": {
@@ -116,25 +153,6 @@
     },
     {
       "__outstatic": {
-        "commit": "a5278d385d953e6d05ef6f2e607f4a2f4a70a3b4",
-        "hash": "1626556727",
-        "path": "outstatic/content/media/trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok & Wouter van Atteveldt",
-        "picture": "https://avatars.githubusercontent.com/u/6438205?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien-Q1Mj.jpeg",
-      "description": "",
-      "publishedAt": "2023-10-30T16:39:16.000Z",
-      "slug": "trouw-omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat",
-      "status": "published",
-      "title": "Trouw: Omtzigt en Timmermans  in debat",
-      "url": "https://www.trouw.nl/politiek/omtzigt-en-timmermans-kiezen-voor-diepte-in-nieuw-debatformat-dit-heb-ik-bij-andere-partijen-niet-gezien~b4998c36/#&gid=1&pid=1"
-    },
-    {
-      "__outstatic": {
         "commit": "2d8dc29e5fd0c66e18b9d7919c209239b7c92c0b",
         "hash": "78396357",
         "path": "outstatic/content/mensen/mariken-van-der-velden.md"
@@ -153,21 +171,21 @@
     },
     {
       "__outstatic": {
-        "commit": "39ee0205963668aa9635b40361092639fde93556",
-        "hash": "973536988",
-        "path": "outstatic/content/pages/overons.md"
+        "commit": "c9dabec933e68f6fef0f67f6476727e0bd75839f",
+        "hash": "3264619971",
+        "path": "outstatic/content/mensen/kasper-welbers.md"
       },
       "author": {
         "name": "Kasper Welbers",
-        "picture": ""
+        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
       },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "Wie zijn wij",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "overons",
-      "status": "published",
-      "title": "Over ons"
+      "collection": "mensen",
+      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
+      "description": "",
+      "publishedAt": "2023-09-26T11:57:02.330Z",
+      "slug": "kasper-welbers",
+      "status": "draft",
+      "title": "Kasper Welbers"
     },
     {
       "__outstatic": {
@@ -189,6 +207,60 @@
     },
     {
       "__outstatic": {
+        "commit": "39ee0205963668aa9635b40361092639fde93556",
+        "hash": "973536988",
+        "path": "outstatic/content/pages/overons.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Wie zijn wij",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "overons",
+      "status": "published",
+      "title": "Over ons"
+    },
+    {
+      "__outstatic": {
+        "commit": "262db464d78e256275fb1e76b55e69505c6e3f6c",
+        "hash": "943188901",
+        "path": "outstatic/content/pages/over_ons.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Wie zijn wij",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "overons",
+      "status": "published",
+      "title": "Over ons"
+    },
+    {
+      "__outstatic": {
+        "commit": "9b13d5e4dea66dff1a7ad4c4aec6c9330f79baa2",
+        "hash": "1449953224",
+        "path": "outstatic/content/pages/methodologie.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Beschrijving van methodologie",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "methodologie",
+      "status": "published",
+      "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
         "commit": "cf5a07dd4cb77969a11a43f4b373e4ca9b3aae66",
         "hash": "3352663077",
         "path": "outstatic/content/pages/media.md"
@@ -204,60 +276,6 @@
       "slug": "media",
       "status": "published",
       "title": "In de media"
-    },
-    {
-      "__outstatic": {
-        "commit": "6a6ecaf98fc08274509bf2a2a71348ef37002b62",
-        "hash": "2267930143",
-        "path": "outstatic/content/pages/dashboard.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "/images/logo_small.png",
-      "description": "Dashboard",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "dashboard",
-      "status": "published",
-      "title": "Dashboard"
-    },
-    {
-      "__outstatic": {
-        "commit": "7d65233203bf45c0f6a4b8ca8d8f654c4b583e56",
-        "hash": "3264619971",
-        "path": "outstatic/content/mensen/kasper-welbers.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": "https://avatars.githubusercontent.com/u/6179240?v=4"
-      },
-      "collection": "mensen",
-      "coverImage": "https://avatars.githubusercontent.com/u/6179240?s=400&u=bc62bb664986df4c700fdc68fc3539ca0893a0f8&v=4",
-      "description": "",
-      "publishedAt": "2023-09-26T11:57:02.330Z",
-      "slug": "kasper-welbers",
-      "status": "draft",
-      "title": "Kasper Welbers"
-    },
-    {
-      "__outstatic": {
-        "commit": "b52d0995accc36952e20adc152d5d6fd46e2ee0a",
-        "hash": "1449953224",
-        "path": "outstatic/content/pages/methodologie.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "Beschrijving van methodologie",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "methodologie",
-      "status": "published",
-      "title": "Methodologie"
     }
   ]
 }
