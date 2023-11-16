@@ -1,6 +1,6 @@
 {
-  "commit": "d3276b4a5063664f5f354d476a206c97c70f50ec",
-  "generated": "2023-11-16T17:55:41.700Z",
+  "commit": "eab082e3423874a1720c47adbd6d5d49a927ce3b",
+  "generated": "2023-11-16T18:01:23.930Z",
   "metadata": [
     {
       "__outstatic": {
@@ -279,8 +279,8 @@
     },
     {
       "__outstatic": {
-        "commit": "d3276b4a5063664f5f354d476a206c97c70f50ec",
-        "hash": "2860433426",
+        "commit": "eab082e3423874a1720c47adbd6d5d49a927ce3b",
+        "hash": "3106616006",
         "path": "outstatic/content/reports/vertrouwen.md"
       },
       "author": {
@@ -293,7 +293,8 @@
       "publishedAt": "2023-11-16T18:00:53.554Z",
       "slug": "vertrouwen",
       "status": "draft",
-      "title": "Vertrouwen en emotie bij de kiezer"
+      "title": "Vertrouwen en emotie bij de kiezer",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/9c3495de8c4ccc2d4bc70a18cda12dd2/raw/35e52d4b5bed9fae0ebefe88d8a0b69511e1249a/issues.html"
     }
   ]
 }
