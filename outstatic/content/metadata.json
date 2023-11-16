@@ -1,6 +1,6 @@
 {
-  "commit": "1f3abc44cbe0431af1ac1f2e998413258a7fefec",
-  "generated": "Thu, 16 Nov 2023 17:53:44 GMT",
+  "commit": "d3276b4a5063664f5f354d476a206c97c70f50ec",
+  "generated": "2023-11-16T17:55:41.700Z",
   "metadata": [
     {
       "__outstatic": {
@@ -276,6 +276,24 @@
       "slug": "media",
       "status": "published",
       "title": "In de media"
+    },
+    {
+      "__outstatic": {
+        "commit": "d3276b4a5063664f5f354d476a206c97c70f50ec",
+        "hash": "2860433426",
+        "path": "outstatic/content/reports/vertrouwen.md"
+      },
+      "author": {
+        "name": "Nel, Wouter, Mariken",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-16T18:00:53.554Z",
+      "slug": "vertrouwen",
+      "status": "draft",
+      "title": "Vertrouwen en emotie bij de kiezer"
     }
   ]
 }
