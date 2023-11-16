@@ -1,6 +1,6 @@
 {
-  "commit": "24c529841deffe2a8b86a9810b8eed128f5991c5",
-  "generated": "2023-11-16T20:19:57.424Z",
+  "commit": "3b56a8545594cfde1ac0db010ad948e6e7b10568",
+  "generated": "2023-11-16T20:21:48.241Z",
   "metadata": [
     {
       "__outstatic": {
@@ -295,6 +295,25 @@
       "status": "draft",
       "title": "Vertrouwen en emotie bij de kiezer",
       "url": "https://gist.githubusercontent.com/vanatteveldt/845262e1ec3ae5b7b9de0b8ebc505873/raw/5c01e23b7bba03256af114fb552bbcfb443845c7/vertrouwen.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "3b56a8545594cfde1ac0db010ad948e6e7b10568",
+        "hash": "3220367380",
+        "path": "outstatic/content/reports/issues-in-de-campagne.md"
+      },
+      "author": {
+        "name": "Wouter van Atteveldt & Nel Ruigrok",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "https://static.independent.co.uk/2023/01/18/13/Extinction%20Rebellion%20comp.jpg?width=1200",
+      "description": "",
+      "publishedAt": "2023-11-16T20:26:37.279Z",
+      "slug": "issues-in-de-campagne",
+      "status": "draft",
+      "title": "Issues in de campagne",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/fdac71fd9e314edf902a0e1bd8058911fc2950aa/issues.html"
     }
   ]
 }
