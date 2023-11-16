@@ -3,7 +3,7 @@ import ContentGrid from "@/components/ContentGrid";
 import markdownToHtml from "@/lib/markdownToHtml";
 
 export default async function Index() {
-  const { content, allPosts, allProjects } = await getData();
+  const { content, allProjects } = await getData();
 
   return (
     <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8 w-full">
@@ -23,19 +23,15 @@ async function getData() {
 
   const content = await markdownToHtml(page.content);
 
-  const allPosts = await db
-    .find({ collection: "posts" }, ["title", "publishedAt", "slug", "coverImage", "description", "tags"])
-    .sort({ publishedAt: -1 })
-    .toArray();
-
-  const allProjects = await db
-    .find({ collection: "rapporten" }, ["title", "slug", "coverImage"])
-    .sort({ publishedAt: -1 })
-    .toArray();
-
+  const allProjects = (
+    await db
+      .find({ collection: "reports", status: "published" }, ["title", "slug", "coverImage", "status"])
+      .sort({ publishedAt: -1 })
+      .toArray()
+  ).filter((project) => project.status === "Published");
+  console.log(allProjects);
   return {
     content,
-    allPosts,
     allProjects,
   };
 }

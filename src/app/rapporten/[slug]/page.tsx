@@ -1,14 +1,14 @@
-import markdownToHtml from "@/lib/markdownToHtml";
 import { getDocumentSlugs, load } from "outstatic/server";
+
 import DateFormatter from "@/components/DateFormatter";
-import Image from "next/image";
-import ContentGrid from "@/components/ContentGrid";
 import { OstDocument } from "outstatic";
 import { Metadata } from "next";
 import { absoluteUrl } from "@/lib/utils";
+import "./styles.css";
 
 type Project = {
   tags: { value: string; label: string }[];
+  url?: string;
 } & OstDocument;
 
 interface Params {
@@ -50,48 +50,30 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 }
 
 export default async function Project(params: Params) {
-  const { project, moreProjects, content } = await getData(params);
-
+  const { project, content } = await getData(params);
+  if (project == null) return <div>404!</div>;
   return (
     <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8">
       <article className="mb-8 mt-18">
-        <div className="grid md:grid-cols-[30%,1fr] gap-8">
-          <div className="relative flex justify-center mb-2 md:mb-4 sm:mx-0 ">
-            <img
-              alt={project.title}
-              src={project.coverImage ?? ""}
-              className="w-1/2 md:w-full aspect-square"
-            />
-          </div>
-          <div>
-            <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
-              {project.title}
-            </h1>
-            <div className="hidden md:block md:mb-8 text-slate-600">
-              <DateFormatter dateString={project.publishedAt} />{" "}
-              {project?.author?.name ? `door ${project?.author?.name}` : null}.
-            </div>
-            <div className="inline-block p-4 border mb-8 font-semibold text-lg rounded shadow">
-              {project.description}
-            </div>
-            <div className="max-w-2xl mx-auto">
-              <div
-                className="prose lg:prose-xl"
-                dangerouslySetInnerHTML={{ __html: content }}
-              />
-            </div>
-          </div>
+        <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">{project.title}</h1>
+        <div className="hidden md:block md:mb-8 text-slate-600">
+          <DateFormatter dateString={project.publishedAt} />{" "}
+          {project?.author?.name ? `door ${project?.author?.name}` : null}.
         </div>
-      </article>
-      <div className="mb-16">
-        {moreProjects.length > 0 && (
-          <ContentGrid
-            title="Other Projects"
-            items={moreProjects}
-            collection="projects"
-          />
+        {project.description === "" ? null : (
+          <div className="inline-block p-4 border mb-8 font-semibold text-lg rounded shadow">{project.description}</div>
         )}
-      </div>
+        {project?.coverImage == null ? null : (
+          <div className="relative flex justify-center mb-2 md:mb-4 sm:mx-0 ">
+            <img alt={project.title} src={project.coverImage ?? ""} className="h-36 object-cover my-1" />
+          </div>
+        )}
+        {content == null ? null : (
+          <div className="max-w-2xl mx-auto">
+            <div className="prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: content }} />
+          </div>
+        )}
+      </article>
     </div>
   );
 }
@@ -99,35 +81,28 @@ export default async function Project(params: Params) {
 async function getData({ params }: Params) {
   const db = await load();
   const project = await db
-    .find<Project>({ collection: "rapporten", slug: params.slug }, [
+    .find<Project>({ collection: "reports", slug: params.slug }, [
       "title",
       "publishedAt",
       "description",
       "slug",
       "author",
-      "content",
+      "url",
       "coverImage",
     ])
     .first();
 
-  const content = await markdownToHtml(project.content);
+  const token = "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";
 
-  const moreProjects = await db
-    .find({ collection: "rapporten", slug: { $ne: params.slug } }, [
-      "title",
-      "slug",
-      "coverImage",
-    ])
-    .toArray();
+  const content = project.url == null ? undefined : await (await fetch(project.url)).text();
 
   return {
     project,
     content,
-    moreProjects,
   };
 }
 
 export async function generateStaticParams() {
-  const posts = getDocumentSlugs("rapporten");
+  const posts = getDocumentSlugs("reports");
   return posts.map((slug) => ({ slug }));
 }
