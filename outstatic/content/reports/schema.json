@@ -1,0 +1,13 @@
+{
+  "title": "reports",
+  "type": "object",
+  "properties": {
+    "url": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "url"
+    }
+  }
+}
