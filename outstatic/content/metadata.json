@@ -1,6 +1,6 @@
 {
   "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-  "generated": "2023-11-16T18:43:24.376Z",
+  "generated": "2023-11-16T20:10:51.910Z",
   "metadata": [
     {
       "__outstatic": {
@@ -280,7 +280,7 @@
     {
       "__outstatic": {
         "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-        "hash": "259685654",
+        "hash": "3459589686",
         "path": "outstatic/content/reports/vertrouwen.md"
       },
       "author": {
@@ -288,13 +288,13 @@
         "picture": ""
       },
       "collection": "reports",
-      "coverImage": "https://bridgingthegap.com.sg/wp-content/uploads/2021/07/emotions-clipart-7.jpg",
+      "coverImage": "",
       "description": "",
       "publishedAt": "2023-11-16T18:00:53.554Z",
       "slug": "vertrouwen",
       "status": "draft",
       "title": "Vertrouwen en emotie bij de kiezer",
-      "url": "https://raw.githubusercontent.com/vupolcom/tk2023/main/src/analysis/vertrouwen.html?token=GHSAT0AAAAAACHFXLGNN22RQJI6EDCZRUNIZKWMGJQ"
+      "url": "https://raw.githubusercontent.com/vupolcom/tk2023/main/src/analysis/vertrouwen.html?token=GHSAT0AAAAAACHFXLGNLYDINTER4Y6ZW2QOZKWO5MQ"
     }
   ]
 }
