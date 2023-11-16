@@ -1,6 +1,6 @@
 {
-  "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-  "generated": "2023-11-16T20:10:51.910Z",
+  "commit": "24c529841deffe2a8b86a9810b8eed128f5991c5",
+  "generated": "2023-11-16T20:19:57.424Z",
   "metadata": [
     {
       "__outstatic": {
@@ -279,8 +279,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-        "hash": "3459589686",
+        "commit": "24c529841deffe2a8b86a9810b8eed128f5991c5",
+        "hash": "1718772673",
         "path": "outstatic/content/reports/vertrouwen.md"
       },
       "author": {
@@ -294,7 +294,7 @@
       "slug": "vertrouwen",
       "status": "draft",
       "title": "Vertrouwen en emotie bij de kiezer",
-      "url": "https://raw.githubusercontent.com/vupolcom/tk2023/main/src/analysis/vertrouwen.html?token=GHSAT0AAAAAACHFXLGNLYDINTER4Y6ZW2QOZKWO5MQ"
+      "url": "https://gist.githubusercontent.com/vanatteveldt/845262e1ec3ae5b7b9de0b8ebc505873/raw/5c01e23b7bba03256af114fb552bbcfb443845c7/vertrouwen.html"
     }
   ]
 }
