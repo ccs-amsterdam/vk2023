@@ -1,6 +1,6 @@
 {
   "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-  "generated": "2023-11-16T18:37:49.035Z",
+  "generated": "2023-11-16T18:43:24.376Z",
   "metadata": [
     {
       "__outstatic": {
@@ -280,7 +280,7 @@
     {
       "__outstatic": {
         "commit": "c8edfd68e2ce32e5467790a76180551c7da5f9d3",
-        "hash": "1392665254",
+        "hash": "259685654",
         "path": "outstatic/content/reports/vertrouwen.md"
       },
       "author": {
@@ -288,7 +288,7 @@
         "picture": ""
       },
       "collection": "reports",
-      "coverImage": "",
+      "coverImage": "https://bridgingthegap.com.sg/wp-content/uploads/2021/07/emotions-clipart-7.jpg",
       "description": "",
       "publishedAt": "2023-11-16T18:00:53.554Z",
       "slug": "vertrouwen",

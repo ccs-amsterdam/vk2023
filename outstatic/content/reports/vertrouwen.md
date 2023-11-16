@@ -2,7 +2,7 @@
 author:
   name: 'Nel, Wouter, Mariken'
   picture: ''
-coverImage: ''
+coverImage: 'https://bridgingthegap.com.sg/wp-content/uploads/2021/07/emotions-clipart-7.jpg'
 title: 'Vertrouwen en emotie bij de kiezer'
 status: 'draft'
 slug: 'vertrouwen'
