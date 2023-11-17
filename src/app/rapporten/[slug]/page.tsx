@@ -106,7 +106,9 @@ async function getData({ params }: Params) {
     ])
     .first();
 
-  const token = "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";
+  // create .env.local file with TOKEN=xxx for local dev.
+  // Add to Vercel for production
+  const token = process.env.TOKEN;
 
   const content =
     project.url == null ? undefined : await (await fetch(project.url)).text();
