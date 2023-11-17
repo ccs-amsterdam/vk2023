@@ -36,6 +36,8 @@ export default function MultilineQueryForm({
   return (
     <div className="prose max-w-none grid grid-cols-1 md:grid-cols-[1fr,300px] gap-3 lg:gap-6">
       <form className="flex flex-col flex-auto w-full p-1">
+        {/*       <form className="flex-auto w-full p-1">
+         */}
         <div className="flex items-center gap-2 h-10">
           <div className="flex items-center">
             <b>Query</b>
