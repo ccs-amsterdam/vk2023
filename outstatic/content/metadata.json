@@ -1,6 +1,6 @@
 {
-  "commit": "d0c94260255df46a2dfffdfd1a8150d7d0919e09",
-  "generated": "2023-11-17T23:28:17.283Z",
+  "commit": "60313d42142f0f0358711fca1599027730c08f8c",
+  "generated": "2023-11-17T23:29:46.720Z",
   "metadata": [
     {
       "__outstatic": {
@@ -333,6 +333,25 @@
       "status": "published",
       "title": "Coalitievoorkeuren",
       "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/baef402961d6417c434e59ed5209acae1d06c8f5/coalities.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "60313d42142f0f0358711fca1599027730c08f8c",
+        "hash": "4238488873",
+        "path": "outstatic/content/media/trouw-omtzigt-is-de-beste-coalitiepartner.md"
+      },
+      "author": {
+        "name": "Ruigrok, Van Atteveldt, Van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
+      },
+      "collection": "media",
+      "coverImage": "https://img.trouw.nl/c81da9ba04ffd96d009e015a69466361e041bc56/kiezers-van-rechts-naar-links-zijn-het-erover-eens-omtzigt-is-de-beste-coalitiepartner.webp",
+      "description": "",
+      "publishedAt": "2023-11-17T23:34:59.443Z",
+      "slug": "trouw-omtzigt-is-de-beste-coalitiepartner",
+      "status": "draft",
+      "title": "Trouw: Omtzigt is de beste coalitiepartner",
+      "url": "https://www.trouw.nl/politiek/kiezers-van-rechts-naar-links-zijn-het-erover-eens-omtzigt-is-de-beste-coalitiepartner~bd2ee72b/"
     }
   ]
 }
