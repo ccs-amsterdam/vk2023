@@ -1,6 +1,6 @@
 ---
 title: 'Issues in de campagne'
-status: 'draft'
+status: 'published'
 author:
   name: 'Wouter van Atteveldt & Nel Ruigrok'
   picture: ''

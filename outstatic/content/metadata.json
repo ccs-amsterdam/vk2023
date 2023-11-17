@@ -1,6 +1,6 @@
 {
-  "commit": "d2643de6668c4cdd4552b9c4d6aedda506279592",
-  "generated": "2023-11-17T23:23:59.310Z",
+  "commit": "558d655fbc7088330dd29297fae6996ef2a1afb0",
+  "generated": "2023-11-17T23:24:06.430Z",
   "metadata": [
     {
       "__outstatic": {
@@ -279,25 +279,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3b56a8545594cfde1ac0db010ad948e6e7b10568",
-        "hash": "3701688135",
-        "path": "outstatic/content/reports/issues.md"
-      },
-      "author": {
-        "name": "Wouter van Atteveldt & Nel Ruigrok",
-        "picture": ""
-      },
-      "collection": "reports",
-      "coverImage": "https://static.independent.co.uk/2023/01/18/13/Extinction%20Rebellion%20comp.jpg?width=1200",
-      "description": "",
-      "publishedAt": "2023-11-16T20:26:37.279Z",
-      "slug": "issues",
-      "status": "draft",
-      "title": "Issues in de campagne",
-      "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/fdac71fd9e314edf902a0e1bd8058911fc2950aa/issues.html"
-    },
-    {
-      "__outstatic": {
         "commit": "ce4b0ec1e74835c90de119b2d2948a1d6e824d25",
         "hash": "1941578549",
         "path": "outstatic/content/reports/vertrouwen.md"
@@ -333,6 +314,25 @@
       "status": "published",
       "title": "Coalitievoorkeuren",
       "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/baef402961d6417c434e59ed5209acae1d06c8f5/coalities.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "558d655fbc7088330dd29297fae6996ef2a1afb0",
+        "hash": "643608647",
+        "path": "outstatic/content/reports/issues.md"
+      },
+      "author": {
+        "name": "Wouter van Atteveldt & Nel Ruigrok",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "https://static.independent.co.uk/2023/01/18/13/Extinction%20Rebellion%20comp.jpg?width=1200",
+      "description": "",
+      "publishedAt": "2023-11-16T20:26:37.279Z",
+      "slug": "issues",
+      "status": "published",
+      "title": "Issues in de campagne",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/fdac71fd9e314edf902a0e1bd8058911fc2950aa/issues.html"
     }
   ]
 }
