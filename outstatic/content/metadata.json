@@ -1,6 +1,6 @@
 {
-  "commit": "1b997b18ac9ca2c1ba580209945da1160f127955",
-  "generated": "2023-11-17T23:25:44.904Z",
+  "commit": "d0c94260255df46a2dfffdfd1a8150d7d0919e09",
+  "generated": "2023-11-17T23:28:17.283Z",
   "metadata": [
     {
       "__outstatic": {
@@ -261,25 +261,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d2643de6668c4cdd4552b9c4d6aedda506279592",
-        "hash": "3054178200",
-        "path": "outstatic/content/reports/coalities.md"
-      },
-      "author": {
-        "name": "Nel Ruigrok, Wouter van Atteveldt, Mariken van der Velden",
-        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
-      },
-      "collection": "reports",
-      "coverImage": "https://myvistage.com/hub/wp-content/uploads/sites/4/2011/12/negotiation-strategies.jpeg",
-      "description": "",
-      "publishedAt": "2023-11-16T20:57:26.458Z",
-      "slug": "coalities",
-      "status": "published",
-      "title": "Coalitievoorkeuren",
-      "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/baef402961d6417c434e59ed5209acae1d06c8f5/coalities.html"
-    },
-    {
-      "__outstatic": {
         "commit": "558d655fbc7088330dd29297fae6996ef2a1afb0",
         "hash": "643608647",
         "path": "outstatic/content/reports/issues.md"
@@ -333,6 +314,25 @@
       "slug": "rapporten",
       "status": "published",
       "title": "rapporten"
+    },
+    {
+      "__outstatic": {
+        "commit": "d0c94260255df46a2dfffdfd1a8150d7d0919e09",
+        "hash": "4029924235",
+        "path": "outstatic/content/reports/coalities.md"
+      },
+      "author": {
+        "name": "Ruigrok, Van Atteveldt, Van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
+      },
+      "collection": "reports",
+      "coverImage": "https://myvistage.com/hub/wp-content/uploads/sites/4/2011/12/negotiation-strategies.jpeg",
+      "description": "",
+      "publishedAt": "2023-11-16T20:57:26.458Z",
+      "slug": "coalities",
+      "status": "published",
+      "title": "Coalitievoorkeuren",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/50911bf3a546c12a48c198e253e9e292/raw/baef402961d6417c434e59ed5209acae1d06c8f5/coalities.html"
     }
   ]
 }

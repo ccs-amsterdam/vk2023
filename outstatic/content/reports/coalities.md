@@ -2,7 +2,7 @@
 title: 'Coalitievoorkeuren'
 status: 'published'
 author:
-  name: 'Nel Ruigrok, Wouter van Atteveldt, Mariken van der Velden'
+  name: 'Ruigrok, Van Atteveldt, Van der Velden'
   picture: 'https://avatars.githubusercontent.com/u/1736240?v=4'
 slug: 'coalities'
 description: ''
