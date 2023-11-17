@@ -1,6 +1,6 @@
 ---
 title: 'Coalitievoorkeuren'
-status: 'draft'
+status: 'published'
 author:
   name: 'Nel Ruigrok, Wouter van Atteveldt, Mariken van der Velden'
   picture: 'https://avatars.githubusercontent.com/u/1736240?v=4'
