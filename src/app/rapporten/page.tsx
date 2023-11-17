@@ -8,15 +8,10 @@ export default async function Index() {
   return (
     <div className="animate-fade-in max-w-[1200px] mx-auto px-4 md:px-8 w-full">
       <section className="mt-8 mb-16 md:mb-12">
-        <div
-          className="prose md:prose-xl"
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
+        <div className="prose md:prose-xl" dangerouslySetInnerHTML={{ __html: content }} />
       </section>
 
-      {allProjects.length > 0 && (
-        <ContentGrid items={allProjects} collection="projects" />
-      )}
+      {allProjects.length > 0 && <ContentGrid items={allProjects} collection="rapporten" />}
     </div>
   );
 }
@@ -24,9 +19,7 @@ export default async function Index() {
 async function getData() {
   const db = await load();
 
-  const page = await db
-    .find({ collection: "pages", slug: "rapporten" }, ["content"])
-    .first();
+  const page = await db.find({ collection: "pages", slug: "rapporten" }, ["content"]).first();
 
   const content = await markdownToHtml(page.content);
 
@@ -37,11 +30,13 @@ async function getData() {
         "slug",
         "coverImage",
         "status",
+        "publishedAt",
+        "author",
       ])
       .sort({ publishedAt: -1 })
       .toArray()
-  ).filter((project) => project.status === "Published");
-
+  ).filter((project) => project.status.toLowerCase() === "published");
+  console.log(allProjects);
   return {
     content,
     allProjects,
