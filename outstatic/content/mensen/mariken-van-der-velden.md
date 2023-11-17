@@ -10,5 +10,5 @@ description: ''
 publishedAt: '2023-11-13T14:49:00.029Z'
 ---
 
-Politieke communicatie, partijen, coalities
+Politieke communicatie van politieke partijen, coalitie voorkeuren, coalitie formatie; polarisatie; en compromissen
 
