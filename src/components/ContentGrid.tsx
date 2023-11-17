@@ -22,29 +22,28 @@ const ContentGrid = ({ items, collection }: Props) => {
           <Link key={item.slug} href={item.url ? item.url : `/${collection}/${item.slug}`}>
             <div className="cursor-pointer border project-card rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 hover:shadow overflow-hidden">
               <div className="sm:mx-0">
-                {collection === "media" ||
-                  (collection === "rapporten" && (
-                    <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-l absolute top-1/2 left-1/2 -translate-x-1/2 shadow-lg rounded-lg">
-                      <span style={{ color: "grey", fontWeight: "normal" }}>
-                        {titlecase(
-                          new Date(item.publishedAt).toLocaleDateString("nl-NL", {
-                            weekday: "long",
-                            month: "long",
-                            day: "numeric",
-                            year: "numeric",
-                          })
-                        )}
-                      </span>
-                      <br />
-                      {item.title}{" "}
-                      {item.author == null ? null : (
-                        <>
-                          <br />
-                          <i>{item.author.name}</i>
-                        </>
+                {(collection === "media" || collection === "rapporten") && (
+                  <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-l absolute top-1/2 left-1/2 -translate-x-1/2 shadow-lg rounded-lg">
+                    <span style={{ color: "grey", fontWeight: "normal" }}>
+                      {titlecase(
+                        new Date(item.publishedAt).toLocaleDateString("nl-NL", {
+                          weekday: "long",
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        })
                       )}
-                    </h2>
-                  ))}
+                    </span>
+                    <br />
+                    {item.title}{" "}
+                    {item.author == null ? null : (
+                      <>
+                        <br />
+                        <i>{item.author.name}</i>
+                      </>
+                    )}
+                  </h2>
+                )}
                 <img
                   src={item.coverImage ?? ""}
                   alt={`Cover Image for ${item.title}`}
