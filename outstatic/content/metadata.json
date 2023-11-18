@@ -1,6 +1,6 @@
 {
-  "commit": "60313d42142f0f0358711fca1599027730c08f8c",
-  "generated": "2023-11-17T23:29:46.720Z",
+  "commit": "a2eba7d852107b0ce75cb46a6b59fc85e90f1f1f",
+  "generated": "2023-11-18T10:49:36.568Z",
   "metadata": [
     {
       "__outstatic": {
@@ -352,6 +352,25 @@
       "status": "draft",
       "title": "Trouw: Omtzigt is de beste coalitiepartner",
       "url": "https://www.trouw.nl/politiek/kiezers-van-rechts-naar-links-zijn-het-erover-eens-omtzigt-is-de-beste-coalitiepartner~bd2ee72b/"
+    },
+    {
+      "__outstatic": {
+        "commit": "a2eba7d852107b0ce75cb46a6b59fc85e90f1f1f",
+        "hash": "3002182523",
+        "path": "outstatic/content/media/fd-donkere-wolk-boven-verkiezingscampagnes.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/1736240?v=4"
+      },
+      "collection": "media",
+      "coverImage": "https://images.fd.nl/278843-279355.jpeg?auto=format&w=1280&q=45&dpr=2",
+      "description": "",
+      "publishedAt": "2023-11-18T10:53:59.721Z",
+      "slug": "fd-donkere-wolk-boven-verkiezingscampagnes",
+      "status": "draft",
+      "title": "FD: Donkere wolk boven verkiezingscampagnes",
+      "url": "https://fd.nl/tech-en-innovatie/1494966/inperking-facebook-en-instagram-donkere-wolk-boven-campagnes"
     }
   ]
 }
