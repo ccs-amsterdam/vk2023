@@ -1,6 +1,6 @@
 {
-  "commit": "52e1b2257ed77d5d700149a58b7b3c963a8a7f6b",
-  "generated": "2023-11-18T10:57:41.614Z",
+  "commit": "2b67a98126f41c74b04bb275431ca842748f2317",
+  "generated": "2023-11-18T10:58:48.486Z",
   "metadata": [
     {
       "__outstatic": {
@@ -428,6 +428,25 @@
       "status": "draft",
       "title": "Dr. Kelder: Vroegtijdige val   geeft kiezerswinst",
       "url": "https://www.nporadio1.nl/nieuws/politiek/75b0f832-ba59-4b36-b434-ed60c6336e84/vroegtijdige-val-van-een-kabinet-levert-premiers-gemiddeld-kiezerswinst-op"
+    },
+    {
+      "__outstatic": {
+        "commit": "2b67a98126f41c74b04bb275431ca842748f2317",
+        "hash": "3160861251",
+        "path": "outstatic/content/media/bnr-profileren-bij-apb.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://bnr-external-prod.imgix.net/clhEWNpWmRrgbAW-ndoXxE7hO1M.jpg?auto=format&ixlib=react-9.8.0&w=1075",
+      "description": "",
+      "publishedAt": "2023-09-20T10:04:01.000Z",
+      "slug": "bnr-profileren-bij-apb",
+      "status": "draft",
+      "title": "BNR: Profileren bij APB",
+      "url": "https://www.bnr.nl/nieuws/politiek/10525673/apb-plek-bij-uitstek-om-je-te-profileren-richting-verkiezingen"
     }
   ]
 }
