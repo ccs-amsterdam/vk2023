@@ -1,6 +1,6 @@
 {
-  "commit": "9bac90f85bfcea33b79eed3c543ae1052b11b553",
-  "generated": "2023-11-18T10:52:52.410Z",
+  "commit": "2193301ae168a19db61473e20c58c652fedc09fd",
+  "generated": "2023-11-18T10:56:23.124Z",
   "metadata": [
     {
       "__outstatic": {
@@ -409,6 +409,25 @@
       "status": "draft",
       "title": "1 Vandaag: Een minderheidskabinet democratisch?",
       "url": "https://eenvandaag.avrotros.nl/item/is-een-minderheidskabinet-democratischer-dan-een-meerderheidskabinet-en-andere-vragen-beantwoord/"
+    },
+    {
+      "__outstatic": {
+        "commit": "2193301ae168a19db61473e20c58c652fedc09fd",
+        "hash": "1916411278",
+        "path": "outstatic/content/media/.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://cms-assets.nporadio.nl/npoRadio1/_articleHeaderM/Rutte.jpg?v=1680553854",
+      "description": "",
+      "publishedAt": "2023-07-08T10:01:39.000Z",
+      "slug": "",
+      "status": "draft",
+      "title": "",
+      "url": "https://www.nporadio1.nl/nieuws/politiek/75b0f832-ba59-4b36-b434-ed60c6336e84/vroegtijdige-val-van-een-kabinet-levert-premiers-gemiddeld-kiezerswinst-op"
     }
   ]
 }
