@@ -8,7 +8,7 @@ slug: 'fd-donkere-wolk-boven-verkiezingscampagnes'
 description: ''
 coverImage: 'https://images.fd.nl/278843-279355.jpeg?auto=format&w=1280&q=45&dpr=2'
 url: 'https://fd.nl/tech-en-innovatie/1494966/inperking-facebook-en-instagram-donkere-wolk-boven-campagnes'
-publishedAt: '2023-11-18T10:53:59.721Z'
+publishedAt: '2023-11-02T10:53:59.000Z'
 ---
 
 # Inperking Facebook en Instagram donkere wolk boven verkiezingscampagnes
