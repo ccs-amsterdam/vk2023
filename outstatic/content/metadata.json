@@ -1,6 +1,6 @@
 {
-  "commit": "48f1350d7ee8f9ff80663186169ff5163e6d8e2b",
-  "generated": "2023-11-18T10:51:33.768Z",
+  "commit": "9bac90f85bfcea33b79eed3c543ae1052b11b553",
+  "generated": "2023-11-18T10:52:52.410Z",
   "metadata": [
     {
       "__outstatic": {
@@ -390,6 +390,25 @@
       "status": "draft",
       "title": "FD: Donkere wolk boven verkiezingscampagnes",
       "url": "https://fd.nl/tech-en-innovatie/1494966/inperking-facebook-en-instagram-donkere-wolk-boven-campagnes"
+    },
+    {
+      "__outstatic": {
+        "commit": "9bac90f85bfcea33b79eed3c543ae1052b11b553",
+        "hash": "223668442",
+        "path": "outstatic/content/media/1-vandaag-een-minderheidskabinet-democratisch.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://eenvandaag.assets.avrotros.nl/_processed_/4/6/csm_c0e956bfc157bc86553b_95d6665bd2.jpg",
+      "description": "",
+      "publishedAt": "2023-10-29T10:58:11.000Z",
+      "slug": "1-vandaag-een-minderheidskabinet-democratisch",
+      "status": "draft",
+      "title": "1 Vandaag: Een minderheidskabinet democratisch?",
+      "url": "https://eenvandaag.avrotros.nl/item/is-een-minderheidskabinet-democratischer-dan-een-meerderheidskabinet-en-andere-vragen-beantwoord/"
     }
   ]
 }
