@@ -1,6 +1,6 @@
 {
-  "commit": "a2eba7d852107b0ce75cb46a6b59fc85e90f1f1f",
-  "generated": "2023-11-18T10:49:36.568Z",
+  "commit": "279c5c05d2c958958f4f251c2830395bd2b32535",
+  "generated": "2023-11-18T10:51:15.811Z",
   "metadata": [
     {
       "__outstatic": {
@@ -371,6 +371,25 @@
       "status": "draft",
       "title": "FD: Donkere wolk boven verkiezingscampagnes",
       "url": "https://fd.nl/tech-en-innovatie/1494966/inperking-facebook-en-instagram-donkere-wolk-boven-campagnes"
+    },
+    {
+      "__outstatic": {
+        "commit": "279c5c05d2c958958f4f251c2830395bd2b32535",
+        "hash": "3057800364",
+        "path": "outstatic/content/media/leidsch-dagblad-verkiezingsdebatten-kunnen-peilingen-in-beweging-zetten.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://img.leidschdagblad.nl/ihWBBuFySqxedu-1sqi7P90YmCQ=/1280x853/smart/https%3A%2F%2Fcdn-kiosk-api.telegraaf.nl%2Ffcd4552a-7b02-11ee-83bd-02d1dbdc35d1.jpg",
+      "description": "",
+      "publishedAt": "2023-11-04T10:56:22.000Z",
+      "slug": "leidsch-dagblad-verkiezingsdebatten-kunnen-peilingen-in-beweging-zetten",
+      "status": "draft",
+      "title": "Leidsch Dagblad: verkiezingsdebatten kunnen peilingen in beweging zetten",
+      "url": "https://www.leidschdagblad.nl/cnt/dmf20231104_43925950?utm_source=google&utm_medium=organic"
     }
   ]
 }
