@@ -1,5 +1,5 @@
 ---
-title: 'Leidsch Dagblad: verkiezingsdebatten kunnen peilingen in beweging zetten'
+title: 'Leidsch Dagblad: Peilingen in beweging zetten'
 status: 'draft'
 author:
   name: 'Mariken van der Velden'
@@ -12,3 +12,4 @@ publishedAt: '2023-11-04T10:56:22.000Z'
 ---
 
 undefined
+
