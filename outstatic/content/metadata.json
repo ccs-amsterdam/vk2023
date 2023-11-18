@@ -1,6 +1,6 @@
 {
-  "commit": "2b67a98126f41c74b04bb275431ca842748f2317",
-  "generated": "2023-11-18T10:58:48.486Z",
+  "commit": "91aff5373f7c660ff4d079632082ab8c98f84f2d",
+  "generated": "2023-11-18T11:00:04.510Z",
   "metadata": [
     {
       "__outstatic": {
@@ -447,6 +447,25 @@
       "status": "draft",
       "title": "BNR: Profileren bij APB",
       "url": "https://www.bnr.nl/nieuws/politiek/10525673/apb-plek-bij-uitstek-om-je-te-profileren-richting-verkiezingen"
+    },
+    {
+      "__outstatic": {
+        "commit": "91aff5373f7c660ff4d079632082ab8c98f84f2d",
+        "hash": "3787503482",
+        "path": "outstatic/content/media/wnl-peilingen-in-beweging.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://wnl-static.s3.amazonaws.com/uploads/2023/10/debat-klein.png",
+      "description": "",
+      "publishedAt": "2023-11-04T11:05:08.000Z",
+      "slug": "wnl-peilingen-in-beweging",
+      "status": "draft",
+      "title": "WNL: Peilingen in beweging",
+      "url": "https://wnl.tv/2023/11/04/experts-verkiezingsdebatten-kunnen-peilingen-in-beweging-zetten/"
     }
   ]
 }
