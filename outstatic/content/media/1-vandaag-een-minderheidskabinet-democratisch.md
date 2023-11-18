@@ -1,5 +1,5 @@
 ---
-title: '1 Vandaag: Een minderheidskabinet democratisch?'
+title: '1 Vandaag: Minderheidskabinet democratisch?'
 status: 'draft'
 author:
   name: 'Mariken van der Velden'
@@ -13,5 +13,5 @@ publishedAt: '2023-10-29T10:58:11.000Z'
 
 # Is een minderheidskabinet democratischer dan een meerderheidskabinet? En andere vragen beantwoord
 
-1. 
+<!-- -->
 

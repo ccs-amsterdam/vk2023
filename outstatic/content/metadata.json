@@ -1,6 +1,6 @@
 {
-  "commit": "d27426c8f87c26d00235c073b204d5ccdcae9a73",
-  "generated": "2023-11-18T11:00:30.803Z",
+  "commit": "a90a3c6dee7ddf6b44669f425e13d9001499b7c8",
+  "generated": "2023-11-18T11:00:41.270Z",
   "metadata": [
     {
       "__outstatic": {
@@ -374,25 +374,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9bac90f85bfcea33b79eed3c543ae1052b11b553",
-        "hash": "223668442",
-        "path": "outstatic/content/media/1-vandaag-een-minderheidskabinet-democratisch.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": ""
-      },
-      "collection": "media",
-      "coverImage": "https://eenvandaag.assets.avrotros.nl/_processed_/4/6/csm_c0e956bfc157bc86553b_95d6665bd2.jpg",
-      "description": "",
-      "publishedAt": "2023-10-29T10:58:11.000Z",
-      "slug": "1-vandaag-een-minderheidskabinet-democratisch",
-      "status": "draft",
-      "title": "1 Vandaag: Een minderheidskabinet democratisch?",
-      "url": "https://eenvandaag.avrotros.nl/item/is-een-minderheidskabinet-democratischer-dan-een-meerderheidskabinet-en-andere-vragen-beantwoord/"
-    },
-    {
-      "__outstatic": {
         "commit": "52e1b2257ed77d5d700149a58b7b3c963a8a7f6b",
         "hash": "2467959057",
         "path": "outstatic/content/media/dr-kelder-vroegtijdige-val-geeft-kiezerswinst.md"
@@ -466,6 +447,25 @@
       "status": "draft",
       "title": "Leidsch Dagblad: Peilingen in beweging zetten",
       "url": "https://www.leidschdagblad.nl/cnt/dmf20231104_43925950?utm_source=google&utm_medium=organic"
+    },
+    {
+      "__outstatic": {
+        "commit": "a90a3c6dee7ddf6b44669f425e13d9001499b7c8",
+        "hash": "538009997",
+        "path": "outstatic/content/media/1-vandaag-een-minderheidskabinet-democratisch.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://eenvandaag.assets.avrotros.nl/_processed_/4/6/csm_c0e956bfc157bc86553b_95d6665bd2.jpg",
+      "description": "",
+      "publishedAt": "2023-10-29T10:58:11.000Z",
+      "slug": "1-vandaag-een-minderheidskabinet-democratisch",
+      "status": "draft",
+      "title": "1 Vandaag: Minderheidskabinet democratisch?",
+      "url": "https://eenvandaag.avrotros.nl/item/is-een-minderheidskabinet-democratischer-dan-een-meerderheidskabinet-en-andere-vragen-beantwoord/"
     }
   ]
 }
