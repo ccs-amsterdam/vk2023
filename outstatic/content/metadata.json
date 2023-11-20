@@ -1,6 +1,6 @@
 {
-  "commit": "8d37a463f52669baf1163ed0e264c52509a08051",
-  "generated": "2023-11-20T13:17:51.145Z",
+  "commit": "260960a77a57fdf97cf0d6019213c86d7f3c25b0",
+  "generated": "2023-11-20T13:18:54.013Z",
   "metadata": [
     {
       "__outstatic": {
@@ -466,6 +466,25 @@
       "slug": "overons",
       "status": "published",
       "title": "Over ons"
+    },
+    {
+      "__outstatic": {
+        "commit": "260960a77a57fdf97cf0d6019213c86d7f3c25b0",
+        "hash": "7980958",
+        "path": "outstatic/content/reports/vertrouwen-en-emotie-bij-de-kiezer.md"
+      },
+      "author": {
+        "name": "Nel, Wouter, Mariken",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "https://bridgingthegap.com.sg/wp-content/uploads/2021/07/emotions-clipart-7.jpg",
+      "description": "",
+      "publishedAt": "2023-11-16T13:24:00.000Z",
+      "slug": "vertrouwen-en-emotie-bij-de-kiezer",
+      "status": "draft",
+      "title": "Vertrouwen en emotie bij de kiezer",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/845262e1ec3ae5b7b9de0b8ebc505873/raw/ff3fec36ec0c4113597c21a23a5789a5b355f854/vertrouwen2.html"
     }
   ]
 }
