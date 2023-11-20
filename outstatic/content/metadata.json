@@ -1,6 +1,6 @@
 {
-  "commit": "a90a3c6dee7ddf6b44669f425e13d9001499b7c8",
-  "generated": "2023-11-18T11:00:41.270Z",
+  "commit": "0af2f8970c80670b3ded9abbb34831a5034a2202",
+  "generated": "2023-11-20T09:23:18.948Z",
   "metadata": [
     {
       "__outstatic": {
@@ -466,6 +466,25 @@
       "status": "draft",
       "title": "1 Vandaag: Minderheidskabinet democratisch?",
       "url": "https://eenvandaag.avrotros.nl/item/is-een-minderheidskabinet-democratischer-dan-een-meerderheidskabinet-en-andere-vragen-beantwoord/"
+    },
+    {
+      "__outstatic": {
+        "commit": "0af2f8970c80670b3ded9abbb34831a5034a2202",
+        "hash": "214232800",
+        "path": "outstatic/content/media/de-groene-strijd-op-rechts.md"
+      },
+      "author": {
+        "name": "Wouter van Atteveldt, Lisa Zehnter",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-from-2023-11-20-10-23-05-YzNz.png",
+      "description": "",
+      "publishedAt": "2023-11-20T09:27:29.048Z",
+      "slug": "de-groene-strijd-op-rechts",
+      "status": "draft",
+      "title": "De Groene: Strijd op Rechts",
+      "url": "https://www.groene.nl/artikel/zij-kunnen-ook-niks-met-mijn-boze-stem"
     }
   ]
 }
