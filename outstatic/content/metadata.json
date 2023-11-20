@@ -1,6 +1,6 @@
 {
-  "commit": "0af2f8970c80670b3ded9abbb34831a5034a2202",
-  "generated": "2023-11-20T09:23:18.948Z",
+  "commit": "d5712b73d84114b916a2e44017fb3ed13c1f86bd",
+  "generated": "2023-11-20T09:23:28.478Z",
   "metadata": [
     {
       "__outstatic": {
@@ -469,8 +469,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0af2f8970c80670b3ded9abbb34831a5034a2202",
-        "hash": "214232800",
+        "commit": "d5712b73d84114b916a2e44017fb3ed13c1f86bd",
+        "hash": "258109702",
         "path": "outstatic/content/media/de-groene-strijd-op-rechts.md"
       },
       "author": {
@@ -480,7 +480,7 @@
       "collection": "media",
       "coverImage": "/images/screenshot-from-2023-11-20-10-23-05-YzNz.png",
       "description": "",
-      "publishedAt": "2023-11-20T09:27:29.048Z",
+      "publishedAt": "2023-11-15T09:27:29.000Z",
       "slug": "de-groene-strijd-op-rechts",
       "status": "draft",
       "title": "De Groene: Strijd op Rechts",
