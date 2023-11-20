@@ -28,7 +28,7 @@ De verkiezingsprogramma's van de verschillende partijen hebben wij (als tekstbes
 
 - Het **onderwerp** van elke alinea (op basis van een [BERT model ](https://huggingface.co/manifesto-project/manifestoberta-xlm-roberta-56policy-topics-context-2023-1-1)gepubliceerd door het [Comparative Manifesto Project](https://manifesto-project.wzb.eu/), met toevegoegd een [model voor het bepalen van relevantie](https://huggingface.co/joris/manifesto-dutch-binary-relevance) van de Data School in samenwerking met de Groene Amsterdammer)
 
-- Het noemen van bepaalde \*\*maatschappelijke groepen \*\*in de tekst, op basis van een trefwoordenlijst (dictionary) oorspronkelijk samengesteld door Alona Dolinsky
+- Het noemen van bepaalde \*\*maatschappelijke groepen \*\*in de tekst, op basis van een trefwoordenlijst (dictionary) oorspronkelijk samengesteld door Alona Dolinsky (samen met Lena Maria Huber en Will Horne)
 
 Alle broncode hiervan staat op [github](https://github.com/vanatteveldt/2023-manifestos-nl)
 

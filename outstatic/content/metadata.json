@@ -1,6 +1,6 @@
 {
-  "commit": "8701f7f2c66757f2851fd2df097280d54e9a37bf",
-  "generated": "2023-11-20T13:20:23.072Z",
+  "commit": "83af5c5e3ffe8d7201584428069c3eecef5b7b74",
+  "generated": "2023-11-20T15:28:00.146Z",
   "metadata": [
     {
       "__outstatic": {
@@ -323,24 +323,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9b13d5e4dea66dff1a7ad4c4aec6c9330f79baa2",
-        "hash": "1449953224",
-        "path": "outstatic/content/pages/methodologie.md"
-      },
-      "author": {
-        "name": "Kasper Welbers",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "Beschrijving van methodologie",
-      "publishedAt": "2023-09-21T04:35:07.000Z",
-      "slug": "methodologie",
-      "status": "published",
-      "title": "Methodologie"
-    },
-    {
-      "__outstatic": {
         "commit": "cf5a07dd4cb77969a11a43f4b373e4ca9b3aae66",
         "hash": "3352663077",
         "path": "outstatic/content/pages/media.md"
@@ -485,6 +467,24 @@
       "status": "published",
       "title": "Vertrouwen en emotie bij de kiezer",
       "url": "https://gist.githubusercontent.com/vanatteveldt/845262e1ec3ae5b7b9de0b8ebc505873/raw/ff3fec36ec0c4113597c21a23a5789a5b355f854/vertrouwen2.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "83af5c5e3ffe8d7201584428069c3eecef5b7b74",
+        "hash": "3206058563",
+        "path": "outstatic/content/pages/methodologie.md"
+      },
+      "author": {
+        "name": "Kasper Welbers",
+        "picture": ""
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Beschrijving van methodologie",
+      "publishedAt": "2023-09-21T04:35:07.000Z",
+      "slug": "methodologie",
+      "status": "published",
+      "title": "Methodologie"
     }
   ]
 }
