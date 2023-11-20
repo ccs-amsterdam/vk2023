@@ -1,6 +1,6 @@
 {
-  "commit": "dea0ba5bd69eae6fa5c001232053d5c1164f845c",
-  "generated": "2023-11-20T16:11:14.545Z",
+  "commit": "63723d278da85ec451e2397bc3495bc5e9059051",
+  "generated": "2023-11-20T16:13:43.283Z",
   "metadata": [
     {
       "__outstatic": {
@@ -488,8 +488,8 @@
     },
     {
       "__outstatic": {
-        "commit": "dea0ba5bd69eae6fa5c001232053d5c1164f845c",
-        "hash": "323526347",
+        "commit": "63723d278da85ec451e2397bc3495bc5e9059051",
+        "hash": "1518839099",
         "path": "outstatic/content/reports/peilingen.md"
       },
       "author": {
@@ -497,7 +497,7 @@
         "picture": ""
       },
       "collection": "reports",
-      "coverImage": "https://assets-cdn-folia.boondrive.com/620x349/Peilingwijzer-TomLouwerse.jpg",
+      "coverImage": "https://cdn.britannica.com/36/103236-050-EEA9DB5E/Horse-racing-Ballybrit-Galway-Race-Course-Connaught.jpg",
       "description": "",
       "publishedAt": "2023-11-20T16:16:10.602Z",
       "slug": "peilingen",
