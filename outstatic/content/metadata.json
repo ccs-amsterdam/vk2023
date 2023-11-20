@@ -1,6 +1,6 @@
 {
-  "commit": "83af5c5e3ffe8d7201584428069c3eecef5b7b74",
-  "generated": "2023-11-20T15:28:00.146Z",
+  "commit": "dea0ba5bd69eae6fa5c001232053d5c1164f845c",
+  "generated": "2023-11-20T16:11:14.545Z",
   "metadata": [
     {
       "__outstatic": {
@@ -485,6 +485,25 @@
       "slug": "methodologie",
       "status": "published",
       "title": "Methodologie"
+    },
+    {
+      "__outstatic": {
+        "commit": "dea0ba5bd69eae6fa5c001232053d5c1164f845c",
+        "hash": "323526347",
+        "path": "outstatic/content/reports/peilingen.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "https://assets-cdn-folia.boondrive.com/620x349/Peilingwijzer-TomLouwerse.jpg",
+      "description": "",
+      "publishedAt": "2023-11-20T16:16:10.602Z",
+      "slug": "peilingen",
+      "status": "published",
+      "title": "Peilingen in het nieuws",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/dde866ed5bac3b051c48e7970feaafb1/raw/dbccb738ea44cde30259388581a974f6a7a6bbd0/peilingen.html"
     }
   ]
 }
