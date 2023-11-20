@@ -1,44 +1,95 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import {
   AmcatIndexName,
   AmcatQuery,
   AmcatUser,
-  AmcatQueryTerm,
+  AmcatFilter,
 } from "@/amcat/interfaces";
 import MultilineQueryForm from "./MultilineQueryForm";
 import SimpleQueryForm from "./SimpleQueryForm";
 import FilterPicker from "./FilterPicker";
 import { useFields, getField } from "@/amcat/api/fields";
-import { queriesToString } from "./libQuery";
 
 export interface Props {
   user: AmcatUser;
   index: AmcatIndexName;
-  value: AmcatQuery;
-  onSubmit: (value: AmcatQuery) => void;
+  query: AmcatQuery;
+  setQuery: Dispatch<SetStateAction<AmcatQuery>>;
 }
 
-export interface QueryFormProps extends Props {
-  children: React.ReactNode[]; // pass filters as children
-  q: string;
-  setQ: (q: string) => void;
-  switchAdvanced: () => void;
+export default function QueryForm({ user, index, query, setQuery }: Props) {
+  const [queryDebounced, setQueryDebounced] = useState<AmcatQuery>(query);
+  const debounceTimer = useRef<any>();
+
+  if (!index) return null;
+
+  const updateQuery = useCallback(
+    (newQuery: AmcatQuery, executeAfter: number | "never") => {
+      // more controll over state updates.
+      // if executeAfter is "never", only update the debounced query
+      // (as visible in the UI) but don't execute the query yet.
+      // if executeAfter is defined, it is a number for the delay in ms.
+      // can be 0 to execute immediately.
+
+      setQueryDebounced(newQuery);
+
+      if (debounceTimer.current) clearTimeout(debounceTimer.current);
+      if (executeAfter === "never") return;
+      debounceTimer.current = setTimeout(() => {
+        setQuery((current) => {
+          if (JSON.stringify(current) === JSON.stringify(newQuery))
+            return current;
+          return newQuery;
+        });
+        debounceTimer.current = undefined;
+      }, Number(executeAfter) || 0);
+    },
+    [setQuery]
+  );
+
+  const queryChanged = JSON.stringify(query) !== JSON.stringify(queryDebounced);
+  const debouncing = queryChanged && debounceTimer.current != null;
+
+  return (
+    <DebouncedQueryForm
+      user={user}
+      index={index}
+      query={queryDebounced}
+      updateQuery={updateQuery}
+      debouncing={debouncing}
+      queryChanged={queryChanged}
+    />
+  );
 }
 
-export default function QueryForm({ user, index, value, onSubmit }: Props) {
+interface DebouncedQueryFormProps {
+  user: AmcatUser;
+  index: AmcatIndexName;
+  query: AmcatQuery;
+  updateQuery: (query: AmcatQuery, executeAfter: number | "never") => void;
+  debouncing: boolean;
+  queryChanged: boolean;
+}
+
+function DebouncedQueryForm({
+  user,
+  index,
+  query,
+  updateQuery,
+  debouncing,
+  queryChanged,
+}: DebouncedQueryFormProps) {
+  const { fields } = useFields(user, index);
   const [advanced, setAdvanced] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
-  const { fields } = useFields(user, index);
-  const [q, setQ] = useState<string>(() =>
-    queriesToString(value?.queries || [])
-  );
-
-  useEffect(() => {
-    setQ(queriesToString(value?.queries || []));
-  }, [value?.queries]);
-
-  if (!index) return null;
 
   useEffect(() => {
     function setHeight() {
@@ -50,15 +101,25 @@ export default function QueryForm({ user, index, value, onSubmit }: Props) {
     setHeight();
     const interval = setInterval(setHeight, 1000);
     return () => clearInterval(interval);
-  }, [value, advanced, containerRef, formRef]);
+  }, [query, advanced, containerRef, formRef]);
+
+  const onChangeFilter = (filter: AmcatFilter, name: string) => {
+    updateQuery(
+      {
+        ...query,
+        filters: { ...query?.filters, [name]: filter },
+      },
+      2000
+    );
+  };
 
   const switchAdvanced = () => setAdvanced(!advanced);
 
-  function deleteFilter(name: string) {
-    const f = { ...value.filters };
+  const onDeleteFilter = (name: string) => {
+    const f = { ...query.filters };
     delete f[name];
-    onSubmit({ ...value, filters: f });
-  }
+    updateQuery({ ...query, filters: f }, 2000);
+  };
 
   const QForm = advanced ? MultilineQueryForm : SimpleQueryForm;
 
@@ -70,30 +131,26 @@ export default function QueryForm({ user, index, value, onSubmit }: Props) {
       >
         <div>
           <div ref={formRef}>
+            {" "}
             <QForm
               user={user}
               index={index}
-              value={value}
-              q={q}
-              setQ={setQ}
-              onSubmit={onSubmit}
+              query={query}
+              updateQuery={updateQuery}
               switchAdvanced={switchAdvanced}
+              debouncing={debouncing}
+              queryChanged={queryChanged}
             >
-              {Object.keys(value?.filters || {}).map((f, i) => (
+              {Object.keys(query?.filters || {}).map((f, i) => (
                 <FilterPicker
                   key={f + i}
                   className="w-full"
                   user={user}
                   index={index}
                   field={getField(fields, f)}
-                  value={value?.filters?.[f]}
-                  onChange={(newval) =>
-                    onSubmit({
-                      ...value,
-                      filters: { ...value?.filters, [f]: newval },
-                    })
-                  }
-                  onDelete={() => deleteFilter(f)}
+                  value={query?.filters?.[f]}
+                  onChange={(newval) => onChangeFilter(newval, f)}
+                  onDelete={() => onDeleteFilter(f)}
                 />
               ))}
             </QForm>

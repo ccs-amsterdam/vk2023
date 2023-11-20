@@ -1,25 +1,33 @@
 import { AmcatQueryTerm } from "../interfaces";
 
-export function queriesToString(queries: AmcatQueryTerm[]): string {
+export function queriesToString(
+  queries: AmcatQueryTerm[],
+  multiline?: boolean
+): string {
   if (!queries) return "";
-  return queries
+  const sep = multiline ? "\n" : ";";
+  let str = queries
     .map((query) => {
       if (query.label) return `${query.label} = ${query.query}`;
+      if (multiline) return query.query.trimStart();
       return query.query;
     })
-    .join("; ");
+    .join(sep);
+
+  if (!multiline) str = str.replaceAll(/;(?=\S)/g, `; `);
+  return str;
 }
 
 export function queriesFromString(q: string): AmcatQueryTerm[] {
   if (!q?.trim()) return [];
-  const queries = q.split(/[\n;]/).map((s) => s.trim());
+  const queries = q.split(/;\s+;|[\n;]+/g);
   return queries.map((s, i) => queryfromString(s));
 }
 
 function queryfromString(q: string): AmcatQueryTerm {
   const labelRE = /(?<=\w\s*)=/;
   const m = q.match(labelRE);
-  if (!m?.index) return { query: q.trim() };
+  if (!m?.index) return { query: q };
   return {
     label: q.slice(0, m.index).trim(),
     query: q.slice(m.index + m.length).trim(),

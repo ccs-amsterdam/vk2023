@@ -61,8 +61,8 @@ export default function IndexDashboard({ index }: Props) {
             <QueryForm
               user={user}
               index={index.index}
-              value={query}
-              onSubmit={setQuery}
+              query={query}
+              setQuery={setQuery}
             />
           </div>
         </div>

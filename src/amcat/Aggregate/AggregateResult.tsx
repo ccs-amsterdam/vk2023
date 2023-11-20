@@ -92,7 +92,7 @@ export default function AggregateResult({
       <span className="italic text-center">Select aggregation options</span>
     );
   if (!data || !options || !options.display)
-    return <Loading msg={`Loading ${options.title || "aggregation"}`} />;
+    return <Loading msg={`Loading aggregation`} />;
 
   // Handle a click on the aggregate result
   // values should be an array of the same length as the axes and identify the value for each axis
