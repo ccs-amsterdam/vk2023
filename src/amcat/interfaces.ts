@@ -97,6 +97,8 @@ export interface AggregationOptions {
   metrics?: AggregationMetric[];
   /* Limit the number of rows/lines/bars */
   limit?: number;
+  /* Show a title */
+  title?: string;
 }
 
 export interface DateFilter {

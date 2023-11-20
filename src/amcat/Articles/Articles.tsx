@@ -14,6 +14,7 @@ import { getField, useFields } from "@/amcat/api/fields";
 import { postQuery } from "@/amcat/api/query";
 import { useQuery } from "@tanstack/react-query";
 import { useMyIndexrole } from "../api/indexDetails";
+import { Loading } from "@/components/ui/loading";
 
 export interface ArticlesProps {
   user: AmcatUser;
@@ -95,7 +96,8 @@ export default function Articles({
     return columnList;
   }, [data, allColumns, safeColumns, fields]);
 
-  if (!safeColumns || safeColumns.length === 0) return null;
+  if (!safeColumns || safeColumns.length === 0)
+    return <Loading msg="Loading articles" />;
 
   const handleClick = (row: any) => {
     if (onClick != null) onClick(row);
@@ -104,7 +106,6 @@ export default function Articles({
 
   const canOpen = role && role !== "METAREADER";
 
-  console.log(readyData);
   return (
     <div className="w-full">
       <ArticleSnippets

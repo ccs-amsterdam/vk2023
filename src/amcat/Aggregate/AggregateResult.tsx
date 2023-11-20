@@ -16,6 +16,7 @@ import AggregateBarChart from "./AggregateBarChart";
 import AggregateLineChart from "./AggregateLineChart";
 import { postAggregate } from "@/amcat/api/aggregate";
 import { describeError } from "@/amcat/api/error";
+import { Loading } from "@/components/ui/loading";
 
 //TODO: This file is becoming too complex - move some business logic to a lib and add unit tests?
 
@@ -85,8 +86,13 @@ export default function AggregateResult({
     height={300}
   />;
   if (error) return <span className="text-red-600">{error}</span>;
+
+  if (!options)
+    return (
+      <span className="italic text-center">Select aggregation options</span>
+    );
   if (!data || !options || !options.display)
-    return <span className="text-primary">Select aggregation options</span>;
+    return <Loading msg={`Loading ${options.title || "aggregation"}`} />;
 
   // Handle a click on the aggregate result
   // values should be an array of the same length as the axes and identify the value for each axis
@@ -134,6 +140,11 @@ export default function AggregateResult({
   }
   return (
     <div>
+      {options.title ? (
+        <h3 className="text-center font-bold text-lg max-w-none prose mb-3 mt-2">
+          {options.title}
+        </h3>
+      ) : null}
       {getArticleList(user, index, zoom, () => setZoom(undefined))}
       <Element
         data={scaled_data}
