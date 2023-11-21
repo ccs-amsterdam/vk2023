@@ -6,20 +6,18 @@ export function useFieldValues(
   index: AmcatIndexName,
   field: string
 ) {
-  const query = useQuery({
+  return useQuery({
     queryKey: ["fieldValues", user, index, field],
-    queryFn: async () =>
-      getFieldValues(user, index, field).then((res) => res.data),
+    queryFn: async () => getFieldValues(user, index, field),
   });
-
-  const fieldValues: string[] = query.data || [];
-  return { ...query, fieldValues };
 }
 
-export function getFieldValues(
+async function getFieldValues(
   user: AmcatUser,
   index: AmcatIndexName,
   field: string
 ) {
-  return user.api.get(`index/${index}/fields/${field}/values`);
+  const res = await user.api.get(`index/${index}/fields/${field}/values`);
+  const fieldValues: string[] = res.data;
+  return fieldValues;
 }

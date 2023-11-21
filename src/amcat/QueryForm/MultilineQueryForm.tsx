@@ -27,7 +27,7 @@ export default function MultilineQueryForm({
   updateQuery,
   switchAdvanced,
 }: Props) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
 
   if (!index || !fields) return null;
 

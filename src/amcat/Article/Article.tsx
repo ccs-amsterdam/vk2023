@@ -48,7 +48,7 @@ function Article({
   changeArticle,
   link,
 }: ArticleProps) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
   const [article, setArticle] = useState<AmcatDocument | null>(null);
   const myrole = useMyIndexrole(user, index);
 

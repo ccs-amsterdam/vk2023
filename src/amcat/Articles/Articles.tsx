@@ -53,7 +53,7 @@ export default function Articles({
   const role = useMyIndexrole(user, index);
 
   const [articleId, setArticleId] = useState<string | null>(null);
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
   const [page, setPage] = useState(0);
   const [readyData, setReadyData] = useState<AmcatQueryResult | undefined>(
     undefined

@@ -219,7 +219,7 @@ interface MetricPickerProps {
   onChange: (value?: AggregationMetric) => void;
 }
 function MetricPicker({ user, index, value, onChange }: MetricPickerProps) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
 
   if (fields == null) return null;
   const metricFieldOptions = useMemo(() => {
@@ -281,15 +281,14 @@ function AxisPicker({
   user,
   index,
   query,
-
   value,
   onChange,
   clearable = false,
 }: AxisPickerProps) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
 
   const fieldoptions = useMemo(() => {
-    const fieldoptions = fields
+    const fieldoptions = (fields ?? [])
       .filter((f) => ["date", "keyword", "tag"].includes(f.type))
       .map((f) => ({
         text: f.name,

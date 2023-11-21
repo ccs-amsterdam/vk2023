@@ -6,20 +6,14 @@ import { useHasGlobalRole } from "./userDetails";
 import { useServerConfig } from "./serverConfig";
 
 export function useIndexDetails(user: AmcatUser, index: AmcatIndexName) {
-  const query = useQuery({
+  return useQuery({
     queryKey: ["indexdetails", user, index],
-    queryFn: async () => {
-      const res = await getIndex(user, index);
-      return res.data;
-    },
+    queryFn: async () => getIndex(user, index),
   });
-
-  const indexDetails: AmcatIndex | undefined = query.data || undefined;
-  return { ...query, indexDetails };
 }
 
 export function useMyIndexrole(user: AmcatUser, index: AmcatIndexName) {
-  const { indexDetails } = useIndexDetails(user, index);
+  const { data: indexDetails } = useIndexDetails(user, index);
   return indexDetails?.user_role;
 }
 
@@ -39,6 +33,8 @@ export function useHasIndexRole(
   return actual_role_index >= required_role_index;
 }
 
-export function getIndex(user: AmcatUser, index: string) {
-  return user.api.get(`/index/${index}`);
+async function getIndex(user: AmcatUser, index: string) {
+  const res = await user.api.get(`/index/${index}`);
+  const indexDetails: AmcatIndex = res.data;
+  return indexDetails;
 }

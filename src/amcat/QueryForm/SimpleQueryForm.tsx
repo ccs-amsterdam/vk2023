@@ -26,7 +26,7 @@ export default function SimpleQueryForm({
   updateQuery,
   switchAdvanced,
 }: Props) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
 
   if (!index || !fields) return null;
 
@@ -36,7 +36,6 @@ export default function SimpleQueryForm({
     }
   }
   const options = fieldOptions(fields, query);
-
   return (
     <div>
       <div className="flex flex-wrap items-center gap-1 p-1">

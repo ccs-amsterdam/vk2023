@@ -75,9 +75,9 @@ export function KeywordPopup({
 }: FilterPopupProps) {
   if (field == null || value == null) return null;
 
-  const { fieldValues } = useFieldValues(user, index, field.name);
+  const { data: fieldValues } = useFieldValues(user, index, field.name);
   const selected = value?.values || [];
-  if (fieldValues.length === 0) return null;
+  if (!fieldValues || fieldValues.length === 0) return null;
 
   function handleChange(checked: boolean, v: string) {
     if (checked && !selected.includes(v))
@@ -115,8 +115,17 @@ function date2str(date: Date, ifNone = ""): string {
   return year + "-" + month + "-" + day;
 }
 
-export function DateRangePopup({ value, onChange }: FilterPopupProps) {
-  if (value == null) return null;
+export function DateRangePopup({
+  user,
+  index,
+  field,
+  value,
+  onChange,
+}: FilterPopupProps) {
+  if (field == null || value == null) return null;
+
+  const { data: fieldValues } = useFieldValues(user, index, field.name);
+  if (!fieldValues || fieldValues.length === 0) return null;
 
   const handleChange = (key: keyof DateFilter, newval: Date | undefined) => {
     let result = { ...value };

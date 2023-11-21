@@ -79,7 +79,7 @@ export default function AxisPicker({
     const interval = f.type === "date" ? value?.interval : undefined;
     onChange({ name: f.name, interval: interval, field: f.type });
   };
-  const field = getField(fields, value?.field);
+  const field = getField(fields, value.field);
 
   return (
     <div>

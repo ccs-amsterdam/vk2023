@@ -86,7 +86,7 @@ function DebouncedQueryForm({
   debouncing,
   queryChanged,
 }: DebouncedQueryFormProps) {
-  const { fields } = useFields(user, index);
+  const { data: fields } = useFields(user, index);
   const [advanced, setAdvanced] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);

@@ -9,14 +9,9 @@ import {
 import { useServerConfig } from "./serverConfig";
 
 export function useCurrentUserDetails(user?: AmcatUser) {
-  const query = useQuery({
+  return useQuery({
     queryKey: ["users", user],
-    queryFn: async () => {
-      if (user == null) return null;
-      if (user.email === "") return {};
-      const res = await getCurrentUserDetails(user);
-      return { ...res.data, role: res.data.role.toUpperCase() };
-    },
+    queryFn: async () => getCurrentUserDetails(user),
     enabled: user != null,
     retry: (_: any, e: AxiosError) => {
       // Don't retry on 404, this just means the user is not known
@@ -24,13 +19,10 @@ export function useCurrentUserDetails(user?: AmcatUser) {
       return e.response?.status != 404;
     },
   });
-
-  const userInfo: AmcatUserInfo = query.data || {};
-  return { ...query, userInfo };
 }
 
 export function useMyGlobalRole(user: AmcatUser | undefined) {
-  const { userInfo } = useCurrentUserDetails(user);
+  const { data: userInfo } = useCurrentUserDetails(user);
   return userInfo?.role;
 }
 
@@ -44,6 +36,13 @@ export function useHasGlobalRole(user: AmcatUser | undefined, role: AmcatRole) {
   return actual_role_index >= required_role_index;
 }
 
-export function getCurrentUserDetails(user: AmcatUser) {
-  return user.api.get(`/users/me`);
+async function getCurrentUserDetails(user: AmcatUser | undefined) {
+  if (!user) return;
+  if (!user.email) return;
+  const res = await user.api.get(`/users/me`);
+  const userInfo: AmcatUserInfo = {
+    ...res.data,
+    role: res.data.role.toUpperCase(),
+  };
+  return userInfo;
 }
