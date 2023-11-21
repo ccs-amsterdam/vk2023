@@ -1,6 +1,6 @@
 {
-  "commit": "977f27279bb377de5f3fa0ff50ba3e3069246564",
-  "generated": "2023-11-21T14:27:27.596Z",
+  "commit": "5f0c62567c74f1c5f734c30a4c7f9b193e1e4e76",
+  "generated": "2023-11-21T14:29:46.323Z",
   "metadata": [
     {
       "__outstatic": {
@@ -564,8 +564,8 @@
     },
     {
       "__outstatic": {
-        "commit": "977f27279bb377de5f3fa0ff50ba3e3069246564",
-        "hash": "1633015832",
+        "commit": "5f0c62567c74f1c5f734c30a4c7f9b193e1e4e76",
+        "hash": "2713992859",
         "path": "outstatic/content/media/new-party-led-by-veteran-mp-dominates-netherlands-elections.md"
       },
       "author": {
@@ -573,7 +573,7 @@
         "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
       },
       "collection": "media",
-      "coverImage": "",
+      "coverImage": "/images/screenshot-2023-11-21-at-15.29.35-U2MT.png",
       "description": "",
       "publishedAt": "2023-11-21T14:33:16.821Z",
       "slug": "new-party-led-by-veteran-mp-dominates-netherlands-elections",
