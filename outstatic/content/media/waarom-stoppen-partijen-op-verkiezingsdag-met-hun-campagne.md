@@ -1,6 +1,6 @@
 ---
 title: 'Waarom stoppen partijen op verkiezingsdag met hun campagne?'
-status: 'draft'
+status: 'published'
 author:
   name: 'Mariken van der Velden'
   picture: 'https://avatars.githubusercontent.com/u/40858978?v=4'
