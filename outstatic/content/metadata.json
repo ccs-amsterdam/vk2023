@@ -1,6 +1,6 @@
 {
-  "commit": "63723d278da85ec451e2397bc3495bc5e9059051",
-  "generated": "2023-11-20T16:13:43.283Z",
+  "commit": "cb5be3017e46560978d864230d03e5d5b83b5297",
+  "generated": "2023-11-21T08:03:48.735Z",
   "metadata": [
     {
       "__outstatic": {
@@ -504,6 +504,25 @@
       "status": "published",
       "title": "Peilingen in het nieuws",
       "url": "https://gist.githubusercontent.com/vanatteveldt/dde866ed5bac3b051c48e7970feaafb1/raw/dbccb738ea44cde30259388581a974f6a7a6bbd0/peilingen.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "cb5be3017e46560978d864230d03e5d5b83b5297",
+        "hash": "4028845933",
+        "path": "outstatic/content/media/trouw-het-regent-peilingen.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": ""
+      },
+      "collection": "media",
+      "coverImage": "https://img.trouw.nl/93e5b679beca2f5bed585749058b05063f6bb389/het-regent-peilingen-maar-wat-voor-invloed-hebben-die-op-de-verkiezingen.webp",
+      "description": "",
+      "publishedAt": "2023-11-20T08:08:53.000Z",
+      "slug": "trouw-het-regent-peilingen",
+      "status": "draft",
+      "title": "Trouw: Het regent peilingen",
+      "url": "https://www.trouw.nl/politiek/het-regent-peilingen-maar-wat-voor-invloed-hebben-die-op-de-verkiezingen~b6b55882/"
     }
   ]
 }
