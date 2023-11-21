@@ -1,6 +1,6 @@
 {
-  "commit": "cb5be3017e46560978d864230d03e5d5b83b5297",
-  "generated": "2023-11-21T08:03:48.735Z",
+  "commit": "c7aa4459fb5ba4fce2086d98221c92f3f1237e5a",
+  "generated": "2023-11-21T14:24:15.788Z",
   "metadata": [
     {
       "__outstatic": {
@@ -523,6 +523,25 @@
       "status": "draft",
       "title": "Trouw: Het regent peilingen",
       "url": "https://www.trouw.nl/politiek/het-regent-peilingen-maar-wat-voor-invloed-hebben-die-op-de-verkiezingen~b6b55882/"
+    },
+    {
+      "__outstatic": {
+        "commit": "c7aa4459fb5ba4fce2086d98221c92f3f1237e5a",
+        "hash": "255999751",
+        "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-21T14:29:52.591Z",
+      "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
+      "status": "draft",
+      "title": "Waarom stoppen partijen op verkiezingsdag met hun campagne?",
+      "url": ""
     }
   ]
 }
