@@ -1,6 +1,6 @@
 {
-  "commit": "b56ca7dfad119a05457688d48d72422c21c1bb00",
-  "generated": "2023-11-21T14:30:45.543Z",
+  "commit": "446e1c279293632e5549388e376840a8fa47cc47",
+  "generated": "2023-11-21T14:31:30.912Z",
   "metadata": [
     {
       "__outstatic": {
@@ -526,25 +526,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c7aa4459fb5ba4fce2086d98221c92f3f1237e5a",
-        "hash": "3712744416",
-        "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
-      },
-      "collection": "media",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2023-11-21T14:29:52.591Z",
-      "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
-      "status": "published",
-      "title": "Waarom stoppen partijen op verkiezingsdag met hun campagne?",
-      "url": ""
-    },
-    {
-      "__outstatic": {
         "commit": "5f0c62567c74f1c5f734c30a4c7f9b193e1e4e76",
         "hash": "2713992859",
         "path": "outstatic/content/media/new-party-led-by-veteran-mp-dominates-netherlands-elections.md"
@@ -579,6 +560,25 @@
       "slug": "netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron",
       "status": "published",
       "title": "Netherlands: Is centrist leader Pieter Omtzigt the Dutch version of France's Macron?",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "446e1c279293632e5549388e376840a8fa47cc47",
+        "hash": "1092186853",
+        "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-21-at-15.31.17-IwMj.png",
+      "description": "",
+      "publishedAt": "2023-11-21T14:29:52.591Z",
+      "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
+      "status": "published",
+      "title": "Waarom stoppen partijen op verkiezingsdag met hun campagne?",
       "url": ""
     }
   ]

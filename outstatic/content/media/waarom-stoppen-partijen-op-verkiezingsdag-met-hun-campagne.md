@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/40858978?v=4'
 slug: 'waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne'
 description: ''
-coverImage: ''
+coverImage: '/images/screenshot-2023-11-21-at-15.31.17-IwMj.png'
 url: ''
 publishedAt: '2023-11-21T14:29:52.591Z'
 ---
