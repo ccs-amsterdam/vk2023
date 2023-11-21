@@ -1,6 +1,6 @@
 {
-  "commit": "c7aa4459fb5ba4fce2086d98221c92f3f1237e5a",
-  "generated": "2023-11-21T14:24:30.573Z",
+  "commit": "444836889456552cf371752c7e21b748e177b809",
+  "generated": "2023-11-21T14:27:02.378Z",
   "metadata": [
     {
       "__outstatic": {
@@ -541,6 +541,25 @@
       "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
       "status": "published",
       "title": "Waarom stoppen partijen op verkiezingsdag met hun campagne?",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "444836889456552cf371752c7e21b748e177b809",
+        "hash": "1521746593",
+        "path": "outstatic/content/media/netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-21T14:32:50.696Z",
+      "slug": "netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron",
+      "status": "published",
+      "title": "Netherlands: Is centrist leader Pieter Omtzigt the Dutch version of France's Macron?",
       "url": ""
     }
   ]
