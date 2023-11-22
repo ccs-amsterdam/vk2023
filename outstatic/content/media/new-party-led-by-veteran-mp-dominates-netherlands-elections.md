@@ -1,5 +1,5 @@
 ---
-title: 'Omtzigt dominates Netherlands elections '
+title: 'Omtzigt dominates Dutch elections '
 status: 'published'
 author:
   name: 'Mariken van der Velden'

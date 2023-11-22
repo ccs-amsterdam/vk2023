@@ -1,6 +1,6 @@
 {
   "commit": "de8c9bf2a95b680449c3708b797dd82aaa6a5c95",
-  "generated": "2023-11-22T08:52:29.335Z",
+  "generated": "2023-11-22T08:52:35.026Z",
   "metadata": [
     {
       "__outstatic": {
@@ -565,7 +565,7 @@
     {
       "__outstatic": {
         "commit": "de8c9bf2a95b680449c3708b797dd82aaa6a5c95",
-        "hash": "4068364238",
+        "hash": "3567242338",
         "path": "outstatic/content/media/new-party-led-by-veteran-mp-dominates-netherlands-elections.md"
       },
       "author": {
@@ -578,7 +578,7 @@
       "publishedAt": "2023-11-21T14:33:16.821Z",
       "slug": "new-party-led-by-veteran-mp-dominates-netherlands-elections",
       "status": "published",
-      "title": "Omtzigt dominates Netherlands elections ",
+      "title": "Omtzigt dominates Dutch elections ",
       "url": ""
     }
   ]
