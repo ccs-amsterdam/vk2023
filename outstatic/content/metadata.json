@@ -1,6 +1,6 @@
 {
-  "commit": "83df039cb88909dc1dcab01ec1756968e567dfed",
-  "generated": "2023-11-22T09:01:34.783Z",
+  "commit": "bb63bb14635f9fb923b4befb717e2ac94b973f25",
+  "generated": "2023-11-22T09:07:11.242Z",
   "metadata": [
     {
       "__outstatic": {
@@ -602,8 +602,8 @@
     },
     {
       "__outstatic": {
-        "commit": "83df039cb88909dc1dcab01ec1756968e567dfed",
-        "hash": "1950210829",
+        "commit": "bb63bb14635f9fb923b4befb717e2ac94b973f25",
+        "hash": "3242295811",
         "path": "outstatic/content/media/bnr-verkiezingsavond.md"
       },
       "author": {
@@ -617,7 +617,7 @@
       "slug": "bnr-verkiezingsavond",
       "status": "published",
       "title": "BNR: Verkiezingsavond",
-      "url": ""
+      "url": "https://www.bnr.nl/nieuws/politiek/10532301/zo-volg-je-verkiezingsdag-en-de-uitslagenavond-bij-bnr"
     }
   ]
 }
