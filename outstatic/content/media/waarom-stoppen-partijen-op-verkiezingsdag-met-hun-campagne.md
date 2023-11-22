@@ -1,5 +1,5 @@
 ---
-title: 'Waarom stoppen partijen op verkiezingsdag met hun campagne?'
+title: 'Geen campagne op verkiezingsdag'
 status: 'published'
 author:
   name: 'Mariken van der Velden'
