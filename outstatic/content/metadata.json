@@ -1,6 +1,6 @@
 {
-  "commit": "aa6c2d5e3f5c491c8142ab3c2d9d500fc55d42be",
-  "generated": "2023-11-22T08:52:55.265Z",
+  "commit": "1fc595b1344ab8f6e7b4d76afcaddd6852330aed",
+  "generated": "2023-11-22T08:54:50.675Z",
   "metadata": [
     {
       "__outstatic": {
@@ -579,6 +579,25 @@
       "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
       "status": "published",
       "title": "Geen campagne op verkiezingsdag",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "1fc595b1344ab8f6e7b4d76afcaddd6852330aed",
+        "hash": "3242978076",
+        "path": "outstatic/content/media/omtzigt-wants-reform.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-11-22T08:59:01.912Z",
+      "slug": "omtzigt-wants-reform",
+      "status": "draft",
+      "title": "Omtzigt wants reform",
       "url": ""
     }
   ]
