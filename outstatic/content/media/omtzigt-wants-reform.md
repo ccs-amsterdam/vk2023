@@ -1,5 +1,5 @@
 ---
-title: 'Omtzigt wants reform'
+title: 'Altinget (DK): Omtzigt wants reform'
 status: 'published'
 author:
   name: 'Mariken van der Velden'

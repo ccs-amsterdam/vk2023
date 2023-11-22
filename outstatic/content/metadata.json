@@ -1,6 +1,6 @@
 {
-  "commit": "db3557ffd9ea673625f08994dc4769b249196e72",
-  "generated": "2023-11-22T08:55:24.264Z",
+  "commit": "e790d96079def61f1f9046c3e2a87511cf4999e5",
+  "generated": "2023-11-22T08:58:19.369Z",
   "metadata": [
     {
       "__outstatic": {
@@ -583,8 +583,8 @@
     },
     {
       "__outstatic": {
-        "commit": "db3557ffd9ea673625f08994dc4769b249196e72",
-        "hash": "2712720948",
+        "commit": "e790d96079def61f1f9046c3e2a87511cf4999e5",
+        "hash": "1052687293",
         "path": "outstatic/content/media/omtzigt-wants-reform.md"
       },
       "author": {
@@ -597,7 +597,7 @@
       "publishedAt": "2023-11-22T08:59:01.912Z",
       "slug": "omtzigt-wants-reform",
       "status": "published",
-      "title": "Omtzigt wants reform",
+      "title": "Altinget (DK): Omtzigt wants reform",
       "url": ""
     }
   ]
