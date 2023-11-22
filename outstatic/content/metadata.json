@@ -1,6 +1,6 @@
 {
-  "commit": "afae43dba0cb6e1200ddb505de9cd24fdd7de10c",
-  "generated": "2023-11-22T09:07:41.656Z",
+  "commit": "0982d62dbd350ed6deddc3741b106fd95dc130e0",
+  "generated": "2023-11-22T09:07:56.381Z",
   "metadata": [
     {
       "__outstatic": {
@@ -526,25 +526,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c956569ad4764476d5893a7092145b39d549922b",
-        "hash": "1009272882",
-        "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/screenshot-2023-11-21-at-15.31.17-IwMj.png",
-      "description": "",
-      "publishedAt": "2023-11-21T14:29:52.591Z",
-      "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
-      "status": "published",
-      "title": "BNNVARA: Geen campagne op verkiezingsdag",
-      "url": ""
-    },
-    {
-      "__outstatic": {
         "commit": "bb63bb14635f9fb923b4befb717e2ac94b973f25",
         "hash": "3242295811",
         "path": "outstatic/content/media/bnr-verkiezingsavond.md"
@@ -618,6 +599,25 @@
       "status": "published",
       "title": "France24: Is Omtzigt the new Macron?",
       "url": "https://www.france24.com/en/tv-shows/focus/20231121-netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-france-s-macron"
+    },
+    {
+      "__outstatic": {
+        "commit": "0982d62dbd350ed6deddc3741b106fd95dc130e0",
+        "hash": "2008346785",
+        "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-21-at-15.31.17-IwMj.png",
+      "description": "",
+      "publishedAt": "2023-11-21T14:29:52.591Z",
+      "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
+      "status": "published",
+      "title": "BNNVARA: Geen campagne op verkiezingsdag",
+      "url": "https://open.spotify.com/episode/74BGeNivL1S1EJOze8a9Lm?si=58c198dcb58c4a50"
     }
   ]
 }

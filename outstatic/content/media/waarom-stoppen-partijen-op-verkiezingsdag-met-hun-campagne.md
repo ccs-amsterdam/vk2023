@@ -7,7 +7,7 @@ author:
 slug: 'waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne'
 description: ''
 coverImage: '/images/screenshot-2023-11-21-at-15.31.17-IwMj.png'
-url: ''
+url: 'https://open.spotify.com/episode/74BGeNivL1S1EJOze8a9Lm?si=58c198dcb58c4a50'
 publishedAt: '2023-11-21T14:29:52.591Z'
 ---
 
