@@ -1,5 +1,5 @@
 ---
-title: 'New party led by veteran MP dominates Netherlands elections '
+title: 'Omtzigt dominates Netherlands elections '
 status: 'published'
 author:
   name: 'Mariken van der Velden'
