@@ -1,5 +1,5 @@
 ---
-title: 'Netherlands: Is centrist leader Pieter Omtzigt the Dutch version of France''s Macron?'
+title: 'Is Omtzigt the new Macron?'
 status: 'published'
 author:
   name: 'Mariken van der Velden'
