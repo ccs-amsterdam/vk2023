@@ -7,7 +7,7 @@ author:
 slug: 'omtzigt-wants-reform'
 description: ''
 coverImage: '/images/screenshot-2023-11-22-at-09.55.09-AwOD.png'
-url: ''
+url: 'https://www.altinget.dk/artikel/hollandsk-valgkomet-blev-udstoedt-af-sit-parti-nu-vil-han-reformere-sit-land'
 publishedAt: '2023-11-22T08:59:01.912Z'
 ---
 
