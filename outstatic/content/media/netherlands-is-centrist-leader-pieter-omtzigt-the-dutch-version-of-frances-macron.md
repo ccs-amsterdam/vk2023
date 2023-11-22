@@ -1,5 +1,5 @@
 ---
-title: 'Is Omtzigt the new Macron?'
+title: 'France24: Is Omtzigt the new Macron?'
 status: 'published'
 author:
   name: 'Mariken van der Velden'
