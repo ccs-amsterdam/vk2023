@@ -1,6 +1,6 @@
 {
-  "commit": "c1334f54932bf3956f438952ce5876c26baae04e",
-  "generated": "2023-11-22T09:07:21.883Z",
+  "commit": "c6493cdbcf0b6a1530a313cd3e3d7bdb67a7f218",
+  "generated": "2023-11-22T09:07:31.710Z",
   "metadata": [
     {
       "__outstatic": {
@@ -526,25 +526,6 @@
     },
     {
       "__outstatic": {
-        "commit": "b1aff66f6d2fdc002d9d2ed6aeeb1c29deb0f749",
-        "hash": "574097570",
-        "path": "outstatic/content/media/new-party-led-by-veteran-mp-dominates-netherlands-elections.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/screenshot-2023-11-21-at-15.29.35-U2MT.png",
-      "description": "",
-      "publishedAt": "2023-11-21T14:33:16.821Z",
-      "slug": "new-party-led-by-veteran-mp-dominates-netherlands-elections",
-      "status": "published",
-      "title": "Euronews: Omtzigt dominates Dutch elections ",
-      "url": ""
-    },
-    {
-      "__outstatic": {
         "commit": "3260d21d17f8c23667e529b311b4caf8314c9b2e",
         "hash": "664278844",
         "path": "outstatic/content/media/netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron.md"
@@ -618,6 +599,25 @@
       "status": "published",
       "title": "Altinget (DK): Omtzigt wants reform",
       "url": "https://www.altinget.dk/artikel/hollandsk-valgkomet-blev-udstoedt-af-sit-parti-nu-vil-han-reformere-sit-land"
+    },
+    {
+      "__outstatic": {
+        "commit": "c6493cdbcf0b6a1530a313cd3e3d7bdb67a7f218",
+        "hash": "755260138",
+        "path": "outstatic/content/media/new-party-led-by-veteran-mp-dominates-netherlands-elections.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-21-at-15.29.35-U2MT.png",
+      "description": "",
+      "publishedAt": "2023-11-21T14:33:16.821Z",
+      "slug": "new-party-led-by-veteran-mp-dominates-netherlands-elections",
+      "status": "published",
+      "title": "Euronews: Omtzigt dominates Dutch elections ",
+      "url": "https://www.euronews.com/2023/11/20/new-party-led-by-veteran-mp-dominates-netherlands-elections"
     }
   ]
 }
