@@ -1,6 +1,6 @@
 {
-  "commit": "c6493cdbcf0b6a1530a313cd3e3d7bdb67a7f218",
-  "generated": "2023-11-22T09:07:31.710Z",
+  "commit": "afae43dba0cb6e1200ddb505de9cd24fdd7de10c",
+  "generated": "2023-11-22T09:07:41.656Z",
   "metadata": [
     {
       "__outstatic": {
@@ -526,25 +526,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3260d21d17f8c23667e529b311b4caf8314c9b2e",
-        "hash": "664278844",
-        "path": "outstatic/content/media/netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron.md"
-      },
-      "author": {
-        "name": "Mariken van der Velden",
-        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
-      },
-      "collection": "media",
-      "coverImage": "/images/screenshot-2023-11-21-at-15.30.35-gwMz.png",
-      "description": "",
-      "publishedAt": "2023-11-21T14:32:50.696Z",
-      "slug": "netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron",
-      "status": "published",
-      "title": "France24: Is Omtzigt the new Macron?",
-      "url": ""
-    },
-    {
-      "__outstatic": {
         "commit": "c956569ad4764476d5893a7092145b39d549922b",
         "hash": "1009272882",
         "path": "outstatic/content/media/waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne.md"
@@ -618,6 +599,25 @@
       "status": "published",
       "title": "Euronews: Omtzigt dominates Dutch elections ",
       "url": "https://www.euronews.com/2023/11/20/new-party-led-by-veteran-mp-dominates-netherlands-elections"
+    },
+    {
+      "__outstatic": {
+        "commit": "afae43dba0cb6e1200ddb505de9cd24fdd7de10c",
+        "hash": "2521417011",
+        "path": "outstatic/content/media/netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-21-at-15.30.35-gwMz.png",
+      "description": "",
+      "publishedAt": "2023-11-21T14:32:50.696Z",
+      "slug": "netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-frances-macron",
+      "status": "published",
+      "title": "France24: Is Omtzigt the new Macron?",
+      "url": "https://www.france24.com/en/tv-shows/focus/20231121-netherlands-is-centrist-leader-pieter-omtzigt-the-dutch-version-of-france-s-macron"
     }
   ]
 }
