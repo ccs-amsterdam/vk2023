@@ -1,5 +1,5 @@
 ---
-title: 'Geen campagne op verkiezingsdag'
+title: 'BNNVARA: Geen campagne op verkiezingsdag'
 status: 'published'
 author:
   name: 'Mariken van der Velden'
