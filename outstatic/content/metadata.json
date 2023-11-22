@@ -1,6 +1,6 @@
 {
-  "commit": "1fc595b1344ab8f6e7b4d76afcaddd6852330aed",
-  "generated": "2023-11-22T08:54:50.675Z",
+  "commit": "db3557ffd9ea673625f08994dc4769b249196e72",
+  "generated": "2023-11-22T08:55:24.264Z",
   "metadata": [
     {
       "__outstatic": {
@@ -583,8 +583,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1fc595b1344ab8f6e7b4d76afcaddd6852330aed",
-        "hash": "3242978076",
+        "commit": "db3557ffd9ea673625f08994dc4769b249196e72",
+        "hash": "2712720948",
         "path": "outstatic/content/media/omtzigt-wants-reform.md"
       },
       "author": {
@@ -592,11 +592,11 @@
         "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
       },
       "collection": "media",
-      "coverImage": "",
+      "coverImage": "/images/screenshot-2023-11-22-at-09.55.09-AwOD.png",
       "description": "",
       "publishedAt": "2023-11-22T08:59:01.912Z",
       "slug": "omtzigt-wants-reform",
-      "status": "draft",
+      "status": "published",
       "title": "Omtzigt wants reform",
       "url": ""
     }

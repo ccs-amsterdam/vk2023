@@ -1,12 +1,12 @@
 ---
 title: 'Omtzigt wants reform'
-status: 'draft'
+status: 'published'
 author:
   name: 'Mariken van der Velden'
   picture: 'https://avatars.githubusercontent.com/u/40858978?v=4'
 slug: 'omtzigt-wants-reform'
 description: ''
-coverImage: ''
+coverImage: '/images/screenshot-2023-11-22-at-09.55.09-AwOD.png'
 url: ''
 publishedAt: '2023-11-22T08:59:01.912Z'
 ---
