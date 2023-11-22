@@ -1,6 +1,6 @@
 {
-  "commit": "c956569ad4764476d5893a7092145b39d549922b",
-  "generated": "2023-11-22T08:59:18.259Z",
+  "commit": "83df039cb88909dc1dcab01ec1756968e567dfed",
+  "generated": "2023-11-22T09:01:34.783Z",
   "metadata": [
     {
       "__outstatic": {
@@ -598,6 +598,25 @@
       "slug": "waarom-stoppen-partijen-op-verkiezingsdag-met-hun-campagne",
       "status": "published",
       "title": "BNNVARA: Geen campagne op verkiezingsdag",
+      "url": ""
+    },
+    {
+      "__outstatic": {
+        "commit": "83df039cb88909dc1dcab01ec1756968e567dfed",
+        "hash": "1950210829",
+        "path": "outstatic/content/media/bnr-verkiezingsavond.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-22-at-10.01.18-c3ND.png",
+      "description": "",
+      "publishedAt": "2023-11-22T09:07:00.215Z",
+      "slug": "bnr-verkiezingsavond",
+      "status": "published",
+      "title": "BNR: Verkiezingsavond",
       "url": ""
     }
   ]
