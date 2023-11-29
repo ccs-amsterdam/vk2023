@@ -1,6 +1,6 @@
 {
-  "commit": "564dcd416965dbf6219f5b47da36acc6db9675c2",
-  "generated": "2023-11-29T05:14:08.821Z",
+  "commit": "eda39bbb7b3ca21b9558c08848b7577a01ad5c7f",
+  "generated": "2023-11-29T06:29:28.774Z",
   "metadata": [
     {
       "__outstatic": {
@@ -675,6 +675,25 @@
       "status": "published",
       "title": "EenVandaag: Minderheidskabinet & gedoogsteun uitgelegd",
       "url": "https://eenvandaag.avrotros.nl/item/kan-een-mogelijk-minderheidskabinet-met-gedoogpartner-de-grote-vraagstukken-wel-aanpakken-en-andere-vragen-over-gedoogsteun-beantwoord/"
+    },
+    {
+      "__outstatic": {
+        "commit": "eda39bbb7b3ca21b9558c08848b7577a01ad5c7f",
+        "hash": "2922641974",
+        "path": "outstatic/content/media/npo1-polarisatie-na-de-verkiezingen.md"
+      },
+      "author": {
+        "name": "Mariken van der Velden",
+        "picture": "https://avatars.githubusercontent.com/u/40858978?v=4"
+      },
+      "collection": "media",
+      "coverImage": "/images/screenshot-2023-11-29-at-06.05.20-k3Mj.png",
+      "description": "",
+      "publishedAt": "2023-11-29T06:34:39.899Z",
+      "slug": "npo1-polarisatie-na-de-verkiezingen",
+      "status": "published",
+      "title": "NPO1: Polarisatie na de Verkiezingen",
+      "url": "https://open.spotify.com/episode/1imOnlyoULMZzIgNzG3J62?si=jRuQWp3lSLaDOkJoyt1qdA"
     }
   ]
 }
