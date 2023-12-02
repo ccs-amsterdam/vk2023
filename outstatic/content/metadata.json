@@ -1,6 +1,6 @@
 {
-  "commit": "98ea80f8dfad4acc141bf82555b2f6fe4a9529f4",
-  "generated": "2023-12-02T11:16:18.097Z",
+  "commit": "100a8e5ef2355ad7b34c4a72820f2a9f4d249e31",
+  "generated": "2023-12-02T11:26:19.232Z",
   "metadata": [
     {
       "__outstatic": {
@@ -713,6 +713,25 @@
       "status": "published",
       "title": "Media en de winst voor de PVV",
       "url": "https://gist.githubusercontent.com/vanatteveldt/1afeb0abd59b59ac0956729a62e228b4/raw/35daedc04c492969accec896f314330b1cbfa637/peilingen.html"
+    },
+    {
+      "__outstatic": {
+        "commit": "100a8e5ef2355ad7b34c4a72820f2a9f4d249e31",
+        "hash": "3194483125",
+        "path": "outstatic/content/reports/de-pvv-kiezer.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2023-12-02T11:31:18.256Z",
+      "slug": "de-pvv-kiezer",
+      "status": "published",
+      "title": "Profiel van de PVV kiezer",
+      "url": "https://gist.github.com/vanatteveldt/63a0c03233b5a2ffb7daf575659b8e72"
     }
   ]
 }
