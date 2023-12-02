@@ -1,6 +1,6 @@
 {
-  "commit": "eda39bbb7b3ca21b9558c08848b7577a01ad5c7f",
-  "generated": "2023-11-29T06:29:28.774Z",
+  "commit": "eeba39dab049ccf347228006728d19d692e027e0",
+  "generated": "2023-12-02T11:16:12.487Z",
   "metadata": [
     {
       "__outstatic": {
@@ -694,6 +694,25 @@
       "status": "published",
       "title": "NPO1: Polarisatie na de Verkiezingen",
       "url": "https://open.spotify.com/episode/1imOnlyoULMZzIgNzG3J62?si=jRuQWp3lSLaDOkJoyt1qdA"
+    },
+    {
+      "__outstatic": {
+        "commit": "eeba39dab049ccf347228006728d19d692e027e0",
+        "hash": "1367498248",
+        "path": "outstatic/content/reports/media-en-pvv.md"
+      },
+      "author": {
+        "name": "Nel Ruigrok & Wouter van Atteveldt",
+        "picture": ""
+      },
+      "collection": "reports",
+      "coverImage": "https://wnl-static.s3.amazonaws.com/uploads/2023/11/Wilders.png",
+      "description": "",
+      "publishedAt": "2023-12-02T11:20:42.085Z",
+      "slug": "media-en-pvv",
+      "status": "draft",
+      "title": "Media en de winst voor de PVV",
+      "url": "https://gist.githubusercontent.com/vanatteveldt/1afeb0abd59b59ac0956729a62e228b4/raw/35daedc04c492969accec896f314330b1cbfa637/peilingen.html"
     }
   ]
 }
