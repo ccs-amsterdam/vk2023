@@ -1,6 +1,6 @@
 {
-  "commit": "100a8e5ef2355ad7b34c4a72820f2a9f4d249e31",
-  "generated": "2023-12-02T11:26:19.232Z",
+  "commit": "d3b6969b5bc4f455dbf77e3362cfa8a07923e01c",
+  "generated": "2023-12-02T11:29:14.962Z",
   "metadata": [
     {
       "__outstatic": {
@@ -716,8 +716,8 @@
     },
     {
       "__outstatic": {
-        "commit": "100a8e5ef2355ad7b34c4a72820f2a9f4d249e31",
-        "hash": "3194483125",
+        "commit": "d3b6969b5bc4f455dbf77e3362cfa8a07923e01c",
+        "hash": "693568065",
         "path": "outstatic/content/reports/de-pvv-kiezer.md"
       },
       "author": {
@@ -725,13 +725,13 @@
         "picture": ""
       },
       "collection": "reports",
-      "coverImage": "",
+      "coverImage": "https://i.imgur.com/dEIvlXf.png",
       "description": "",
       "publishedAt": "2023-12-02T11:31:18.256Z",
       "slug": "de-pvv-kiezer",
       "status": "published",
       "title": "Profiel van de PVV kiezer",
-      "url": "https://gist.github.com/vanatteveldt/63a0c03233b5a2ffb7daf575659b8e72"
+      "url": "https://gist.githubusercontent.com/vanatteveldt/63a0c03233b5a2ffb7daf575659b8e72/raw/f90d36874acfb807b7dd0699f93956f4f59cd300/w4_pvv.html"
     }
   ]
 }
