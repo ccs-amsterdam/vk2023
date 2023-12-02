@@ -1,6 +1,6 @@
 {
-  "commit": "eeba39dab049ccf347228006728d19d692e027e0",
-  "generated": "2023-12-02T11:16:12.487Z",
+  "commit": "98ea80f8dfad4acc141bf82555b2f6fe4a9529f4",
+  "generated": "2023-12-02T11:16:18.097Z",
   "metadata": [
     {
       "__outstatic": {
@@ -697,8 +697,8 @@
     },
     {
       "__outstatic": {
-        "commit": "eeba39dab049ccf347228006728d19d692e027e0",
-        "hash": "1367498248",
+        "commit": "98ea80f8dfad4acc141bf82555b2f6fe4a9529f4",
+        "hash": "196502491",
         "path": "outstatic/content/reports/media-en-pvv.md"
       },
       "author": {
@@ -710,7 +710,7 @@
       "description": "",
       "publishedAt": "2023-12-02T11:20:42.085Z",
       "slug": "media-en-pvv",
-      "status": "draft",
+      "status": "published",
       "title": "Media en de winst voor de PVV",
       "url": "https://gist.githubusercontent.com/vanatteveldt/1afeb0abd59b59ac0956729a62e228b4/raw/35daedc04c492969accec896f314330b1cbfa637/peilingen.html"
     }

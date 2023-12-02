@@ -1,6 +1,6 @@
 ---
 title: 'Media en de winst voor de PVV'
-status: 'draft'
+status: 'published'
 author:
   name: 'Nel Ruigrok & Wouter van Atteveldt'
   picture: ''
@@ -12,3 +12,4 @@ publishedAt: '2023-12-02T11:20:42.085Z'
 ---
 
 undefined
+
